@@ -1,0 +1,49 @@
+////* Utils Files *////
+@import "utils/animation";
+@import "utils/common-mixing";
+@import "utils/variables";
+
+.dark-mode {
+    @import "utils/dark-variable";
+}
+
+////* Base Files *////
+@import "base/reset";
+@import "base/typography";
+
+////* Components Files *////
+@import "components/auth";
+@import "components/button";
+@import "components/form";
+@import "components/offcanvas";
+@import "components/onboarding";
+@import "components/range-slider";
+@import "components/tab";
+@import "components/timer";
+@import "components/title";
+
+////* Layout Files *////
+@import "layout/filter";
+@import "layout/header";
+@import "layout/home";
+@import "layout/loader";
+@import "layout/mobile-menu";
+@import "layout/product-box";
+@import "layout/profile";
+@import "layout/panel";
+
+////* Pages Files *////
+@import "pages/ecommerce";
+@import "pages/grocery";
+@import "pages/pet";
+@import "pages/plant";
+@import "pages/food";
+@import "pages/chatting";
+@import "pages/hotel-booking";
+@import "pages/blog";
+@import "pages/learning";
+@import "pages/cab-booking";
+@import "pages/fitness";
+@import "pages/furniture";
+@import "pages/jewellery";
+////* Themes Files *////
