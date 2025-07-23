@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconly.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="ecommerce lato-font">
+
+    <!-- header start -->
+    <header class="header">
+        <div class="custom-container">
+            <div class="head-content">
+                <a href="location.html" class="header-location">
+                    <div class="location-content">
+                        <div class="d-flex align-items-center gap-1">
+                            <h3>New York, USA</h3>
+                            <i class="iconsax d-arrow" data-icon="chevron-down"></i>
+                        </div>
+                        <h5>20, Cooper Sq, Kingston</h5>
+                    </div>
+                </a>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="notification.html">
+                        <i class="iconsax icon-btn notification-icon" data-icon="bell-2"></i>
+                    </a>
+                    <a href="#sidebar" class="sidebar-btn" data-bs-toggle="offcanvas">
+                        <i class="iconsax" data-icon="text-align-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- search section starts -->
+    <section class="section-lg-t-space">
+        <div class="custom-container">
+            <form class="search-form">
+                <div class="form-group mt-0">
+                    <div class="form-input">
+                        <input type="search" class="form-control search" id="inputusername"
+                            placeholder="Search here.....">
+                        <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- search section end -->
+
+    <!-- category section starts -->
+    <section class="category-section">
+        <div class="custom-container">
+            <div class="title">
+                <h3>Category</h3>
+                <a href="category.html">See All</a>
+            </div>
+        </div>
+
+        <ul class="category-slide custom-scrollbar">
+            <li>
+                <a href="shop.html" class="category-box">
+                    <img src="../assets/images/ecommerce/categories/1.png" class="img-fluid" alt="1">
+                    <h4>Women</h4>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html" class="category-box">
+                    <img src="../assets/images/ecommerce/categories/2.png" class="img-fluid" alt="2">
+                    <h4>men</h4>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html" class="category-box">
+                    <img src="../assets/images/ecommerce/categories/3.png" class="img-fluid" alt="3">
+                    <h4>Kids</h4>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html" class="category-box">
+                    <img src="../assets/images/ecommerce/categories/4.png" class="img-fluid" alt="4">
+                    <h4>Beauty</h4>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html" class="category-box">
+                    <img src="../assets/images/ecommerce/categories/5.png" class="img-fluid" alt="5">
+                    <h4>footwear</h4>
+                </a>
+            </li>
+            <li>
+                <a href="shop.html" class="category-box">
+                    <img src="../assets/images/ecommerce/categories/6.png" class="img-fluid" alt="6">
+                    <h4>jewelry</h4>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- category section ends -->
+
+    <!-- banner section starts -->
+    <section class="banner-section">
+        <div class="custom-container">
+            <a href="shop.html">
+                <img class="img-fluid banner-img w-100" src="../assets/images/ecommerce/banner/1.png" alt="1">
+            </a>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
+    <!-- brands section start -->
+    <section class="brand-section">
+        <div class="custom-container">
+            <div class="title">
+                <h3>Biggest Deals on Top Brands</h3>
+            </div>
+        </div>
+        <ul class="brand-slider">
+            <li>
+                <a class="brand-box" href="shop.html">
+                    <img src="../assets/images/ecommerce/brand-logo/1.png" class="img-fluid brand-img" alt="1">
+                </a>
+            </li>
+            <li>
+                <a class="brand-box" href="shop.html">
+                    <img src="../assets/images/ecommerce/brand-logo/2.png" class="img-fluid brand-img" alt="2">
+                </a>
+            </li>
+            <li>
+                <a class="brand-box" href="shop.html">
+                    <img src="../assets/images/ecommerce/brand-logo/3.png" class="img-fluid brand-img" alt="3">
+                </a>
+            </li>
+            <li>
+                <a class="brand-box" href="shop.html">
+                    <img src="../assets/images/ecommerce/brand-logo/4.png" class="img-fluid brand-img" alt="4">
+                </a>
+            </li>
+            <li>
+                <a class="brand-box" href="shop.html">
+                    <img src="../assets/images/ecommerce/brand-logo/5.png" class="img-fluid brand-img" alt="5">
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- brands section end -->
+
+    <!-- product tab section start -->
+    <section>
+        <div class="custom-container">
+            <div class="title">
+                <h3>Find your Style</h3>
+                <a href="shop.html">See All</a>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs ecommerce-tab pl-15">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#trending" type="button">Trending
+                    Now</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#top" type="button">Top
+                    Picks</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#featured" type="button">Featured
+                    Products</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#rated" type="button">Top
+                    Rated</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ship" type="button">Ready to
+                    ship</button>
+            </li>
+        </ul>
+
+        <div class="custom-container">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="trending">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/1.png" alt="1"
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/5.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del>$35.00</del><span>(20% off)</span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/6.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/7.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="top">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/6.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/7.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/4.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/5.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="featured">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/7.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/4.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/5.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/6.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="rated">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/5.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/4.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/7.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/6.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ship">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/4.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/6.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/7.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="product-box">
+                                <div class="img-part">
+                                    <a href="product.html" class="product-image"><img
+                                            src="../assets/images/ecommerce/product/5.png" alt=""
+                                            class="img-fluid product"></a>
+                                    <button class="wishlist-btn btn">
+                                        <i class="iconly-Heart icli"></i>
+                                        <i class="iconly-Heart icbo"></i>
+                                    </button>
+                                </div>
+                                <div class="product-content">
+                                    <h6 class="ratings">
+                                        <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                            alt="star"> 4.6
+                                    </h6>
+                                    <a href="product.html" class="product-name">
+                                        Blue Denim Jacket
+                                    </a>
+                                    <h4 class="price">$32.00 <del> $35.00 </del> <span> (20% off) </span></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product tab section end -->
+
+    <!-- banner section starts -->
+    <section class="banner-section">
+        <div class="banner-box">
+            <a href="shop.html">
+                <div class="banner-content">
+                    <div>
+                        <h6>Denim Wear</h6>
+                        <h3>Sales Starts In</h3>
+                        <div class="timer" id="clock">
+                            <div class="counter">
+                                <p>Hours</p>
+                                <span id="hours"></span>
+                            </div>
+                            <div class="counter">
+                                <p>Minutes</p>
+                                <span id="minutes"></span>
+                            </div>
+                            <div class="counter">
+                                <p>Seconds</p>
+                                <span id="seconds"></span>
+                            </div>
+
+
+                        </div>
+                        <a href="shop.html" class="text-decoration-underline link-offset-2">Explore now</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- offer corner start -->
+    <section class="offer-corner-section">
+        <div class="custom-container">
+            <div class="title">
+                <h3>Offer Corner</h3>
+            </div>
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="offer-box">
+                        <a href="shop.html">Under $50.00</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="offer-box">
+                        <a href="shop.html">Flat $20 OFF</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="offer-box">
+                        <a href="shop.html">buy 1 get 1</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="offer-box">
+                        <a href="shop.html">upto 50% off</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offer corner end -->
+
+    <!-- product section start -->
+    <section class="section-b-space">
+        <div class="custom-container">
+            <div class="title">
+                <h3>The Kids Corner</h3>
+                <a href="shop.html">See All</a>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-12">
+                    <div class="horizontal-product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="../assets/images/ecommerce/horizontal-product/1.png" alt="1"
+                                class="img-fluid product">
+                        </a>
+
+                        <div class="product-content">
+                            <div class="flex-space">
+                                <a class="product-name">Crop Denim Jacket</a>
+                                <h6 class="ratings">
+                                    <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                        alt="star"> 4.6
+                                </h6>
+                            </div>
+
+                            <h4 class="price">$30.00 <del>$35.00</del> <span> (20% off) </span></h4>
+
+
+                            <ul class="tag-list">
+                                <li>Kids</li>
+                                <li>Jacket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="horizontal-product-box">
+                        <a href="product.html" class="product-image">
+                            <img src="../assets/images/ecommerce/horizontal-product/2.png" alt="1"
+                                class="img-fluid product">
+                        </a>
+
+                        <div class="product-content">
+                            <div class="flex-space">
+                                <a class="product-name">Navy Blue Denim Jacket</a>
+                                <h6 class="ratings">
+                                    <img class="img-fluid star" src="../assets/images/ecommerce/svg/star-fill.svg"
+                                        alt="star"> 4.6
+                                </h6>
+                            </div>
+
+                            <h4 class="price">$40.00 <del>$50.00</del> <span> (20% off) </span></h4>
+
+                            <ul class="tag-list">
+                                <li>Kids</li>
+                                <li>Jacket</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product section end -->
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- Mobile Section Start -->
+    <div class="ecommerce-mobile-menu">
+        <ul class="mobile-list">
+            <li class="active">
+                <a href="home.html">
+                    <div class="icon">
+                        <img class="inactive" src="../assets/images/ecommerce/svg/home.svg" alt="home">
+                        <img class="active" src="../assets/images/ecommerce/svg/home-fill.svg" alt="home">
+                    </div>
+                    <h5 class="active">Home</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="search.html">
+                    <div class="icon">
+                        <img class="inactive" src="../assets/images/ecommerce/svg/search.svg" alt="search">
+                        <img class="active" src="../assets/images/ecommerce/svg/search-fill.svg" alt="search">
+                    </div>
+                    <h5>Search</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="shop.html">
+                    <div class="icon">
+                        <img class="inactive" src="../assets/images/ecommerce/svg/shop.svg" alt="shop">
+                        <img class="active" src="../assets/images/ecommerce/svg/shop-fill.svg" alt="shop">
+                    </div>
+                    <h5>Shop</h5>
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <div class="icon">
+                        <img class="inactive" src="../assets/images/ecommerce/svg/profile.svg" alt="profile">
+                        <img class="active" src="../assets/images/ecommerce/svg/profile-fill.svg" alt="profile">
+                    </div>
+                    <h5>Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Mobile Section End -->
+
+    <!-- sidebar starts -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+        <div class="offcanvas-body">
+            <div class="custom-container">
+                <div class="profile-background">
+                    <div class="profile-part">
+                        <div class="profile-image">
+                            <img id="output" class="img-fluid profile-pic" src="../assets/images/profile/p3.png"
+                                alt="3">
+                        </div>
+
+                        <h3>Smith Williams</h3>
+                        <h4>smithwilliams452@gmail.com</h4>
+                    </div>
+                </div>
+
+
+                <ul class="profile-list">
+                    <li>
+                        <a href="order.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="document-text-1"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Orders</h5>
+                                <h6>Ongoing orders, Recent orders..</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wishlist.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="heart"> </i>
+
+                            </div>
+                            <div class="setting-content">
+                                <h5> Your Wishlist</h5>
+                                <h6>Your save products</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payment.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="bank-card-diagonal"> </i>
+
+                            </div>
+                            <div class="setting-content">
+                                <h5>Payment</h5>
+                                <h6>Saved cards, Wallets</h6>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="page-listing.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="globe"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Language</h5>
+                                <h6>Select your language here..</h6>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../elements/elements-page.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="bell-2"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Notification</h5>
+                                <h6>Offers, Order tracking messages..</h6>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../elements/elements-page.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="setting-1"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Settings</h5>
+                                <h6>App settings, Help center</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="bottom-sidebar">
+                    <a href="login.html" class="btn ecommerce-btn w-100"> <i class="iconsax sidebar-icon"
+                            data-icon="logout-2"> </i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax js-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- timer js -->
+    <script src="../assets/js/timer.js"></script>
+
+    <!-- template Settings js-->
+    <script src="../assets/js/template-setting.js"></script>
+
+    <!-- script js-->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

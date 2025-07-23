@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="jewellery poppins-font">
+
+    <!-- header start -->
+    <header class="jewellery-main-header">
+        <div class="custom-container2">
+            <div class="header-panel">
+                <button class="left-btn" onclick="history.back()">
+                    <i class="iconsax icon" data-icon="arrow-left"></i>
+                </button>
+                <h3>Shopping Cart</h3>
+            </div>
+            <form class="jewellery-auth-form">
+                <div class="form-group">
+                    <input type="search" class="form-control search" id="inputusername" placeholder="Search here.....">
+                    <i class="iconsax search-i" data-icon="search-normal-2"> </i>
+                    <a href="#!" class="filter-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                        <i class="iconsax" data-icon="media-sliders-3"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </header>
+    <!-- header  end  -->
+
+    <!-- delivery address section start -->
+    <section class="section-t-space-1 jewellery-delivery-section">
+        <div class="custom-container2">
+            <div class="jewellery-delivery-box">
+                <img src="../assets/images/jewellery/jpg/2.jpg" class="img-fluid" alt="map">
+                <div class="jewellery-delivery-content">
+                    <div>
+                        <h4>Your Delivery Address</h4>
+                        <h5>1901 jodge, Hawaii 81063</h5>
+                    </div>
+                    <a href="#!">Change</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- delivery address section  end  -->
+
+    <!-- popular product section start -->
+    <section class="section-t-space gold-popular-section">
+        <div class="custom-container2">
+            <ul class="jewellery-popular-wrapper">
+                <li>
+                    <a href="#!" class="image">
+                        <img src="../assets/images/jewellery/gold/2.png" class="img-fluid" alt="gold">
+                    </a>
+                    <div class="jewellery-most-content">
+                        <a href="#!">Heaset Bracelet</a>
+                        <h4>Size : 7.0</h4>
+                        <div class="gold-rate-price">
+                            <span>$250.20<del>$256.20</del></span>
+                        </div>
+                    </div>
+                    <div class="plus-minus">
+                        <i class="iconsax icon add" data-icon="add"></i>
+                        <input type="number" disabled="" value="1" min="1" max="10">
+                        <i class="iconsax icon sub" data-icon="minus"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#!" class="image">
+                        <img src="../assets/images/jewellery/gold/4.png" class="img-fluid" alt="gold">
+                    </a>
+                    <div class="jewellery-most-content">
+                        <a href="#!">Flower Earrings</a>
+                        <h4>Size : 7.5</h4>
+                        <div class="gold-rate-price">
+                            <span>$130.20 <del>$200.20</del></span>
+                        </div>
+                    </div>
+                    <div class="plus-minus">
+                        <i class="iconsax icon add" data-icon="add"></i>
+                        <input type="number" disabled="" value="1" min="1" max="10">
+                        <i class="iconsax icon sub" data-icon="minus"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- popular product section  end  -->
+
+    <!-- offer coupon section start -->
+    <section class="section-t-space-2 jewellery-coupon-section">
+        <div class="custom-container2">
+            <div class="jewellery-coupon-box coupon-box">
+                <div>
+                    <h4>Offers for You</h4>
+                    <h5>Use coupon code</h5>
+                </div>
+                <div>
+                    <h6><img src="../assets/images/jewellery/svg/2.svg" class="img-fluid cut" alt="">FASHION765</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- offer coupon section  end  -->
+
+    <!-- delivery bill section start -->
+    <section class="section-t-space jewellery-bill-section">
+        <div class="custom-container2">
+            <h4 class="bill-title">Order Details:</h4>
+            <ul class="gold-bill-list">
+                <li>
+                    Bag total
+                    <h4>$220.00</h4>
+                </li>
+                <li>
+                    Bag savings
+                    <span>-$20.00</span>
+                </li>
+                <li>
+                    Coupon Discount
+                    <span class="apply">Apply Coupon</span>
+                </li>
+                <li>
+                    Delivery
+                    <h4>$50.00</h4>
+                </li>
+            </ul>
+            <div class="gold-total">
+                <h5>Total Amount</h5>
+                <span>$358.00</span>
+            </div>
+        </div>
+    </section>
+    <!-- delivery bill section  end -->
+
+    <div class="panel-space-sm"></div>
+
+    <!-- bottom section start -->
+    <div class="order-action-buttons">
+        <h5>$358.00 <span>(2 items)</span></h5>
+        <a href="#!" class="track-btn"><i class="iconsax pay-icon" data-icon="bank-card"></i>Check Out</a>
+    </div>
+    <!-- bottom section end -->
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- count JS -->
+    <script src="../assets/js/quantity.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- script JS -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

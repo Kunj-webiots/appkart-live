@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconly.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="ecommerce lato-font position-relative">
+
+    <!-- header starts -->
+    <header class="main-header">
+        <div class="custom-container">
+            <div class="header-panel">
+                <a href="#" onclick="history.back()">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+                <h3>Payment Method</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- payment section starts -->
+    <section class="section-lg-t-space">
+        <div class="custom-container">
+            <div class="title">
+                <h3>Debit/Credit Cards</h3>
+            </div>
+            <ul class="payment-listing">
+                <li>
+                    <div class="form-check form-check-reverse text-start">
+                        <label class="form-check-label" for="payment1">
+                            <span>
+                                <span class="payment-img">
+                                    <img class="img-fluid payment-icon" src="../assets/images/icon/visa.svg" alt="visa">
+                                </span>
+                            </span>
+                            <span class="payment-content">
+                                <span class="payment-account">XXXX-XXXX-XXXX-9862</span>
+                                <span class="payment-expire">Expires 10/26</span>
+                            </span>
+                        </label>
+                        <input class="form-check-input" type="radio" name="payment" id="payment1" checked>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="form-check form-check-reverse text-start">
+                        <label class="form-check-label" for="payment2">
+                            <span>
+                                <span class="payment-img">
+                                    <img class="img-fluid payment-icon" src="../assets/images/icon/master.svg"
+                                        alt="visa">
+                                </span>
+                            </span>
+                            <span class="payment-content">
+                                <span class="payment-account">XXXX-XXXX-XXXX-5621</span>
+                                <span class="payment-expire">Expires 12/26</span>
+                            </span>
+                        </label>
+                        <input class="form-check-input" type="radio" name="payment" id="payment2">
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#" class="new-card-box">+ Add New Card </a>
+
+            <div class="title mt-4">
+                <h3>Pay Upi</h3>
+            </div>
+            <ul class="payment-listing">
+                <li>
+                    <div class="form-check form-check-reverse text-start">
+                        <label class="form-check-label" for="payment3">
+                            <span>
+                                <span class="payment-img">
+                                    <img class="img-fluid payment-icon" src="../assets/images/icon/gpay.svg" alt="visa">
+                                </span>
+                            </span>
+                            <span class="payment-content">
+                                <span class="payment-account">GPay</span>
+                                <span class="payment-expire">jacobp@okbanking</span>
+                            </span>
+                        </label>
+                        <input class="form-check-input" type="radio" name="payment" id="payment3">
+                    </div>
+                </li>
+            </ul>
+
+            <a href="#" class="new-card-box">+ Add New Card </a>
+
+            <div class="title mt-4">
+                <h3>Pay Upi</h3>
+            </div>
+            <ul class="payment-listing">
+                <li>
+                    <div class="form-check form-check-reverse text-start">
+                        <label class="form-check-label" for="payment4">
+                            <span>
+                                <span class="payment-img">
+                                    <img class="img-fluid payment-icon" src="../assets/images/icon/cash.svg" alt="visa">
+                                </span>
+                            </span>
+                            <span class="payment-content">
+                                <span class="payment-account">Cash on Delivery</span>
+                                <span class="payment-expire">Link your wallet</span>
+                            </span>
+                        </label>
+                        <input class="form-check-input" type="radio" name="payment" id="payment4">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- payment section end -->
+
+    <!-- fixed-panel start -->
+    <div class="fixed-panel">
+        <div class="custom-container">
+            <div class="fixed-panel-content">
+                <h5>$270 <a href="#!" class="link-offset-1">View Details</a></h5>
+                <a href="order-successfully.html" class="btn fixed-btn">Pay Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- fixed-panel end -->
+
+
+
+    <!-- panel-space start -->
+    <div class="panel-space"></div>
+    <!-- panel-space end -->
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax js-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- quantity js -->
+    <script src="../assets/js/quantity.js"></script>
+
+    <!-- template Settings js-->
+    <script src="../assets/js/template-setting.js"></script>
+
+    <!-- script js-->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

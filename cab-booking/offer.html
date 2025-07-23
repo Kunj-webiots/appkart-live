@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="cab-booking outfit-font">
+    <!-- header section start -->
+    <header class="cab-main-header">
+        <div class="custom-container2">
+            <div class="header-panel">
+                <a href="#" onclick="history.back()">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"></i>
+                </a>
+                <h3>Special Offer </h3>
+            </div>
+        </div>
+    </header>
+    <!-- header section  end  -->
+
+    <!-- Offer List section start -->
+    <section class="section-lg-t-space booking-offer-section">
+        <div class="custom-container2">
+            <ul class="booking-offer-list">
+                <li>
+                    <i class="iconsax icon-btn" data-icon="ticket-discount"></i>
+                    <div class="offer-content">
+                        <div class="offer">
+                            <h4>Discounts 15% Off</h4>
+                        </div>
+                        <h5>If you're sure, please confirm. Otherwise, feel free to reach out if you need help with
+                            anything else.</h5>
+                        <button class="apply-btn" type="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Apply
+                            <i class="iconsax icon" data-icon="arrow-right"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconsax icon-btn" data-icon="ticket-discount"></i>
+                    <div class="offer-content">
+                        <div class="offer">
+                            <h4>Get 15% Off Your Next Cab Ride!</h4>
+                        </div>
+                        <h5>Enjoy a smooth and affordable journey with 15% OFF on your next cab booking.
+                            Use code CAB15 at checkout offer valid for a limited time only!
+                        </h5>
+                        <button class="apply-btn" type="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">Apply
+                            <i class="iconsax icon" data-icon="arrow-right"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconsax icon-btn" data-icon="ticket-discount"></i>
+                    <div class="offer-content">
+                        <div class="offer">
+                            <h4>Limited Time Offer 15% Off!</h4>
+                        </div>
+                        <h5>Travel smarter and save more!
+                            Book your cab now and get 15% discount instantly. No minimum fare required ride now and
+                            save!</h5>
+                        <button class="apply-btn">Apply
+                            <i class="iconsax icon" data-icon="arrow-right"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconsax icon-btn" data-icon="ticket-discount"></i>
+                    <div class="offer-content">
+                        <div class="offer">
+                            <h4>Save 15% on Every Ride</h4>
+                        </div>
+                        <h5>Whether it’s a quick trip or a long journey, you get 15% OFF on all cab bookings today.
+                            Hurry this special deal won’t last long!</h5>
+                        <button class="apply-btn">Apply
+                            <i class="iconsax icon" data-icon="arrow-right"></i>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <i class="iconsax icon-btn" data-icon="ticket-discount"></i>
+                    <div class="offer-content">
+                        <div class="offer">
+                            <h4>Special 20% Off</h4>
+                        </div>
+                        <h5>Travel smarter and save more!
+                            Book your cab now and get 15% discount instantly. No minimum fare required ride now and
+                            save!</h5>
+                        <button class="apply-btn">Apply
+                            <i class="iconsax icon" data-icon="arrow-right"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Offer List section  end  -->
+
+    <!-- offer modal section start  -->
+    <div class="modal fade cab-offer-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body cab-offer-box">
+                    <img src="../assets/images/cab-booking/png/1.gif" class="img-fluid" alt="offer-box">
+                    <h3>Welcome To Cab Booking Offer </h3>
+                    <p>You are selecting this promo code for your ride. Applying it now means it will be locked to this
+                        booking.</p>
+                    <div class="flex-common gap-2 m_top-30">
+                        <a href="#!" class="btn cab-main-btn cab-btn" data-bs-dismiss="modal">Cancel
+                            <a href="choose-cab.html" class="btn cab-main-btn">Apply
+                            </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offer modal section  end  -->
+
+
+
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- script JS -->
+    <script src="../assets/js/script.js"></script>
+
+
+</body>
+
+</html>

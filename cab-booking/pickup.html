@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="cab-booking outfit-font">
+
+    <!-- header  start -->
+
+    <header class="cab-search-header">
+        <div class="custom-container2">
+            <div class="cab-search-box">
+                <button class="cab-left-btn" onclick="history.back()">
+                    <i class="iconsax icon" data-icon="chevron-left"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- header  end -->
+
+    <!-- map section start -->
+    <section class="pt-0 map-location-section">
+        <img src="../assets/images/cab-booking/map/3.png" class="img-fluid" alt="map">
+    </section>
+    <!-- map section  end  -->
+
+    <!-- confirm pickup section start -->
+    <section class="pt-0 confirm-pickup-section">
+        <div class="custom-container2">
+            <div class="pickup-header">
+                <h3>Confirm the pickup spot</h3>
+            </div>
+            <div class="pickup-search-box">
+                <div>
+                    <h4>Anand Mahal Road</h4>
+                    <h5>2464 Royal Ln. Mesa, New Jersey 45463</h5>
+                </div>
+                <a href="location.html">
+                    <i class="iconsax icon" data-icon="search-normal-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- confirm pickup section end   -->
+
+    <div class="panel-space"></div>
+
+    <!-- fixed button start -->
+    <div class="cab-bottom-btn">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn cab-main-btn">Confirm Pickup
+            <i class="iconsax icon" data-icon="arrow-right"></i>
+        </a>
+    </div>
+    <!-- fixed button  end  -->
+
+    <!-- confirm modal start -->
+    <div class="modal fade confirm-modal" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body confirm-pickup-modal">
+                    <img src="../assets/images/cab-booking/png/9.png" class="img-fluid" alt="image">
+                    <h4>Verification Required</h4>
+                    <h5>Please fill out the verification procedures below
+                        before continuing.</h5>
+                    <a href="booked-ride.html" class="btn cab-main-btn m_top-28">Confirm Pickup
+                        <i class="iconsax icon" data-icon="arrow-right"></i>
+                    </a>
+                    <a href="#!" class="text-cancel" data-bs-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- confirm modal end -->
+
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

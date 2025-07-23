@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Swiper Slider CSS  -->
+    <link rel="stylesheet" href="../assets/css/vendors/swiper/swiper.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconly.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="hotel-booking mulish-font position-relative">
+
+    <!-- header section start -->
+    <header class="header hotel-header">
+        <div class="custom-container2">
+            <div class="head-content">
+                <a href="#" onclick="history.back()">
+                    <i class="iconsax icon-btn" data-icon="chevron-left"> </i>
+                </a>
+                <div class="profile-content">
+                    <div class="flex-common gap-1">
+                        <h4>Select Room</h4>
+                    </div>
+                    <h6>Nov 20-Nov 21 1 room 2 Guests</h6>
+                </div>
+                <div class="flex-common gap-2 ms-auto " data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+                    <a href="#!">
+                        <i class="iconsax back-icon" data-icon="edit-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header section  end -->
+
+    <!-- select section start -->
+    <section class="section-lg-t-space">
+        <div class="custom-container2">
+            <div class="select-room-tab">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Free Cancellation</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+                            aria-selected="false">Breakfast Included</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
+                            aria-selected="false">Book With $0 Payment</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="rating-tab" data-bs-toggle="tab" data-bs-target="#rating-tab-pane"
+                            type="button" role="tab" aria-controls="rating-tab-pane"
+                            aria-selected="false">Rating</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                        tabindex="0">
+                        <div class="title3">
+                            <h3>Select from additional choices.</h3>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/2.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/6.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Room With Free Cancellation | Breakfast Only</h3>
+                            <ul class="room-list">
+                                <li>Book with $o Payment
+                                    <del>$3,781</del>
+                                </li>
+                                <li>Free Breakfast
+                                    <span>$2,738</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Free Cancellation</span> before 17 Nov 01:30 PM
+
+                                    </div>
+                                    <h5>+$3728 taxes</h5>
+                                </li>
+                            </ul>
+                            <div class="more-detail">
+                                <a href="#!">More Details</a>
+                                <h6>Selected</h6>
+                            </div>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Room With Free Cancellation | Breakfast Only</h3>
+                            <ul class="room-list">
+                                <li>Book with $o Payment
+                                    <del>$2,620</del>
+                                </li>
+                                <li>Free Breakfast
+                                    <span>$8,320</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Free Cancellation</span> before 17 Nov 01:30 PM
+                                    </div>
+                                    <h5>+$9520 taxes</h5>
+                                </li>
+                            </ul>
+                            <div class="more-detail">
+                                <a href="#!">More Details</a>
+                                <h6>Selected</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="title3">
+                            <h3>Select from additional choices.</h3>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/6.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/2.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>4.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Breakfast Only | Food & Drink</h3>
+                            <ul class="room-list">
+                                <li>Free Breakfast</li>
+                                <li>Fruits Additional charge</li>
+                                <li>Bar</li>
+                                <li>Restaurant</li>
+                                <li>Tea/Coffee maker</li>
+                            </ul>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/6.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/1.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Internet</h3>
+                            <ul class="room-list">
+                                <li>WiFi is available in all areas and is free of charge.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <div class="title3">
+                            <h3>Select from additional choices.</h3>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/1.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/2.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Room With Free Cancellation | Breakfast Only</h3>
+                            <ul class="room-list">
+                                <li>Book with $o Payment
+                                    <del>$3,781</del>
+                                </li>
+                                <li>Free Breakfast
+                                    <span>$2,738</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Free Cancellation</span> before 17 Nov 01:30 PM
+                                    </div>
+                                    <h5>+$3728 taxes</h5>
+                                </li>
+                            </ul>
+                            <div class="more-detail">
+                                <a href="#!">More Details</a>
+                                <h6>Selected</h6>
+                            </div>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Room With Free Cancellation | Breakfast Only</h3>
+                            <ul class="room-list">
+                                <li>Book with $o Payment
+                                    <del>$2,620</del>
+                                </li>
+                                <li>Free Breakfast
+                                    <span>$8,320</span>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span>Free Cancellation</span> before 17 Nov 01:30 PM
+                                    </div>
+                                    <h5>+$9520 taxes</h5>
+                                </li>
+                            </ul>
+                            <div class="more-detail">
+                                <a href="#!">More Details</a>
+                                <h6>Selected</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="rating-tab-pane" role="tabpanel" aria-labelledby="rating-tab"
+                        tabindex="0">
+                        <div class="title3">
+                            <h3>Select from additional choices.</h3>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/2.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/1.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Hotel Booking Reviews</h3>
+                            <ul class="room-list">
+                                <li>Hotel room booking
+                                    <h6><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        4.4
+                                    </h6>
+                                </li>
+                                <li>Breakfast
+                                    <h6><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        3.9
+                                    </h6>
+                                </li>
+                                <li>
+                                    Comfortable
+                                    <h6><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        4.9
+                                    </h6>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="room-slide-wrapper">
+                            <div class="swiper room-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide ">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/11.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/hotel-booking/product/10.png" class="img-fluid"
+                                            alt="room-image">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="room-slide-content">
+                                <div class="flex-space">
+                                    <div>
+                                        <h4>Super Deluxe Room</h4>
+                                        <h5>$200.7 <span>/night</span></h5>
+                                    </div>
+                                    <div class="flex-common gap-1">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <h6>5.0</h6>
+                                    </div>
+                                </div>
+                                <ul class="hotel-room-size">
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/18.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>355 sq.ft (33 sq.mt)</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/19.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Lake View</h6>
+                                    </li>
+                                    <li>
+                                        <img src="../assets/images/hotel-booking/svg/20.svg" class="img-fluid"
+                                            alt="home">
+                                        <h6>Bed</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hotel-guest-list">
+                            <h3>Hotel Booking Reviews</h3>
+                            <ul class="room-list">
+                                <li>Hotel room booking
+                                    <h6><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        4.5
+                                    </h6>
+                                </li>
+                                <li>Breakfast
+                                    <h6><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        4.9
+                                    </h6>
+                                </li>
+                                <li>
+                                    Comfortable
+                                    <h6><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                        4.8
+                                    </h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- select section end -->
+
+    <!-- review bottom section start -->
+    <div class="hotel-review-box">
+        <div>
+            <h5>$260 <span>per night(2 Adults)</span></h5>
+            <h6>+$20 taxes & fees</h6>
+        </div>
+        <a href="review-booking.html" class="review-button">Continue</a>
+    </div>
+    <!-- review bottom section  end  -->
+
+    <div class="panel-space-sm"></div>
+
+    <!-- edit offcanvas section start  -->
+    <div class="offcanvas offcanvas-bottom hotel-theme-offcanvas" id="offcanvasBottom">
+        <div class="offcanvas-header hotel-theme-header">
+            <h5 class="offcanvas-title">Hotels & Home stays</h5>
+        </div>
+        <div class="offcanvas-body overflow-visible small px-0">
+            <div class="booking-search-bar">
+                <div class="row g-sm-4 g-3">
+                    <div class="col-12">
+                        <div class="booking-location" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSearch">
+                            <i class="iconsax icon" data-icon="location"></i>
+                            <h6>Search</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="booking-date">
+                            <i class="iconsax icon" data-icon="calendar-1"></i>
+                            <input type="date" value="2025-01-01" min="2005-01-01" max="2040-01-01"
+                                class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="booking-date">
+                            <i class="iconsax icon" data-icon="calendar-1"></i>
+                            <input type="date" value="2024-01-08" min="2005-01-01" max="2040-01-01"
+                                class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="booking-location" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRoom">
+                            <i class="iconsax icon" data-icon="user-2"></i>
+                            <h6>1 Room 2 Adults</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- edit offcanvas section end  -->
+
+    <!-- booking search bar section start -->
+    <div class="offcanvas offcanvas-bottom hotel-theme-offcanvas p-0" id="offcanvasSearch">
+        <div class="offcanvas-body small">
+            <div class="destination-wrapper">
+                <div class="search-header">
+                    <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" class="btn">
+                        <i class="iconsax icon" data-icon="arrow-left"></i>
+                    </button>
+                    <input type="text" name="search" id="search" placeholder="What place would you want to stay?">
+                </div>
+                <h5 class="auto-type-text">Search
+                    <span class="auto-type"></span>
+                </h5>
+                <a href="#!" class="current-location-gps">
+                    <div>
+                        <i class="iconsax icon" data-icon="send-2"></i>
+                    </div>
+                    <div>
+                        <h5>Use Current Location</h5>
+                        <h6>Properties Near Me</h6>
+                    </div>
+                </a>
+                <div class="popular-city">
+                    <h3>POPULAR</h3>
+                    <ul>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Delhi</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Mumbai</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Goa</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Chennai</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Dubai</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Bangkok</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Singapore</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="iconsax icon" data-icon="location"></i>Pattaya</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- booking search bar section end -->
+
+
+    <!-- booking search bar section start -->
+    <div class="offcanvas offcanvas-bottom hotel-theme-offcanvas p-0" tabindex="-1" id="offcanvasRoom">
+        <div class="offcanvas-header hotel-theme-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Room & Guests</h5>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="destination-wrapper">
+                <div class="guest-detail">
+                    <h4>Room</h4>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="guest-detail">
+                    <h4>Adults</h4>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="guest-detail">
+                    <div>
+                        <h4>Children</h4>
+                        <h6>1-5 Year old</h6>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <a href="select-room.html" class="btn hotel-button mt-4 mb-0">Done</a>
+            </div>
+        </div>
+    </div>
+    <!-- booking search bar section  end -->
+
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- type text Js -->
+    <script src="../assets/js/text-type.js"></script>
+    <script src="../assets/js/typed.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Swiper Slider JS -->
+    <script src="../assets/js/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom-swiper.js"></script>
+
+    <!-- script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
