@@ -274,8 +274,11 @@
                padding: 14px;
 
                img {
-                    width: 28px;
-                    height: 28px;
+                    @include pseudowh(28px, 28px);
+
+                    @media (max-width:600px) {
+                         @include pseudowh (calc(20px + (28 - 20) * ((100vw - 320px) / (600 - 320))), calc(20px + (28 - 20) * ((100vw - 320px) / (600 - 320))));
+                    }
                }
           }
      }
