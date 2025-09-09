@@ -66,7 +66,7 @@
             <div class="calender-list">
                 <div class="main-title">
                     <i class="iconsax icon" data-icon="chevron-left"></i>
-                    <h4>Feb,2025</h4>
+                    <h4 id="currentMonth">Feb,2025</h4>
                     <i class="iconsax icon" data-icon="chevron-right"></i>
                 </div>
                 <div class="calendar-day">
@@ -102,7 +102,15 @@
                     <i class="iconsax icon" data-icon="basket-2"></i>
                     <div class="content">
                         <h5>Service Location</h5>
-                        <i class="iconsax menu-icon" data-icon="menu-meatballs"></i>
+                        <div class="dropdown">
+                            <i class="iconsax menu-icon" data-bs-toggle="dropdown" role="button" aria-expanded="false"
+                                data-icon="menu-meatballs"></i>
+
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="detail">
@@ -215,16 +223,19 @@
     </div>
     <!-- button  end  -->
 
-
     <!-- Bootstrap js-->
+    <script src="../assets/js/vendors/bootstrap/popper.min.js"></script>
     <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Calender JS -->
+    <script src="../assets/js/calender.js"></script>
 
     <!-- Iconsax js-->
     <script src="../assets/js/iconsax.js"></script>
 
     <!-- script js-->
-
     <script src="../assets/js/script.js"></script>
+
 </body>
 
 </html>

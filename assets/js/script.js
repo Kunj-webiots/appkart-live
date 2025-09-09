@@ -222,9 +222,9 @@ function copyLink(el) {
     alert("Input not found");
   }
 }
-document.querySelectorAll('.month-date li').forEach(li =>
-  li.onclick = () => {
-    document.querySelector('.month-date .active')?.classList.remove('active');
-    li.classList.add('active');
-  }
-);
+// document.querySelectorAll('.month-date li').forEach(li =>
+//   li.onclick = () => {
+//     document.querySelector('.month-date .active')?.classList.remove('active');
+//     li.classList.add('active');
+//   }
+// );

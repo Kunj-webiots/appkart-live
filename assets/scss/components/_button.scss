@@ -9,11 +9,11 @@
     border-radius: 6px;
 
     &:hover {
-        background-color: transparent !important;
+        background-color: rgba(var(--theme-color), 1) !important;
     }
 
     &:active {
-        background-color: transparent !important;
+        background-color: rgba(var(--theme-color), 1) !important;
     }
 
     &-sm {
@@ -136,6 +136,7 @@
     border-radius: 8px;
     border: none;
     color: rgba(var(--dark-bg), 1);
+
 
     .dark-mode & {
         color: rgba(var(--bg-color), 1);

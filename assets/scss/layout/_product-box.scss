@@ -31,16 +31,22 @@
             background-color: rgba(var(--white), 1);
             border: none;
 
+            &.btn {
+
+                &:hover,
+                :active {
+                    background-color: rgba(var(--white), 1) !important;
+                }
+            }
+
             &.active,
             :active,
             :hover {
                 border: transparent;
-                background-color: transparent !important;
             }
 
             &:not(.btn-check)+.btn:active {
                 border: transparent;
-                background-color: transparent;
             }
 
             .icli {
