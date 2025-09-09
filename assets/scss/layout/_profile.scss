@@ -866,6 +866,10 @@ fitness CSS
         margin: 0;
         width: 35px;
 
+        &::file-selector-button {
+            cursor: pointer;
+        }
+
         [dir="rtl"] & {
             right: unset;
             left: 0;

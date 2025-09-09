@@ -272,6 +272,11 @@
                @include flex_center;
                @include pseudowh (calc(50px + (54 - 50) * ((100vw - 320px) / (600 - 320))), calc(50px + (54 - 50) * ((100vw - 320px) / (600 - 320))));
                padding: 14px;
+
+               img {
+                    width: 28px;
+                    height: 28px;
+               }
           }
      }
 }

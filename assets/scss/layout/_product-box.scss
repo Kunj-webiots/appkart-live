@@ -35,10 +35,12 @@
             :active,
             :hover {
                 border: transparent;
+                background-color: transparent !important;
             }
 
             &:not(.btn-check)+.btn:active {
                 border: transparent;
+                background-color: transparent;
             }
 
             .icli {

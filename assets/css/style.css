@@ -5301,6 +5301,10 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
   height: calc(50px + 4 * (100vw - 320px) / 280);
   padding: 14px;
 }
+.food-social-icon li a img {
+  width: 28px;
+  height: 28px;
+}
 
 /*================== Food OTP auth  ====================*/
 .starting-heading {
@@ -7454,10 +7458,10 @@ body.dark .movie-auth-form .form-group .form-control {
   border-radius: 6px;
 }
 .btn:hover {
-  background-color: rgba(var(--theme-color), 1) !important;
+  background-color: transparent !important;
 }
 .btn:active {
-  background-color: rgba(var(--theme-color), 1) !important;
+  background-color: transparent !important;
 }
 .btn-sm {
   padding: 5px 10px !important;
@@ -14057,7 +14061,7 @@ food range slider
   all: unset;
   font-size: 14px;
   font-weight: 500;
-  color: rgba(var(--title-color), 1);
+  color: rgba(var(--white), 1);
   text-align: center;
   pointer-events: auto;
   width: 30px;
@@ -20517,9 +20521,11 @@ salon CSS
 .product-box .img-part .wishlist-btn :active,
 .product-box .img-part .wishlist-btn :hover {
   border: transparent;
+  background-color: transparent !important;
 }
 .product-box .img-part .wishlist-btn:not(.btn-check) + .btn:active {
   border: transparent;
+  background-color: transparent;
 }
 .product-box .img-part .wishlist-btn .icli {
   color: rgba(var(--content-color), 1);
@@ -22692,6 +22698,9 @@ fitness CSS
   cursor: pointer;
   margin: 0;
   width: 35px;
+}
+.body-profile-box #file::file-selector-button {
+  cursor: pointer;
 }
 [dir=rtl] .body-profile-box #file {
   right: unset;
@@ -38544,7 +38553,7 @@ body.dark-mode .salon-payment-list li:nth-child(2) img {
 .salon-review-list {
   background-color: rgba(var(--content-color), 0.11);
   border-radius: 12px;
-  padding: 14px 14px 31px 14px;
+  padding: 15px;
 }
 .salon-review-list ul {
   padding-bottom: 20px;

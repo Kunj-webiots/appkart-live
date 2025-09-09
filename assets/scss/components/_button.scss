@@ -9,11 +9,11 @@
     border-radius: 6px;
 
     &:hover {
-        background-color: rgba(var(--theme-color), 1) !important;
+        background-color: transparent !important;
     }
 
     &:active {
-        background-color: rgba(var(--theme-color), 1) !important;
+        background-color: transparent !important;
     }
 
     &-sm {
