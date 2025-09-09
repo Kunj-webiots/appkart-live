@@ -1290,19 +1290,19 @@
     .input-icon {
         cursor: pointer;
         position: absolute;
-        right: 14%;
+        right: 90px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 18px;
         color: rgba(var(--content-color), 1);
 
-        @media (max-width:375px) {
-            right: 25%;
+        @media (max-width:550px) {
+            right: calc(85px + (90 - 85) * ((100vw - 320px) / (600 - 320)));
         }
 
         [dir="rtl"] & {
             right: unset;
-            left: 14%;
+            left: 90px;
         }
 
         .clip-icon {
@@ -1794,6 +1794,9 @@
     position: relative;
 
     img {
+        width: 100%;
+        height: 76px;
+        object-fit: cover;
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
     }

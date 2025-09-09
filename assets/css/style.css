@@ -5305,12 +5305,6 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
   width: 28px;
   height: 28px;
 }
-@media (max-width: 600px) {
-  .food-social-icon li a img {
-    width: calc(20px + 8 * (100vw - 320px) / 280);
-    height: calc(20px + 8 * (100vw - 320px) / 280);
-  }
-}
 
 /*================== Food OTP auth  ====================*/
 .starting-heading {

@@ -144,6 +144,7 @@
                 }
 
                 .close-icon {
+                    cursor: pointer;
                     transform: rotate(45deg);
                     --Iconsax-Color: rgba(var(--title-color), 1);
                     --Iconsax-Size: 18px;
@@ -1101,7 +1102,7 @@
 
     .rating-review-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 13px;
         padding-block: 13px;
         border-top: 1px solid rgba(var(--content-color), 0.15);
@@ -1440,7 +1441,7 @@
 .product-team-condition-wrapper {
     .condition-content {
         h2 {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
             color: rgba(var(--title-color), 1);
         }

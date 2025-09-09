@@ -274,11 +274,8 @@
                padding: 14px;
 
                img {
-                    @include pseudowh(28px, 28px);
-
-                    @media (max-width:600px) {
-                         @include pseudowh (calc(20px + (28 - 20) * ((100vw - 320px) / (600 - 320))), calc(20px + (28 - 20) * ((100vw - 320px) / (600 - 320))));
-                    }
+                    width: 28px;
+                    height: 28px;
                }
           }
      }
@@ -287,7 +284,6 @@
 /*================== Food OTP auth  ====================*/
 .starting-heading {
      text-align: center;
-     margin-top: 10px;
 
      p {
           font-size: 16px;
@@ -314,7 +310,7 @@
      padding-block: 40px 60px;
 
      @media (max-width:600px) {
-          padding-block: calc(30px + (60 - 30) * ((100vw - 320px) / (600 - 320)));
+          padding-block: calc(25px + (60 - 25) * ((100vw - 320px) / (600 - 320)));
      }
 
      p {
