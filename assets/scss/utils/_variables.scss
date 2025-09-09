@@ -1,0 +1,266 @@
+/*=====================
+    1.3 Variables CSS
+==========================*/
+/* Fonts */
+$metropolis: "Metropolis",
+sans-serif;
+$lato: "Lato",
+serif;
+$anton: "Anton",
+serif;
+$nunito: "Nunito Sans",
+serif;
+$mulish: "Mulish",
+sans-serif;
+$lato:"Lato",
+sans-serif;
+$noto: "Noto Sans",
+sans-serif;
+$roboto:"Roboto",
+sans-serif;
+$manrope:"Manrope",
+sans-serif;
+$mukta: 'Mukta';
+$outfit: "Outfit",
+sans-serif;
+$poppins:"Poppins",
+sans-serif;
+;
+
+
+:root {
+    --theme-color: 255, 199, 47;
+    --title-color: 47, 48, 50;
+    --content-color: 157, 172, 177;
+    --white: 255, 255, 255;
+    --black: 0, 0, 0;
+    --light-bg: 245, 245, 245;
+    --dark-bg: 32, 32, 32;
+    --border-color: 221, 221, 221;
+    --success-color: 25, 135, 84;
+    --error-color: 255, 76, 59;
+    --secondary-color: 255, 199, 47;
+    --rating-color: 255, 199, 47; // #ffc72f
+    --gradient: linear-gradient(90deg, #ffc72f 0%, rgba(32, 32, 32, 0.11) 100%);
+}
+
+.ecommerce {
+    --theme-color: 82, 104, 102;
+    --title-color: 34, 34, 34;
+    --content-color: 141, 143, 141;
+    --light-bg: 245, 245, 245;
+    --border-color: 221, 221, 221;
+
+    &.dark-mode {
+        --body-color: 41, 51, 50;
+        --light-bg: 29, 38, 37;
+        --title-color: 255, 255, 255;
+        --border-color: 48, 67, 65;
+        --dark-bg: 41, 51, 50;
+    }
+}
+
+.plant {
+    --theme-color: 13, 151, 105;
+    --title-color: 49, 49, 49;
+    --content-color: 141, 143, 141;
+    --light-bg: 243, 243, 243;
+    --border-color: 241, 241, 241;
+
+    &.dark-mode {
+        --body-color: 32, 32, 32;
+        --light-bg: 49, 49, 49;
+        --border-color: 57, 57, 57;
+        --title-color: 255, 255, 255;
+    }
+}
+
+.grocery {
+    --theme-color: 65, 167, 167;
+    --secondary-color: 255, 156, 84;
+    --title-color: 49, 49, 49;
+    --content-color: 141, 143, 141;
+    --light-bg: 243, 243, 243;
+    --border-color: 241, 241, 241;
+
+    &.dark-mode {
+        --body-color: 16, 39, 39;
+        --light-bg: 6, 56, 56;
+        --title-color: 255, 255, 255;
+        --bg-color: 6, 56, 56;
+        --border-color: 32, 97, 97;
+    }
+}
+
+.pet {
+    --theme-color: 6, 75, 181; //#064BB5
+    --title-color: 49, 49, 49;
+    --content-color: 141, 143, 141;
+    --light-bg: 245, 245, 245;
+    --border-color: 218, 218, 218;
+
+    &.dark-mode {
+        --body-color: 15, 27, 44;
+        --light-bg: 28, 46, 69;
+        --title-color: 255, 255, 255;
+        --border-color: 145, 145, 145;
+        --bg-color: 28, 46, 69;
+    }
+}
+
+.food {
+    --theme-color: 255, 199, 47; // #FFC72F
+    --content-color: 141, 143, 141; // #8D8F8D
+    --bg-color: 245, 245, 245; // #F5F5F5
+    --blue: 0, 144, 249; //#0090F9
+    --light-green: 23, 156, 27; //#179C1B
+    --green: 8, 152, 83; //#089853
+    --border: 214, 214, 214; //#D6D6D6
+
+    &.dark-mode {
+        --dark-bg: 255, 255, 255;
+        --bg-color: 34, 35, 37;
+        --content-color: 141, 143, 145;
+        --title-color: 255, 255, 255;
+        --second-color: 47, 48, 50;
+    }
+}
+
+.chatting {
+    --theme-color: linear-gradient(180deg, rgba(95, 149, 255, 1) 0%, rgba(34, 109, 255, 1) 50%);
+    --secondary: 14, 31, 64; //#0E1F40
+    --light-blue: 34, 109, 255; //#226DFF
+    --title-color: 49, 49, 49; //#313131
+    --content-color: 141, 143, 141; //#8D8F8D
+    --light-color: 163, 193, 250; // 
+    --online: 77, 214, 140; //#4DD68C
+
+    &.dark-mode {
+        --body-color: 14, 31, 64;
+        --white: 28, 55, 107;
+        --title-color: 255, 255, 255;
+    }
+}
+
+.hotel-booking {
+    --theme-color: 0, 122, 196; // #007AC4
+    --title-color: 49, 49, 49; //#313131
+    --content-color: 141, 143, 141; //#8D8F8D
+    --light-gray: 242, 242, 242; // #F2F2F2
+
+    &.dark-mode {
+        --body-color: 49, 49, 49;
+        --light-gray: 224, 224, 224; // #F2F2F2
+        --white: 33, 33, 33;
+        --title-color: 255, 255, 255;
+        --light-bg: 33, 33, 33;
+    }
+}
+
+.blog {
+    --theme-color: 165, 99, 77; //#A5634D
+    --title-color: 49, 49, 49; // #313131
+    --content-color: 141, 143, 141; //#8D8F8D
+
+    &.dark-mode {
+        --body-color: 49, 49, 49;
+        --title-color: 255, 255, 255;
+        --white: 34, 34, 34;
+    }
+}
+
+.learning {
+    --theme-color: 255, 155, 92; //#FF9B5C
+    --secondary-color: 153, 187, 78; // #99BB4E
+    --light-blue: 175, 209, 223; //#AFD1DF
+    --title-color: 49, 49, 49; //#313131
+    --content-color: 141, 143, 141; //#8D8F8D
+
+    &.dark-mode {
+        --body-color: 49, 49, 49;
+        --white: 34, 34, 34;
+        --title-color: 255, 255, 255;
+        --light-bg: 34, 34, 34;
+        --black: 141, 143, 141;
+    }
+}
+
+.cab-booking {
+    --theme-color: 10, 132, 255; // #0A84FF
+    --title2-color: linear-gradient(180deg, #464646 0%, #171916 100%);
+    --content-color: 141, 143, 141; // #8D8F8D
+    --title-color: 49, 49, 49; //#313131
+
+    &.dark-mode {
+        --white: 45, 46, 44;
+        --title2-color: 255, 255, 255;
+        --black: 141, 143, 141;
+        --title-color: 255, 255, 255;
+        --bg-color: 33, 34, 32;
+        --light-bg: 33, 34, 32;
+    }
+}
+
+.fitness {
+    --theme-color: 108, 223, 195; //#6CDFC3
+    --bg-color: 49, 49, 49; // #313131
+    --content-color: 141, 143, 141; //#8D8F8D
+    --title-color: 242, 242, 242; //EFF2F3
+    --black-color: 36, 36, 36; //#242424
+}
+
+
+.furniture {
+    --theme-color: 228, 137, 0; // #E48900
+    --title-color: 49, 49, 49; // #313131
+    --content-color: 141, 143, 141; // #8D8F8D
+    --bg-color: 243, 243, 243; // #F3F3F3
+
+    &.dark-mode {
+        --title-color: 255, 255, 255;
+        --bg-color: 49, 49, 49;
+        --white: 32, 32, 32;
+    }
+}
+
+.jewellery {
+    --theme-color: 197, 150, 113; //#C59671
+    --secondary-color: 14, 51, 60; //#0E333C
+    --content-color: 141, 143, 141; //#8D8F8D
+    --title-color: 49, 49, 49; //#313131
+    --bg-color: 246, 245, 245; //#F6F5F5
+    --rate-color: 248, 153, 10; //#F8990A
+
+    &.dark-mode {
+        --body-color: 9, 34, 40;
+        --title-color: 255, 255, 255;
+        --bg-color: 14, 51, 60;
+        --light-bg: 14, 51, 60;
+    }
+}
+
+.salon {
+    --theme-color: 137, 137, 110; //#89896E
+    --title-color: 49, 49, 49; //#313131
+    --content-color: 141, 143, 141; //#8D8F8D
+    --bg-color: 246, 245, 245; //#F6F5F5
+    --rating: 248, 153, 10; //#F8990A
+
+    &.dark-mode {
+        --title-color: 255, 255, 255;
+        --bg-color: 38, 38, 38;
+        --body-color: 49, 49, 49; //#313131
+        --white: 38, 38, 38;
+    }
+}
+
+.movie {
+    --body-color: 15, 12, 19;
+    --theme-color: linear-gradient(137.49deg, #19A1BE 1.43%, #7D4192 93.61%);
+    --button-color: linear-gradient(95.54deg, #6794FF -36.56%, #6794FF -36.55%, #205DEE 60.15%);
+    --content-color: 141, 143, 141;
+    --title-color: 246, 245, 245;
+    --rating: 248, 153, 10; //#F8990A
+    --border: 32, 93, 238;
+    --dark-border: 32, 30, 46;
+}

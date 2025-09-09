@@ -1,0 +1,32 @@
+/*===================== 
+4.4   Loader CSS
+==========================*/
+.loader {
+   @include flex_center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 10;
+   background: var(--theme-color);
+   background-color: rgba(var(--white), 1);
+   transform: translateY(0);
+   transition: opacity 0.6s ease, transform 0.6s ease;
+   opacity: 1;
+
+   body.dark-mode & {
+      background: rgba(var(--body-color), 1);
+   }
+
+   img {
+      width: 100%;
+      max-width: 100px;
+   }
+
+   &.hide {
+      opacity: 0;
+      transform: translateY(-100%);
+      pointer-events: none;
+   }
+}

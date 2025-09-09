@@ -1,0 +1,719 @@
+/*=====================
+    3.2 Button CSS
+=======================*/
+.btn {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 6px;
+
+    &:hover {
+        background-color: rgba(var(--theme-color), 1) !important;
+    }
+
+    &:active {
+        background-color: rgba(var(--theme-color), 1) !important;
+    }
+
+    &-sm {
+        padding: 5px 10px !important;
+    }
+
+    @media (max-width: 600px) {
+        padding: calc(12px + (14 - 12) * ((100vw - 320px) / (600 - 320)));
+        font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (600 - 320)));
+    }
+
+
+
+    // &.solid-btn {
+    //     color: rgba(255, 255, 255, 1);
+    //     background-color: rgba(var(--theme-color), 1);
+    // }
+
+    // &.outline-btn {
+    //     color: rgba(var(--theme-color), 1);
+    //     background-color: transparent;
+    //     border: 1px solid rgba(var(--theme-color), 1);
+    // }
+
+    // &.rounded-btn {
+    //     color: rgba(255, 255, 255, 1);
+    //     background-color: rgba(var(--theme-color), 1);
+    //     border-radius: 100px;
+    // }
+
+}
+
+/**** ecommerce button CSS ****/
+.ecommerce-btn {
+    font-weight: 600;
+    color: rgba(var(--white), 1);
+    background-color: rgba(var(--theme-color), 1);
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
+    }
+}
+
+/**** plant button CSS ****/
+.plant-btn,
+.pet-btn {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(var(--white), 1);
+    background-color: rgba(var(--theme-color), 1);
+    text-transform: capitalize;
+    border-radius: 100px;
+
+    @media (max-width: 600px) {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
+    }
+}
+
+.pet-btn {
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.plant-cart-btn {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 6px 12px;
+    color: rgba(var(--white), 1);
+    background-color: rgba(var(--theme-color), 1);
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
+    }
+}
+
+/**** grocery button CSS ****/
+.grocery-btn {
+    font-weight: 600;
+    color: rgba(var(--white), 1);
+    background-color: rgba(var(--theme-color), 1);
+    text-transform: uppercase;
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1) !important;
+    }
+}
+
+
+/*========= food button ============*/
+.login-btn {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 44px;
+    color: rgba(var(--dark-bg), 1);
+
+    @media (max-width:600px) {
+        margin-top: calc(20px + (44 - 20) * ((100vw - 320px) / (600 - 320)));
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+    }
+
+}
+
+.food-btn {
+    position: sticky;
+    width: 100%;
+    font-weight: 500;
+    padding: 14px;
+    background-color: rgba(var(--theme-color), 1);
+    border-radius: 8px;
+    border: none;
+    color: rgba(var(--dark-bg), 1);
+
+    .dark-mode & {
+        color: rgba(var(--bg-color), 1);
+    }
+}
+
+.map-btn {
+    margin-block: 20px;
+    background-color: rgba(var(--bg-color), 1);
+
+    body.dark-mode & {
+        color: rgba(var(--white), 1) !important;
+    }
+}
+
+.m_top-30 {
+    @media (max-width:600px) {
+        margin-top: calc(12px + (30 - 12) * ((100vw - 320px) / (600 - 320)))
+    }
+}
+
+.location-btn {
+    margin-top: 20px;
+    font-weight: 500;
+    padding: 16px;
+    background-color: rgba(var(--bg-color), 1);
+    border-radius: 8px;
+    color: rgba(var(--dark-bg), 1);
+}
+
+
+
+//*============ chatting-button ==========*//
+.chatting-btn {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(var(--white), 1);
+    background: var(--theme-color);
+    border-radius: 8px;
+    width: 100%;
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+    }
+
+    @media (max-width:600px) {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+        margin-top: calc(35px + (40 - 35) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    &:active {
+        color: rgba(var(--white), 1);
+    }
+
+}
+
+.google-btn {
+    margin-top: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(var(--title-color), 1);
+    background-color: rgba(var(--white), 1);
+    border: 1px solid rgba(var(--contant-color), 0.15);
+    box-shadow: 0 2px 15px 0 rgba(var(--title-color), 0.08);
+
+    body.dark-mode & {
+        background-color: rgba(var(--body-color), 1);
+    }
+
+    @media (max-width:600px) {
+        margin-top: calc(15px + (23 - 15) * ((100vw - 320px) / (600 - 320)));
+    }
+
+}
+
+.chatting-fixed-button {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 600px;
+    padding: 10px 20px;
+    background-color: rgba(var(--white), 1);
+    width: 100%;
+
+    body.dark-mode & {
+        background-color: rgba(var(--body-color), 1);
+    }
+
+    a {
+        margin-top: 0;
+    }
+}
+
+/* ============= Hotel Booking CSS ============ */
+.hotel-button {
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(var(--white), 1);
+    background-color: rgba(var(--theme-color), 1);
+    border-radius: 6px;
+    margin-bottom: 18px;
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+    }
+
+    @media (max-width:600px) {
+        font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (600 - 320)));
+        margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (600 - 320)));
+        margin-bottom: calc(10px + (18 - 10) * ((100vw - 320px) / (600 - 320)));
+
+    }
+}
+
+.download-button {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 20px;
+    bottom: 0;
+    background-color: rgba(var(--white), 1);
+
+    body.dark-mode & {
+        background-color: rgba(var(--body-color), 1);
+
+        a {
+            color: rgba(var(--title-color), 1);
+        }
+    }
+
+    a {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
+        border-radius: 6px;
+
+        @media (max-width:600px) {
+            font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (600 - 320)));
+            margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+}
+
+/*============= Blog Button CSS ===========*/
+.blog-fix-btn {
+    background-color: rgba(var(--white), 1);
+    padding: 18px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+
+    body.dark-mode & {
+        background-color: rgba(var(--body-color), 1);
+    }
+
+    @media (max-width:600px) {
+        padding-inline: calc(15px + (20 - 15) * ((100vw - 320px) / (600 - 320)));
+    }
+}
+
+.blog-btn {
+    width: 100%;
+    padding-block: 12px;
+    background-color: rgba(var(--theme-color), 1);
+    color: rgba(var(--white), 1);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 8px;
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+    }
+}
+
+/*============= Learning Button CSS ==============*/
+.learning-btn {
+    width: 100%;
+    background-color: rgba(var(--theme-color), 1);
+    color: rgba(var(--white), 1);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 30px;
+    padding-block: 15px;
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+    }
+
+    @media (max-width:600px) {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+        padding-block: calc(12px + (15 - 12) * ((100vw - 320px) / (600 - 320)));
+    }
+
+}
+
+.learn-skip {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(var(--title-color), 1);
+    display: block;
+    margin-top: 20px;
+
+    @media (max-width:600px) {
+        margin-top: calc(15px + (20 - 15) * ((100vw - 320px) / (600 - 320)));
+    }
+}
+
+.learn-account {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(var(--content-color), 1);
+
+    @media (max-width:600px) {
+        margin-top: calc(10px + (15 - 10) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    a {
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+    }
+}
+
+.bottom-button {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    max-width: 600px;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(var(--white), 0.15);
+
+    body.dark-mode & {
+        background-color: rgb(49, 49, 49);
+    }
+}
+
+.learn-logout {
+    padding: 10px 0;
+    width: 100%;
+    max-width: 249px;
+    background-color: rgba(var(--white), 1);
+    bottom: 0;
+    position: fixed;
+
+    .icon {
+        margin-right: 4px;
+        --Iconsax-Color: rgba(var(--white), 1);
+        --Iconsax-size: 20px;
+    }
+}
+
+/*============== Cab Booking Button CSS ===============*/
+.cab-bottom-btn {
+    width: 100%;
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 0px;
+    padding: 10px 20px 25px 20px;
+    background-color: rgba(var(--white), 1);
+}
+
+.cab-main-btn {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    background: rgba(var(--theme-color), 1);
+    padding-block: 16px;
+    color: rgba(var(--white), 1);
+
+    &:hover {
+        background: rgba(var(--theme-color), 1);
+        color: rgba(var(--white), 1) !important;
+    }
+
+    @media (max-width:600px) {
+        border-radius: calc(8px + (16 - 8) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+
+        .icon {
+            --Iconsax-Color: rgba(var(--title-color), 1);
+        }
+    }
+
+    .icon {
+        --Iconsax-Color: rgba(var(--white), 1);
+        --Iconsax-Size: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+
+        [dir="rtl"] & {
+            right: unset;
+            left: 20px;
+        }
+
+    }
+}
+
+.cab-btn {
+    color: rgba(var(--white), 1);
+    background: var(--title2-color);
+
+    body.dark-mode & {
+        background-color: #222;
+    }
+}
+
+.cab-sidebar-btn {
+    padding: 10px 0;
+    width: 100%;
+    max-width: 250px;
+    background-color: rgba(var(--white), 1);
+    bottom: 0;
+    position: fixed;
+
+    a {
+        text-align: start;
+    }
+}
+
+.cab-add-card {
+    margin-top: 25px;
+    width: 100%;
+    border: 1px solid rgba(var(--theme-color), 1);
+    border-radius: 4px;
+    text-align: center;
+    color: rgba(var(--theme-color), 1);
+    font-size: 16px;
+    font-weight: 500;
+    padding-block: 19px;
+}
+
+
+/*=========== Fitness button CSS =============*/
+.fitness-body-button {
+    padding-inline: 20px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fitness-btn {
+    border-radius: 50px;
+    background-color: rgba(var(--theme-color), 1);
+    padding-block: 13px;
+    color: rgba(var(--bg-color), 1);
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+
+    @media (max-width:600px) {
+        font-size: calc(17px + (20 - 17) * ((100vw - 320px) / (600 - 320)));
+        padding-block: calc(11px + (13 - 11) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    &:hover {
+        color: rgba(var(--bg-color), 1);
+    }
+
+}
+
+/*=============== furniture button ============*/
+.furniture-fix-button {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(var(--white), 1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+
+    @media (max-width:600px) {
+        padding: calc(12px + (20 - 12) * ((100vw - 320px) / (600 - 320)));
+    }
+}
+
+.furniture-btn {
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgba(var(--theme-color), 1);
+    color: rgba(var(--white), 1);
+    font-size: 18px;
+    font-weight: 500;
+    padding-block: 12px;
+    line-height: 1.2;
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+    }
+
+    &.fur-btn2 {
+        background-color: rgba(var(--title-color), 1);
+        color: rgba(var(--white), 1);
+        border: none;
+
+        body.dark-mode & {
+            background-color: rgba(var(--bg-color), 1);
+
+            &:hover {
+                background-color: rgba(var(--bg-color), 1);
+            }
+        }
+
+        &:hover {
+            background-color: rgba(var(--title-color), 1);
+        }
+    }
+
+    @media (max-width:600px) {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+        padding-block: calc(10px + (12 - 10) * ((100vw - 320px) / (600 - 320)));
+    }
+}
+
+
+
+/*============= jewellery  button ==============*/
+.jewellery-button {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(var(--white), 1);
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    body.dark-mode & {
+        background-color: rgba(var(--body-color), 1);
+    }
+
+    .reset-btn {
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(var(--title-color), 1);
+        padding: 14px;
+        border-radius: 6px;
+        background-color: rgba(var(--white), 1);
+        text-align: center;
+        display: block;
+
+        body.dark-mode & {
+            background-color: rgba(var(--body-color), 1);
+        }
+    }
+
+    .apply-btn {
+        width: 100%;
+        border-radius: 6px;
+        background-color: rgba(var(--theme-color), 1);
+        color: rgba(var(--white), 1);
+        font-size: 17px;
+        font-weight: 500;
+        padding-block: 12px;
+        display: block;
+        text-align: center;
+
+    }
+}
+
+.gold-btn {
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(var(--secondary-color), 1);
+    color: rgba(var(--white), 1);
+    font-size: 17px;
+    font-weight: 500;
+    padding-block: 12px;
+    display: block;
+    text-align: center;
+
+    @media (max-width:600px) {
+        font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    body.dark-mode & {
+        &:active {
+            background-color: rgba(var(--secondary-color), 1);
+            border: none;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(var(--secondary-color), 1);
+    }
+}
+
+/*============== salon  button ==============*/
+.salon-fix-button {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(var(--white), 1);
+    position: fixed;
+    bottom: 0;
+    padding: 15px 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    .dark-mode & {
+        background-color: rgba(var(--body), 1);
+    }
+}
+
+.salon-btn {
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgba(var(--theme-color), 1);
+    color: rgba(var(--white), 1);
+    font-size: 16px;
+    font-weight: 600;
+    padding-block: 15px;
+    text-transform: uppercase;
+
+    @media (max-width:600px) {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
+        padding-block: calc(12px + (15 - 12) * ((100vw - 320px) / (600 - 320)));
+    }
+
+    &:hover {
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
+    }
+
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1);
+    }
+}
+
+/*================ Movie button ==============*/
+.movie-fix-btn {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(var(--baby-color), 1);
+}
+
+.movie-btn {
+    width: 100%;
+    padding-block: 12px;
+    border-radius: 8px;
+    border: 1.25px solid rgba(var(--title-color), 0.08);
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(var(--title-color), 1);
+    background: var(--button-color) padding-box,
+        linear-gradient(92deg, rgba(255, 255, 255, 0.4) 6.08%, rgba(255, 255, 255, 0) 133.84%) border-box;
+    border: 1.25px solid rgba(0, 0, 0, 0);
+}

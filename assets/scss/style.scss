@@ -1,0 +1,116 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name:App kart PWA - classified - car rental, real estate, job find 
+    Template URI: https://themes.pixelstrap.net/fuso
+    Description: This is classified Html Template
+    Author: Pixelstrap
+    Author URL: https://themeforest.net/user/pixelstrap
+
+----------------------------------------------------------------------------------- */
+// ==================================================
+// =============== 1. Abstracts SCSS Files ===============
+// ==================================================
+// 1.1 Animation SCSS
+// 1.2 Mixins SCSS
+// 1.3 Variables SCSS
+
+// ==================================================
+// =============== 2. Base SCSS Files ==================
+// ==================================================
+// 2.1 Reset SCSS
+// 2.2 Typography SCSS
+
+
+// ==================================================
+// =============== 3. Components SCSS Files ============
+// ==================================================
+// 3.1 Auth SCSS
+// 3.2 Button SCSS
+// 3.3 Form SCSS
+// 3.4 Offcanvas SCSS
+// 3.5 Onboarding SCSS
+// 3.6 Range Slider SCSS
+// 3.7 Tab SCSS
+// 3.8 Timer SCSS
+// 3.9 Title SCSS
+
+
+// ==================================================
+// =============== 4. Layout SCSS Files ==================
+// ==================================================
+// 4.1 Filter SCSS
+// 4.2 Header SCSS
+// 4.3 Home SCSS
+// 4.4 Loader SCSS
+// 4.5 Mobile Menu SCSS
+// 4.6 Product Box SCSS
+// 4.7 Profile SCSS
+// 4.8 Panel SCSS
+
+// ==================================================
+// =============== 5. Pages SCSS Files ===================
+// ==================================================
+// 5.1 Ecommerce SCSS
+// 5.2 Grocery SCSS
+// 5.3 Pet SCSS
+// 5.4 Plant SCSS
+// 5.5 Food SCSS
+// 5.6 Chatting SCSS
+// 5.7 Hotel Booking SCSS
+// 5.8 Blog SCSS
+// 5.9  Learning SCSS
+// 5.10 Cab Booking SCSS
+// 5.11 Fitness SCSS
+// 5.12 Furniture SCSS
+// 5.13 Jewellery SCSS
+// 5.14 Salon SCSS
+// 5.15 Movie SCSS
+
+
+
+/* Utils Files */
+@import "utils/animation";
+@import "utils/common-mixing";
+@import "utils/variables";
+
+/* Base Files */
+@import "base/reset";
+@import "base/typography";
+
+/* Components Files */
+@import "components/auth";
+@import "components/button";
+@import "components/form";
+@import "components/offcanvas";
+@import "components/onboarding";
+@import "components/range-slider";
+@import "components/tab";
+@import "components/timer";
+@import "components/title";
+
+/* Layout Files */
+@import "layout/filter";
+@import "layout/header";
+@import "layout/home";
+@import "layout/loader";
+@import "layout/mobile-menu";
+@import "layout/product-box";
+@import "layout/profile";
+@import "layout/panel";
+
+/* Pages Files */
+@import "pages/ecommerce";
+@import "pages/grocery";
+@import "pages/pet";
+@import "pages/plant";
+@import "pages/food";
+@import "pages/chatting";
+@import "pages/hotel-booking";
+@import "pages/blog";
+@import "pages/learning";
+@import "pages/cab-booking";
+@import "pages/fitness";
+@import "pages/furniture";
+@import "pages/jewellery";
+@import "pages/salon";
+@import "pages/movie";

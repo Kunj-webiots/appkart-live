@@ -1,0 +1,450 @@
+/*=====================
+ 3.9 Title CSS
+==========================*/
+.title {
+    margin-bottom: 15px;
+    @include flex_space;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(var(--dark-bg), 1);
+
+        body.dark-mode & {
+            color: rgba(var(--title-color), 1);
+        }
+    }
+
+    .all {
+        font-weight: 500;
+        color: rgba(var(--theme-color), 1);
+    }
+
+    a {
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(var(--error-color), 1);
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            letter-spacing: 0.4px;
+        }
+    }
+
+    &.plant-title {
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: rgba(var(--title-color), 1);
+
+            @media (max-width: 600px) {
+                font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 14px;
+            color: rgba(var(--theme-color), 1);
+        }
+    }
+}
+
+.cart-title {
+    margin-top: 46px;
+    margin-bottom: 8px;
+
+    h3 {
+        color: rgba(var(--dark-bg), 1);
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+}
+
+.title2 {
+    margin-bottom: 15px;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(var(--dark-bg), 1);
+    }
+}
+
+/* ============ food title ============*/
+.center-title {
+    text-align: center;
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(var(--dark-bg), 1);
+    }
+
+    h5 {
+        color: rgba(var(--content-color), 1);
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 3px;
+    }
+}
+
+/* ========== Hotel title ===========*/
+.hotel-title {
+    position: relative;
+
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        color: rgba(var(--title-color), 1);
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(var(--content-color), 1);
+        margin-top: 5px;
+    }
+
+    .loader-line {
+        @include pseudowh(40px, 3px);
+        overflow: hidden;
+        background-color: rgba(var(---title-color), 1);
+        border-radius: 20px;
+        position: absolute;
+        top: -8px;
+
+        &::before {
+            @include pos;
+            left: -50%;
+            height: 2px;
+            width: 30%;
+            background-color: rgba(var(--title-color), 1);
+            animation: lineAnim 2s linear infinite;
+            border-radius: 20px;
+
+            [dir="rtl"] & {
+                animation: reverse-lineAnim 2s linear infinite;
+                right: 50%;
+            }
+        }
+    }
+}
+
+.title3 {
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: rgba(var(--title-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+
+        }
+    }
+
+}
+
+/* ========== Blog title ==============*/
+.blog-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(var(--theme-color), 1);
+    }
+}
+
+/* =========== learning title auth ===============*/
+.learning-auth-title {
+    h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+
+    h4 {
+        margin-top: 3px;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(var(--content-color), 1);
+    }
+}
+
+.learning-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(var(--title-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(var(--theme-color), 1);
+    }
+}
+
+/* ============== cab booking CSS ===============*/
+.cab-auth-title {
+    position: relative;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 500;
+        background: var(--title2-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @media (max-width:600px) {
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+
+    h5 {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(var(--content-color), 1);
+        margin-top: 4px;
+
+        @media (max-width:600px) {
+            font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+
+    .loader-line {
+        @include pseudowh(40px, 3px);
+        overflow: hidden;
+        border-radius: 20px;
+        position: absolute;
+        top: -8px;
+
+        &::before {
+            @include pos;
+            left: -50%;
+            height: 2px;
+            width: 30%;
+            background-color: rgba(var(--black), 1);
+            animation: lineAnim 2s linear infinite;
+            border-radius: 20px;
+
+            [dir="rtl"] & {
+                animation: reverse-lineAnim 2s linear infinite;
+            }
+        }
+    }
+}
+
+.cab-title {
+    h4 {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgba(var(--title-color), 1);
+    }
+}
+
+.cab-title2 {
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+    }
+}
+
+
+/* ========== fitness title ================*/
+.fitness-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(var(--theme-color), 1);
+    }
+
+    .year-dropdown {
+        button {
+            background-color: rgba(var(--bg-color), 1);
+            border: 1px solid rgba(var(--white), 0.07);
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(var(--title-color), 1);
+
+            .down-icon {
+                --Iconsax-Size: 14px;
+                --Iconsax-Color: rgba(var(--white), 1);
+            }
+
+            &:hover {
+                background-color: rgba(var(--bg-color), 1);
+            }
+
+            &:active {
+                background-color: rgba(var(--bg-color), 1) !important;
+            }
+        }
+
+        .dropdown-menu {
+            background-color: rgba(var(--bg-color), 1);
+            border-radius: 6px;
+
+            li {
+                width: 100%;
+
+                a {
+                    &:hover {
+                        background-color: transparent;
+                        color: rgba(var(--theme-color), 1);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/* ============= furniture title ===============*/
+.furniture-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(var(--theme-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+}
+
+/* ============= jewellery title ===============*/
+.gold-recent-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(var(--error-color), 1);
+    }
+}
+
+.gold-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(var(--theme-color), 1);
+    }
+}
+
+
+/*=========== salon title =============*/
+.hair-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(var(--error-color), 1);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            letter-spacing: 0.4px;
+        }
+    }
+}
+
+/* ============ Movie CSS =============*/
+.poster-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(var(--content-color), 1);
+    }
+
+    .all {
+        font-weight: 600;
+        color: rgba(var(--border), 1);
+    }
+
+}

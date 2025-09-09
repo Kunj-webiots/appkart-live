@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="cab-booking outfit-font">
+
+    <!-- loader Start -->
+    <div class="loader">
+        <img src="../assets/images/Appkart-gif/Gif/cab.gif" class="img-fluid" alt="cab-booking">
+    </div>
+    <!-- loader End -->
+
+    <!-- header section start -->
+    <header class="cab-search-header">
+        <div class="custom-container2">
+            <div class="cab-search-box">
+                <button class="cab-left-btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample">
+                    <i class="iconsax icon" data-icon="text-align-left"></i>
+                </button>
+                <div class="search-box">
+                    <form class="cab-auth-form mt-0">
+                        <div class="form-group">
+                            <input type="search" class="form-control search" id="name" placeholder="Search here.....">
+                            <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                            <a href="date-time.html" class="fill-btn">
+                                <i class="iconsax" data-icon="calendar-1"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section  end  -->
+
+    <!-- map section start -->
+    <section class="pt-0 cab-map-section">
+        <div class="cab-map-image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22909.36743847374!2d8.231616661818496!3d44.13140924931415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2f65b0a39b1e3%3A0xe18091fad258f181!2s17025%20Loano%2C%20Province%20of%20Savona%2C%20Italy!5e0!3m2!1sen!2sin!4v1755931313132!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- map section  end  -->
+
+    <!-- choose cab book section start -->
+    <section class="section-t-space choose-cab-booking">
+        <div class="custom-container2">
+            <ul class="choose-cab-list">
+                <li>
+                    <a href="choose-cab.html">
+                        <img src="../assets/images/cab-booking/auto/4.png" class="img-fluid" alt="cab">
+                        <h5>Ride</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="choose-cab.html">
+                        <img src="../assets/images/cab-booking/auto/5.png" class="img-fluid" alt="cab">
+                        <h5>Auto</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="choose-cab.html">
+                        <img src="../assets/images/cab-booking/auto/6.png" class="img-fluid" alt="cab">
+                        <h5>City to City </h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="choose-cab.html">
+                        <img src="../assets/images/cab-booking/auto/7.png" class="img-fluid" alt="cab">
+                        <h5>Moto</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- choose cab book section  end  -->
+
+    <!-- location search section start -->
+    <section class="section-t-space-1 cab-book-search-section">
+        <div class="custom-container2">
+            <div class="cab-book-search">
+                <input type="checkbox" class="radio-circle" name="payment" id="value2" checked>
+                <label for="value2">
+                    <span>Searching for you on the map...</span>
+                </label>
+            </div>
+            <!-- <h5>Searching for you on the map...</h5> -->
+            <form class="cab-auth-form mt-3">
+                <div class="form-group">
+                    <input type="search" class="form-control cab-search" id="user" placeholder="To">
+                    <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                </div>
+                <div class="form-group">
+                    <input type="search" class="form-control cab-search rs-search" id="inputusername"
+                        placeholder="Offer your fare">
+                    <h6>Rs.</h6>
+                    <a href="#!" class="edit">
+                        <i class="iconsax " data-icon="edit-2"></i>
+                    </a>
+                </div>
+            </form>
+            <div class="cab-bottom-btn">
+                <a href="date-time.html" class="btn cab-main-btn">Find Cab
+                    <i class="iconsax icon" data-icon="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- location search section  end  -->
+
+    <!-- side bar offcanvas start  -->
+
+    <div class="offcanvas offcanvas-start cab-offcanvas" tabindex="-1" id="offcanvasExample">
+        <div class="offcanvas-header cab-sidebar-header">
+            <img src="../assets/images/profile/p11.png" class="img-fluid" alt="profile">
+            <div class="cab-sidebar-content">
+                <h5>Joseph K. Feliz</h5>
+                <h6>Edit Profile</h6>
+            </div>
+        </div>
+        <div class="offcanvas-body cab-sidebar-body">
+            <ul class="cab-sidebar-list">
+                <li>
+                    <a href="location.html">
+                        <i class="iconsax icon" data-icon="car"></i>
+                        <h5>City</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="request.html">
+                        <i class="iconsax icon" data-icon="clock"></i>
+                        <h5>Request history</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="booked-ride.html">
+                        <i class="iconsax icon" data-icon="bookmark-page"></i>
+                        <h5>Couriers</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="outstation.html">
+                        <i class="iconsax icon" data-icon="globe"></i>
+                        <h5>Outstation</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="choose-cab.html">
+                        <i class="iconsax icon" data-icon="truck"></i>
+                        <h5>Freight</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="safty.html">
+                        <i class="iconsax icon" data-icon="shield-tick"></i>
+                        <h5>Safety</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <i class="iconsax icon" data-icon="setting-1"></i>
+                        <h5>Settings</h5>
+                    </a>
+                </li>
+            </ul>
+            <div class="cab-sidebar-btn">
+                <a href="index.html" class="btn cab-main-btn">Driver Mode
+                    <i class="iconsax icon" data-icon="arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- side bar offcanvas  end   -->
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

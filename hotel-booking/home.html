@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Swiper Slider CSS  -->
+    <link rel="stylesheet" href="../assets/css/vendors/swiper/swiper.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconly.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="hotel-booking mulish-font">
+
+    <!-- loader Start -->
+    <div class="loader">
+        <img src="../assets/images/Appkart-gif/Gif/hotel.gif" class="img-fluid" alt="hotel">
+    </div>
+    <!-- loader End -->
+
+    <!-- hotel header start -->
+    <header class="hotel-header">
+        <div class="custom-container2">
+            <div class="head-content">
+                <a href="#!" class="sidebar-btn" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+                    <i class="iconsax icon-btn " data-icon="text-align-left"></i>
+                </a>
+                <div class="profile-content">
+                    <div class="flex-common gap-1">
+                        <h4>New York</h4>
+                        <i class="iconsax back-icon" data-icon="chevron-down"></i>
+                    </div>
+                    <h6> <img src="../assets/images/hotel-booking/svg/1.svg" class="img-fluid" alt="map">8502
+                        Preston Rd. Inglewood...</h6>
+                </div>
+                <div class=" ms-auto">
+                    <a href="notification.html">
+                        <i class="iconsax icon-btn " data-icon="bell-1"></i>
+                        <span>2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hotel header end -->
+
+    <!-- Hotel mobile menu start -->
+    <div class="hotel-mobile-menu">
+        <ul>
+            <li class="active"><a href="home.html">
+                    <div class="icon">
+                        <img src="../assets/images/hotel-booking/svg/2.svg" class="img-fluid inactive" alt="home">
+                        <img src="../assets/images/hotel-booking/svg/3.svg" class="img-fluid active" alt="home">
+                    </div>
+                    <h5 class="active">Home</h5>
+                </a>
+            </li>
+            <li><a href="booking.html">
+                    <div class="icon">
+                        <img src="../assets/images/hotel-booking/svg/4.svg" class="img-fluid inactive" alt="home">
+                        <img src="../assets/images/hotel-booking/svg/5.svg" class="img-fluid active" alt="home">
+                    </div>
+                    <h5>Bookings</h5>
+                </a>
+            </li>
+            <li><a href="wishlist.html">
+                    <div class="icon">
+                        <img src="../assets/images/hotel-booking/svg/6.svg" class="img-fluid inactive" alt="home">
+                        <img src="../assets/images/hotel-booking/svg/7.svg" class="img-fluid active" alt="home">
+                    </div>
+                    <h5>Wishlist</h5>
+                </a>
+            </li>
+            <li><a href="profile.html">
+                    <div class="icon">
+                        <img src="../assets/images/hotel-booking/svg/8.svg" class="img-fluid inactive" alt="home">
+                        <img src="../assets/images/hotel-booking/svg/9.svg" class="img-fluid active" alt="home">
+                    </div>
+                    <h5>Profile</h5>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Hotel mobile menu end -->
+
+    <!-- search section start -->
+    <section class="section-lg-t-space hotel-search-section">
+        <div class="custom-container2">
+            <form class="hotel-auth-form mt-3">
+                <div class="form-group">
+                    <input type="search" class="form-control search" id="inputusername" placeholder="Search here.....">
+                    <i class="iconsax search-icon" data-icon="search-normal-2"> </i>
+                    <a href="#!" class="filter-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasFilter">
+                        <i class="iconsax" data-icon="media-sliders-3"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- search section end -->
+
+    <!-- hero section start -->
+    <section class="section-t-space hotel-hero-section">
+        <div class="custom-container2">
+            <ul class="hotel-tab">
+                <li class="active"><a href="#!"><i class="iconsax" data-icon="house-2"></i>Hotel</a></li>
+                <li><a href="#!"><i class="iconsax" data-icon="building-3"></i>Homestay</a></li>
+                <li><a href="#!"><i class="iconsax" data-icon="building-1"></i>Apart</a></li>
+                <li><a href="#!"><i class="iconsax" data-icon="house-1"></i>Rehouses</a></li>
+            </ul>
+            <a href="detail.html">
+                <img src="../assets/images/hotel-booking/banner/1.png" class="img-fluid hotel-banner" alt="banner">
+            </a>
+        </div>
+    </section>
+    <!-- hero section  end -->
+
+    <!-- hotel room card section start  -->
+    <section class="section-t-space  hotel-room-slider ">
+        <div class="title plant-title px-20">
+            <h3>Top Destinations</h3>
+            <a href="select-room.html">See all</a>
+        </div>
+        <div class="swiper hotel-card-slider px-20">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hotel-card-box">
+                    <a href="review-booking.html" class="hotel-card-image">
+                        <img src="../assets/images/hotel-booking/product/1.jpg" class="img-fluid w-100" alt="png">
+                    </a>
+                    <div class="hotel-card-contant">
+                        <button class="wishlist-btn btn">
+                            <i class="iconly-Heart icli"></i>
+                            <i class="iconly-Heart icbo"></i>
+                        </button>
+                        <h4>The Velvet Orchid Inn</h4>
+                        <h5><i class="iconsax" data-icon="location"></i> Alice Springs NT 0870, Australia</h5>
+                        <div class="price-rate">
+                            <div>
+                                <h6>$200.7 <span>/night</span></h6>
+                            </div>
+                            <div class="d-flex gap-1">
+                                <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                <h5>5.0</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide hotel-card-box">
+                    <a href="review-booking.html" class="hotel-card-image">
+                        <img src="../assets/images/hotel-booking/product/2.jpg" class="img-fluid w-100" alt="png">
+                    </a>
+                    <div class="hotel-card-contant">
+                        <button class="wishlist-btn btn">
+                            <i class="iconly-Heart icli"></i>
+                            <i class="iconly-Heart icbo"></i>
+                        </button>
+                        <h4>Crystal Waters Resort</h4>
+                        <h5><i class="iconsax" data-icon="location"></i>Alice Springs NT 0870, Australia</h5>
+                        <div class="price-rate">
+                            <div>
+                                <h6>$200.8 <span>/night</span></h6>
+                            </div>
+                            <div class="d-flex gap-1">
+                                <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                <h5>4.9</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide hotel-card-box">
+                    <a href="review-booking.html" class="hotel-card-image">
+                        <img src="../assets/images/hotel-booking/product/1.jpg" class="img-fluid w-100" alt="png">
+                    </a>
+                    <div class="hotel-card-contant">
+                        <button class="wishlist-btn btn">
+                            <i class="iconly-Heart icli"></i>
+                            <i class="iconly-Heart icbo"></i>
+                        </button>
+                        <h4>The Rosewood Retreat</h4>
+                        <h5><i class="iconsax" data-icon="location"></i> Alice Springs NT 0870, Australia</h5>
+                        <div class="price-rate">
+                            <div>
+                                <h6>$300.8 <span>/night</span></h6>
+                            </div>
+                            <div class="d-flex gap-1">
+                                <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                <h5>4.2</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide hotel-card-box">
+                    <a href="review-booking.html" class="hotel-card-image">
+                        <img src="../assets/images/hotel-booking/product/2.jpg" class="img-fluid w-100" alt="png">
+                    </a>
+                    <div class="hotel-card-contant">
+                        <button class="wishlist-btn btn">
+                            <i class="iconly-Heart icli"></i>
+                            <i class="iconly-Heart icbo"></i>
+                        </button>
+                        <h4>Super Double Room</h4>
+                        <h5><i class="iconsax" data-icon="location"></i> Alice Springs NT 0870, Australia</h5>
+                        <div class="price-rate">
+                            <div>
+                                <h6>$250.7 <span>/night</span></h6>
+                            </div>
+                            <div class="d-flex gap-1">
+                                <img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">
+                                <h5>4.0</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hotel room card section end  -->
+
+    <!-- hotel room list section start -->
+    <section class="section-t-space hotel-list-section">
+        <div class="custom-container2">
+            <div class="title plant-title">
+                <h3>Recommended for you</h3>
+                <a href="#!">See all</a>
+            </div>
+            <ul class="hotel-room-list">
+                <li>
+                    <div class="hotel-list-box">
+                        <a href="detail.html">
+                            <img src="../assets/images/hotel-booking/product/3.jpg" class="img-fluid" alt="hotel-image">
+                        </a>
+                        <div class="hotel-list-content">
+                            <div class="d-flex justify-content-between">
+                                <a href="detail.html">
+                                    <h4>The Moonstone Loft</h4>
+                                </a>
+                                <button class="wishlist-btn">
+                                    <i class="iconly-Heart icli"></i>
+                                    <i class="iconly-Heart icbo"></i>
+                                </button>
+                            </div>
+                            <h5>2972 Westerner, Illinois 85486 </h5>
+                            <div class="price-rating">
+                                <div>
+                                    <h5><img src="../assets/images/svg/star-fill.svg" class="img-fluid"
+                                            alt="star">5.0<span>(150 ratings)</span></h5>
+                                </div>
+                                <div>
+                                    <h6>$50 <span>/ night</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hotel-list-box">
+                        <a href="detail.html">
+                            <img src="../assets/images/hotel-booking/product/4.jpg" class="img-fluid" alt="hotel-image">
+                        </a>
+                        <div class="hotel-list-content">
+                            <div class="d-flex justify-content-between">
+                                <a href="detail.html">
+                                    <h4>The Rosewood Retreat</h4>
+                                </a>
+                                <button class="wishlist-btn">
+                                    <i class="iconly-Heart icli"></i>
+                                    <i class="iconly-Heart icbo"></i>
+                                </button>
+                            </div>
+                            <h5>2715Jose, South Dakota 83475</h5>
+                            <div class="price-rating">
+                                <div>
+                                    <h5><img src="../assets/images/svg/star-fill.svg" class="img-fluid"
+                                            alt="star">4.2<span>(100 ratings)</span></h5>
+                                </div>
+                                <div>
+                                    <h6>$50 <span>/ night</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="hotel-list-box">
+                        <a href="detail.html">
+                            <img src="../assets/images/hotel-booking/product/5.jpg" class="img-fluid" alt="hotel-image">
+                        </a>
+                        <div class="hotel-list-content">
+                            <div class="d-flex justify-content-between">
+                                <a href="detail.html">
+                                    <h4>The Horizon Suite</h4>
+                                </a>
+                                <button class="wishlist-btn">
+                                    <i class="iconly-Heart icli"></i>
+                                    <i class="iconly-Heart icbo"></i>
+                                </button>
+                            </div>
+                            <h5>2464 Royal Ln. Mesa,Jersey 45463</h5>
+                            <div class="price-rating">
+                                <div>
+                                    <h5><img src="../assets/images/svg/star-fill.svg" class="img-fluid"
+                                            alt="star">4.9<span>(120 ratings)</span></h5>
+                                </div>
+                                <div>
+                                    <h6>$50 <span>/ night</span></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- hotel room list section  end  -->
+
+    <div class="panel-space"></div>
+
+    <!-- filter offcanvas section start -->
+    <div class="offcanvas offcanvas-bottom  hotel-theme-offcanvas" tabindex="-1" id="offcanvasFilter">
+        <div class="offcanvas-header hotel-theme-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter</h5>
+        </div>
+        <div class="offcanvas-body small pt-0">
+            <div class="custom-slider-theme">
+                <h4>Guest Details</h4>
+                <div class="range-slider hotel-range-slider">
+                    <div class="progress-slider"></div>
+                    <input type="range" min="0" max="100" value="30" class="min-range">
+                    <input type="range" min="0" max="100" value="60" class="max-range">
+
+                    <div class="range-number hotel-range-number">
+                        <div class="range-box input-min-box hotel-range-box">
+                            <span class="rs-label">$</span>
+                            <input type="number" value="30" class="input-min">
+                        </div>
+                        <div class="range-box input-max-box hotel-range-box">
+                            <span class="rs-label">$</span>
+                            <input type="number" value="60" class="input-max">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-tab-section">
+                <h3>Property type</h3>
+                <ul class="hotel-tab m_top-12">
+                    <li><a href="#!"><i class="iconsax" data-icon="house-2"></i>Hotel</a></li>
+                    <li><a href="#!"><i class="iconsax" data-icon="building-3"></i>Homestay</a></li>
+                    <li><a href="#!"><i class="iconsax" data-icon="building-1"></i>Apart</a></li>
+                    <li><a href="#!"><i class="iconsax" data-icon="house-1"></i>Rehouses</a></li>
+                </ul>
+            </div>
+            <div class="hotel-filter-wrapper">
+                <h3>Star Rating</h3>
+                <ul class="hotel-star-rating">
+                    <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">5</li>
+                    <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">4</li>
+                    <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">3</li>
+                    <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">2</li>
+                    <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">1</li>
+                </ul>
+            </div>
+            <div class="hotel-filter-wrapper">
+                <h3>Facilities</h3>
+                <div class="checkbox-section">
+                    <label class="native-checkbox">
+                        <input type="checkbox">
+                        Wifi
+                    </label>
+                    <label class="native-checkbox">
+                        <input type="checkbox" checked>
+                        Swimming Pool
+                    </label>
+                    <label class="native-checkbox">
+                        <input type="checkbox">
+                        Breakfast Available
+                    </label>
+                </div>
+            </div>
+            <div class="hotel-review-box hotel-reset">
+                <a href="#!" class="reset-btn w-100">Reset</a>
+                <a href="#!" class="review-button w-100">Apply Filter</a>
+            </div>
+        </div>
+        <div class="panel-space-sm"></div>
+    </div>
+    <!-- filter offcanvas section end -->
+
+    <!-- side bar offcanvas section start -->
+    <div class="offcanvas sidebar-offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop">
+        <div class="offcanvas-body">
+            <div class="custom-container">
+                <div class="profile-background">
+                    <div class="profile-part">
+                        <div class="profile-image">
+                            <img id="output" class="img-fluid profile-pic" src="../assets/images/profile/p8.png"
+                                alt="3">
+                        </div>
+                        <h3>Leslie Alexander</h3>
+                        <h4>lesliealexander@gmail.com</h4>
+                    </div>
+                </div>
+                <ul class="profile-list hotel-list">
+                    <li>
+                        <a href="guest-detail.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="document-text-1"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Guest Details</h5>
+                                <h6>Saved Guest Info</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wishlist.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="heart"> </i>
+
+                            </div>
+                            <div class="setting-content">
+                                <h5> Your Wishlist</h5>
+                                <h6>Your save products</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payment.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="bank-card-diagonal"> </i>
+
+                            </div>
+                            <div class="setting-content">
+                                <h5>Payment</h5>
+                                <h6>Saved cards, Wallets</h6>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="language.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="globe"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Language</h5>
+                                <h6>Select your language here..</h6>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notification.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="bell-2"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Notification</h5>
+                                <h6>Offers, Order tracking messages..</h6>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="setting.html" class="setting-box">
+                            <div class="setting-icon">
+                                <i class="iconsax main-icon" data-icon="setting-1"> </i>
+                            </div>
+                            <div class="setting-content">
+                                <h5>Settings</h5>
+                                <h6>App settings, Help center</h6>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="bottom-sidebar">
+                    <a href="login.html" class="btn plant-btn w-100"> <i class="iconsax sidebar-icon"
+                            data-icon="logout-2">
+                        </i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- side bar offcanvas section  end  -->
+
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/popper.min.js"></script>
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Range slider Js  -->
+    <script src="../assets/js/range-slider.js"></script>
+
+    <!-- Active section JS -->
+    <script src="../assets/js/active-section.js"></script>
+
+    <!-- Swiper Slider JS -->
+    <script src="../assets/js/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom-swiper.js"></script>
+
+    <!-- script JS -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

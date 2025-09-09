@@ -1,0 +1,988 @@
+/* ===============
+5.13 Jewellery CSS 
+==================*/
+.jewellery {
+    background-color: rgba(var(--white), 1);
+
+    &.dark-mode {
+        background-color: rgba(var(--body-color), 1);
+    }
+
+}
+
+.gold-category-list {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    li {
+        a {
+            border-radius: 4px;
+            background-color: rgba(var(--bg-color), 1);
+            padding: 10px 25px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(var(--title-color), 1);
+            display: block;
+
+            &:hover {
+                background-color: rgba(var(--theme-color), 1);
+                color: rgba(var(--white), 1);
+            }
+        }
+    }
+}
+
+.gold-banner {
+    img {
+        border-radius: 8px;
+    }
+}
+
+.gold-offer-button {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    li {
+        width: 100%;
+
+        a {
+            display: block;
+            height: 51px;
+            background-color: rgba(var(--theme-color), 1);
+            background-blend-mode: multiply;
+            color: rgba(var(--white), 1);
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 12px;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+
+            @media (max-width:600px) {
+                height: calc(44px + (51 - 44) * ((100vw - 320px) / (600 - 320)));
+                font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (600 - 320)));
+                line-height: calc(44px + (50 - 44) * ((100vw - 320px) / (600 - 320)));
+            }
+
+            &::before {
+                @include pos;
+                background-image: url(/assets/images/jewellery/background/3.png);
+                mix-blend-mode: color-burn;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            &.second {
+                background-color: rgba(var(--secondary-color), 1);
+            }
+        }
+    }
+}
+
+.jewellery-popular-wrapper {
+    margin-top: 10px;
+
+    li {
+        width: 100%;
+        border: 1px solid rgba(var(--content-color), 0.23);
+        border-radius: 10px;
+        padding: 8px;
+        display: flex;
+        gap: 12px;
+
+        +li {
+            margin-top: 20px;
+        }
+
+        .image {
+            @include flex_center;
+            width: 99px;
+            height: 73px;
+            background-color: rgba(var(--bg-color), 1);
+            border-radius: 8px;
+
+            @media (max-width:600px) {
+                width: calc(85px + (99 - 85) * ((100vw - 320px) / (600 - 320)));
+                height: calc(65px + (73 - 65) * ((100vw - 320px) / (600 - 320)));
+            }
+
+            img {
+                height: 66px;
+                width: 51px;
+                object-fit: contain;
+
+                @media (max-width:600px) {
+                    width: calc(60px + (65 - 60) * ((100vw - 320px) / (600 - 320)));
+                    height: calc(45px + (51 - 45) * ((100vw - 320px) / (600 - 320)));
+                }
+            }
+        }
+
+        .jewellery-most-content {
+            width: 100%;
+
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(var(--title-color), 1);
+            }
+
+            .rate {
+                display: flex;
+                align-items: baseline;
+                gap: 3px;
+                font-size: 12px;
+                font-weight: 400;
+                color: rgba(var(--rate-color), 1);
+            }
+
+            h4 {
+                margin-top: 3px;
+                font-size: 13px;
+                font-weight: 400;
+                color: rgba(var(--content-color), 1);
+            }
+
+            .gold-rate-price {
+                margin-top: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span {
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: rgba(var(--title-color), 1);
+
+                    @media (max-width:600px) {
+                        font-size: calc(14px + (15 - 14) * ((100vw - 320px) / (600 - 320)));
+                    }
+
+                    del {
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: rgba(var(--content-color), 1);
+
+                        @media (max-width:600px) {
+                            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (600 - 320)));
+                        }
+                    }
+                }
+
+                .plus {
+                    @include pseudowh(28px, 28px);
+                    @include flex_center;
+                    border-radius: 100%;
+                    background-color: rgba(var(--theme-color), 1);
+
+                    .icon {
+                        --Iconsax-Color: rgba(var(--white), 1);
+                        --Iconsax-Size: 18px;
+                    }
+                }
+            }
+
+        }
+
+        .plus-minus {
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            padding: 3px 0;
+            background-color: rgba(var(--bg-color), 1);
+            border-radius: 50px;
+            margin: 0;
+            flex-direction: column;
+            border: none;
+
+            .icon {
+                --Iconsax-Size: 16px;
+                --Iconsax-Color: rgba(var(--title-color), 1);
+                background-color: rgba(var(--white), 1);
+                padding: 3px;
+                border-radius: 100%;
+
+                body.dark-mode & {
+                    background-color: rgba(var(--body-color), 1);
+                }
+            }
+
+            .add {
+                --Iconsax-Color: rgba(var(--white), 1);
+                background-color: rgba(var(--theme-color), 1) !important;
+            }
+
+            input {
+                color: rgba(var(--content-color), 1);
+                font-size: 13px;
+                font-weight: 400;
+                background-color: rgba(var(--bg-color), 1);
+            }
+        }
+
+    }
+}
+
+.gold-search {
+    li {
+        a {
+            .add-icon {
+                --Iconsax-Size: 18px;
+                --Iconsax-Color: rgba(var(--content-color), 1);
+            }
+        }
+
+        +li {
+            margin-top: 16px;
+        }
+    }
+}
+
+.order-action-buttons {
+    background-color: rgba(var(--white), 1);
+    position: fixed;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+
+    body.dark-mode & {
+        background-color: rgba(var(--bg-color), 1);
+
+        .track-btn {
+            background-color: rgba(var(--body-color), 1);
+        }
+    }
+
+    h5 {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(var(--title-color), 1);
+        padding-left: 24px;
+        text-align: center;
+        width: 100%;
+
+        @media (max-width:600px) {
+            font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
+
+        }
+
+        span {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(var(--content-color), 1);
+        }
+    }
+
+    .track-btn {
+        @include flex_center;
+        width: 100%;
+        padding: 16px 35px;
+        border-top-left-radius: 40px;
+        background-color: rgba(var(--secondary-color), 1);
+        color: rgba(var(--white), 1);
+        font-size: 16px;
+        font-weight: 500;
+        gap: 12px;
+        text-align: center;
+
+        @media (max-width:600px) {
+            padding: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320))) calc(15px + (35 - 15) * ((100vw - 320px) / (600 - 320)));
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
+        }
+
+        .pay-icon {
+            --Iconsax-Color: rgba(var(--white), 1);
+            --Iconsax-Size: 24px;
+        }
+    }
+}
+
+
+.jewellery-payment-card {
+    border: 1px solid rgba(var(--content-color), 0.23);
+    border-radius: 10px;
+    background-color: rgba(var(--white), 1);
+
+    body.dark-mode & {
+        background-color: transparent;
+    }
+}
+
+.new-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 15px;
+    border-bottom: 1px solid rgba(var(--content-color), 0.3);
+
+    h5 {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(var(--title-color), 1);
+    }
+
+    a {
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(var(--theme-color), 1);
+        text-decoration: underline;
+    }
+}
+
+.gold-checkout-list {
+    padding-inline: 15px;
+
+    li {
+        width: 100%;
+        padding-block: 15px 11px;
+
+        +li {
+            border-top: 1px dashed rgba(var(--content-color), 0.16);
+        }
+
+        &:nth-child(2) {
+            body.dark-mode & {
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        label.payment-box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 17px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            .payment-titles {
+                width: calc(100% - 25px - 17px);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .pay-title {
+                    display: flex;
+                    flex-direction: column;
+
+                    .main {
+                        color: rgba(var(--title-color), 1);
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    span {
+                        color: rgba(var(--content-color), 1);
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gold-payment {
+    margin-top: 15px;
+    padding: 0;
+
+    li {
+        border: 1px solid rgba(var(--content-color), 0.16);
+        border-radius: 10px;
+        padding: 15px;
+
+        +li {
+            border: 1px solid rgba(var(--content-color), 0.16);
+            margin-top: 15px;
+        }
+
+        .payment-info {
+            img {
+                width: 35px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.jewellery-address-list {
+    li {
+        width: 100%;
+        position: relative;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .jewellery-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+        .jewellery-address-wrapper {
+            position: relative;
+            z-index: 2;
+            border: 0.5px solid rgba(var(--content-color), 0.2);
+            border-radius: 10px;
+            padding: 15px;
+
+            @media (max-width: 600px) {
+                padding: calc(12px + (15 - 12) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+
+        &:has(input:checked) {
+            .jewellery-address-wrapper {
+                background-color: #fef3ea;
+                border: 0.5px solid rgba(var(--theme-color), 0.54);
+                border-radius: 5px;
+
+                body.dark-mode & {
+                    background-color: rgba(var(--bg-color), 0.43);
+                }
+            }
+        }
+
+        +li {
+            margin-top: 16px;
+
+            @media (max-width: 600px) {
+                margin-top: calc(12px + (16 - 12) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+
+        .jewellery-address-content {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+
+            .icon {
+                @include flex_center;
+                width: 28px;
+                height: 28px;
+                background-color: rgba(var(--theme-color), 1);
+                border-radius: 4px;
+                --Iconsax-Color: rgba(var(--white), 1);
+                --Iconsax-Size: 18px;
+            }
+
+            .dot-icon {
+                --Iconsax-Size: 18px;
+                --Iconsax-Color: rgba(var(--title-color), 1);
+                transform: rotate(90deg);
+            }
+
+            h3 {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+            }
+
+            .dropdown {
+                button {
+                    background-color: transparent;
+                    border: none;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+
+                .dropdown-menu {
+                    min-width: 60px;
+                    transform: translate(-6px, 20px) !important;
+                    border: 1px solid rgba(var(--content-color), 0.16);
+
+                    body.dark-mode & {
+                        background-color: rgba(var(--bg-color), 1);
+
+                        .dropdown-item {
+                            color: rgba(var(--white), 1);
+                        }
+                    }
+
+                    li+li {
+                        margin-top: 2px;
+                        padding-top: 5px;
+                        border-top: 1px solid rgba(var(--content-color), 0.16);
+                    }
+
+                    a {
+                        padding-block: 5px 8px;
+                        background-color: transparent;
+
+                        &:active,
+                        &:hover {
+                            color: rgba(var(--title-color), 1);
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        .content {
+            margin-top: 8px;
+
+            h4 {
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(var(--title-color), 1);
+            }
+
+            h5 {
+                display: flex;
+                flex-direction: column;
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(var(--content-color), 1);
+                gap: 2px;
+            }
+
+            h6 {
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(var(--content-color), 1);
+            }
+        }
+    }
+}
+
+
+.jewellery-delivery-box {
+    background-color: rgba(var(--theme-color), 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 15px;
+
+    img {
+        @include pseudowh(41px, 41px);
+        border-radius: 8px;
+        border: 1px solid rgba(var(--white), 1);
+    }
+
+    .jewellery-delivery-content {
+        width: calc(100% - 11px - 41px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h4 {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(var(--content-color), 1);
+        }
+
+        h5 {
+            @include text-ellipsis($line: 1);
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(var(--title-color), 1);
+            margin-top: 2px;
+        }
+
+        a {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(var(--theme-color), 1);
+            text-decoration: underline;
+        }
+    }
+}
+
+.jewellery-coupon-box {
+    h4 {
+        font-weight: 600;
+    }
+
+    h5 {
+        margin-top: 2px;
+    }
+
+    h6 {
+        position: relative;
+        border: 1px dashed rgba(var(--white));
+        padding: 8px 24px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 600;
+
+        @media (max-width:600px) {
+            padding: calc(6px + (8 - 6) * ((100vw - 320px) / (600 - 320))) calc(8px + (24 - 8) * ((100vw - 320px) / (600 - 320)));
+
+        }
+    }
+
+    .cut {
+        position: absolute;
+        top: -4px;
+        right: 12px;
+    }
+}
+
+.bill-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(var(--title-color), 1);
+}
+
+.gold-bill-list {
+    padding-top: 12px;
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(var(--content-color), 1);
+
+        +li {
+            margin-top: 10px;
+        }
+
+        span {
+            color: rgba(var(--success-color), 1);
+        }
+
+        .apply {
+            color: rgba(var(--error-color), 1);
+        }
+    }
+}
+
+.gold-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(var(--content-color), 0.16);
+    padding-top: 14px;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+
+    span {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.gold-success-order {
+    text-align: center;
+
+    img {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: 600;
+        color: rgba(var(--theme-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(var(--title-color), 1);
+
+        @media (max-width:600px) {
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+}
+
+
+.order-success-wrapper {
+    padding-top: 12px;
+
+    li {
+        width: 100%;
+
+        +li {
+            margin-top: 25px;
+        }
+
+        h4 {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgba(var(--title-color), 1);
+        }
+
+        p {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(var(--content-color), 1);
+        }
+    }
+}
+
+.jewellery-language-list {
+    li {
+        input[type="radio"] {
+            display: none;
+
+            &:checked+label {
+                border: 1px solid rgba(var(--theme-color), 1) !important;
+            }
+        }
+
+        .language-contant {
+            .language-name {
+                font-weight: 500 !important;
+            }
+        }
+
+    }
+
+}
+
+.jewellery-slider {
+    height: 260px;
+
+    body.dark-mode & {
+        background-color: rgba(var(--body-color), 1);
+    }
+}
+
+.jewellery-slide-detail {
+    background-color: rgba(var(--white), 1);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: calc(100vh - 312px);
+    padding-inline: 20px;
+
+    body.dark-mode & {
+        background-color: rgba(var(--bg-color), 1);
+    }
+}
+
+.product-gold-section {
+    position: relative;
+
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 175px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.product-gold-small {
+    .swiper-wrapper {
+        justify-content: center;
+        margin-top: 40px;
+
+        .swiper-slide {
+            @include flex_center;
+            min-height: 60px;
+            width: 100%;
+            margin-bottom: 19px !important;
+            max-width: 70px;
+            background-color: rgba(var(--white), 1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid transparent;
+
+            body.dark-mode & {
+                border-color: rgba(var(--bg-color), 1);
+                background-color: rgba(var(--body-color), 1);
+
+                &.swiper-slide-thumb-active {
+                    border-color: rgba(var(--theme-color), 1);
+                }
+            }
+
+            img {
+                height: 50px;
+                width: 40px;
+            }
+
+            .img-1 {
+                transform: rotate(90deg);
+            }
+
+            .img-2 {
+                transform: rotate(90deg) scale(1.8);
+                left: 43px;
+                position: absolute;
+            }
+
+            .img-3 {
+                transform: rotate(91deg) scale(1.8) translate(2px, 10px);
+            }
+
+        }
+    }
+
+    .swiper-slide-thumb-active {
+        border: 1px solid rgba(var(--theme-color), 1);
+    }
+}
+
+.gold-rate-list {
+    border-top: 1px solid rgba(var(--content-color), 0.15);
+    padding-top: 11px;
+    margin-top: 24px;
+}
+
+.size-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+
+    label {
+        cursor: pointer;
+
+        input {
+            display: none;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 18px;
+            border-radius: 50px;
+            background-color: rgba(var(--bg-color), 1);
+            color: rgba(var(--content-color), 1);
+            font-size: 16px;
+            font-weight: 500;
+            transition: 0.3s ease;
+
+            body.dark-mode & {
+                background-color: rgba(var(--body-color), 1);
+            }
+
+        }
+    }
+
+    input:checked+span {
+        background-color: rgba(var(--theme-color), 1);
+        color: rgba(var(--white), 1);
+    }
+}
+
+.gold-notification-list {
+    li {
+        width: 100%;
+        background-color: rgba(var(--theme-color), 0.03);
+        padding: 12px 15px;
+        border-radius: 12px;
+        box-shadow: 1px 2px 4px rgba(var(--black), 0.06);
+
+        +li {
+            margin-top: 20px;
+
+            @media (max-width:600px) {
+                margin-top: calc(12px + (20 - 12) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+
+        .notify-main-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon {
+                @include flex_center;
+                width: 35px;
+                height: 35px;
+                border-radius: 12px;
+                background-color: rgba(var(--theme-color), 0.15);
+                --Iconsax-Size: 24px;
+                --Iconsax-Color: rgba(var(--theme-color), 1);
+
+                @media (max-width:600px) {
+                    width: calc(30px + (35 - 30) * ((100vw - 320px) / (600 - 320)));
+                    height: calc(30px + (35 - 30) * ((100vw - 320px) / (600 - 320)));
+                    --Iconsax-Size: calc(20px + (24 - 20) * ((100vw - 320px) / (600 - 320)));
+                    border-radius: calc(8px + (12 - 8) * ((100vw - 320px) / (600 - 320)));
+                }
+            }
+
+            h4 {
+                @include text-ellipsis($line: 1);
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(var(--title-color), 1);
+
+                @media (max-width:600px) {
+                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
+                }
+            }
+
+            span {
+                white-space: nowrap;
+                font-size: 13px;
+                font-weight: 400;
+                color: rgba(var(--content-color), 1);
+            }
+        }
+
+        h6 {
+            color: rgba(var(--theme-color), 1);
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 18px;
+
+            @media (max-width:600px) {
+                margin-top: calc(10px + (18 - 10) * ((100vw - 320px) / (600 - 320)));
+            }
+        }
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(var(--content-color), 1);
+        margin-top: 12px;
+        line-height: 22px;
+
+        @media (max-width:600px) {
+            font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (600 - 320)));
+            margin-top: calc(8px + (12 - 8) * ((100vw - 320px) / (600 - 320)));
+        }
+    }
+}

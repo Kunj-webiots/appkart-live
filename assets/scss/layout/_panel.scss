@@ -1,0 +1,169 @@
+ /* ===================
+4.8 Panel SCSS
+ ====================*/
+ .food-fixed-panel {
+     position: fixed;
+     width: 100%;
+     max-width: 600px;
+     left: 50%;
+     bottom: 0;
+     transform: translate(-50%);
+     z-index: 8;
+     padding: 15px;
+     box-shadow: 0px 0px 10px 0px rgba(var(--title-color), 0.1);
+     background-color: rgba(var(--white), 1);
+
+     .dark-mode & {
+         background-color: rgba(var(--second-color), 1);
+         box-shadow: none;
+
+         .food-fixed-panel-content {
+             background-color: rgba(var(--bg-color), 1);
+         }
+     }
+
+     .food-fixed-panel-content {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         gap: 5px;
+         padding: 22px 20px;
+         background-color: rgba(var(--dark-bg), 1);
+         border-radius: 20px;
+         margin-bottom: 10px;
+
+         @media (max-width: 600px) {
+             padding: 12px calc(12px + (20 - 12) * ((100vw - 320px) / (600 - 320)));
+         }
+
+         .view-btn {
+             width: auto;
+             padding: 8px 20px;
+             line-height: 1;
+             font-size: 18px;
+             font-weight: 400;
+             font-family: $roboto;
+             color: rgba(var(--dark-bg), 1);
+             background-color: rgba(var(--theme-color), 1);
+             border-radius: 8px;
+             white-space: nowrap;
+
+             @media (max-width: 600px) {
+                 padding: calc(8px + (10 - 8) * ((100vw - 320px) / (600 - 320))) calc(15px + (25 - 15) * ((100vw - 320px) / (600 - 320)));
+             }
+
+             .dark-mode & {
+                 color: rgba(var(--bg-color), 1);
+             }
+         }
+
+         h5 {
+             font-size: 16px;
+             font-weight: 700;
+             color: rgba(var(--theme-color), 1);
+         }
+
+         a {
+             color: rgba(var(--white), 1);
+             font-weight: 400;
+             font-size: 14px;
+         }
+     }
+
+     .food-driver-wrapper {
+         display: flex;
+         align-items: center;
+         background-color: rgba(var(--dark-bg), 1);
+         padding: 18px 14px;
+         border-radius: 20px;
+
+         .dark-mode & {
+             background-color: rgba(var(--bg-color), 1);
+         }
+
+         @media (max-width:600px) {
+             padding-block: calc(14px + (18 - 14) * ((100vw - 320px) / (600 - 320)));
+             padding-inline: calc(10px + (14 - 10) * ((100vw - 320px) / (600 - 320)));
+         }
+
+         a {
+             display: flex;
+             align-items: center;
+             gap: 14px;
+             width: 100%;
+         }
+
+         .driver-image {
+             width: 80px;
+             height: 80px;
+             object-fit: cover;
+             border-radius: 10px;
+         }
+
+         .driver-contant {
+             color: rgba(var(--white), 1);
+             font-size: 14px;
+             font-weight: 400;
+
+             h5 {
+                 color: rgba(var(--theme-color), 1);
+                 font-size: 16px;
+                 font-weight: 700;
+                 margin-bottom: 6px;
+
+                 @media (max-width:600px) {
+                     font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (600 - 320)));
+
+                 }
+             }
+         }
+
+         .driver-user {
+             display: flex;
+             gap: 12px;
+
+             .action-btn {
+                 @include flex_center;
+                 width: 40px;
+                 height: 40px;
+                 border: none;
+                 border-radius: 50%;
+
+                 @media (max-width:600px) {
+                     width: calc(30px + (40 - 30) * ((100vw - 320px) / (600 - 320)));
+                     height: calc(30px + (40 - 30) * ((100vw - 320px) / (600 - 320)));
+
+                 }
+
+                 svg {
+                     --Iconsax-Color: rgba(var(--white), 1);
+                     --Iconsax-Size: 22px;
+
+                     @media (max-width:600px) {
+                         --Iconsax-Size: calc(18px + (22 - 18) * ((100vw - 320px) / (600 - 320)));
+
+                     }
+                 }
+
+                 a {
+                     display: flex;
+                     justify-content: center;
+                     align-items: center;
+                 }
+
+                 &.chat {
+                     background-color: #1e90ff;
+                 }
+
+                 &.call {
+                     background-color: #28a745;
+                 }
+
+                 i {
+                     pointer-events: none;
+                 }
+             }
+         }
+     }
+
+ }
