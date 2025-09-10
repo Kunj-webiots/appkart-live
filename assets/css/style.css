@@ -5361,6 +5361,8 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
   background: var(--theme-color);
   height: 100vh;
   z-index: 0;
+  position: fixed;
+  top: 0;
 }
 .chatting-authentication-section .chatting-circle {
   width: 100%;
