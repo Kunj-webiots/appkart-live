@@ -10,13 +10,13 @@
     border: none;
 
     &:hover {
-        color: rgba(var(--white), 1);
+        color: rgba(var(--white), 1) !important;
         background-color: rgba(var(--theme-color), 1);
     }
 
     &:active {
         border-color: none !important;
-        color: rgba(var(--white), 1);
+        color: rgba(var(--white), 1) !important;
         background-color: rgba(var(--theme-color), 1);
     }
 

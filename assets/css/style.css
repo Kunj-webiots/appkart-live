@@ -5358,6 +5358,8 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
 
 /*<================== Chatting authentication =================>*/
 .chatting-authentication-section {
+  width: 100%;
+  max-width: 600px;
   background: var(--theme-color);
   height: 100vh;
   z-index: 0;
@@ -7460,12 +7462,12 @@ body.dark .movie-auth-form .form-group .form-control {
   border: none;
 }
 .btn:hover {
-  color: rgba(var(--white), 1);
+  color: rgba(var(--white), 1) !important;
   background-color: rgba(var(--theme-color), 1);
 }
 .btn:active {
   border-color: none !important;
-  color: rgba(var(--white), 1);
+  color: rgba(var(--white), 1) !important;
   background-color: rgba(var(--theme-color), 1);
 }
 .btn-sm {
@@ -21175,9 +21177,11 @@ body.dark-mode .grocery-product-box .img-part {
 .food-product-box .wishlist-btn.active,
 .food-product-box .wishlist-btn :active,
 .food-product-box .wishlist-btn :hover {
+  background-color: rgba(var(--theme-color), 1);
   border-color: transparent !important;
 }
 .food-product-box .wishlist-btn:not(.btn-check) + .btn:active {
+  background-color: rgba(var(--theme-color), 1);
   border-color: transparent !important;
 }
 .food-product-box .wishlist-btn .icli {
