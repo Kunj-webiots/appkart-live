@@ -4505,6 +4505,7 @@
   --title-color: 49, 49, 49;
 }
 .cab-booking.dark-mode {
+  --body-color: 45, 46, 44;
   --white: 45, 46, 44;
   --title2-color: 255, 255, 255;
   --black: 141, 143, 141;
@@ -7854,8 +7855,8 @@ body.dark-mode .bottom-button {
   padding-block: 16px;
   color: rgba(var(--white), 1);
 }
-.cab-main-btn:hover {
-  background: rgba(var(--theme-color), 1);
+.cab-main-btn:hover, .cab-main-btn:active {
+  background: var(--theme-color);
   color: rgba(var(--white), 1) !important;
 }
 @media (max-width: 600px) {
@@ -7884,6 +7885,9 @@ body.dark-mode .cab-main-btn .icon {
 
 .cab-btn {
   color: rgba(var(--white), 1);
+  background: var(--title2-color);
+}
+.cab-btn:hover, .cab-btn:active {
   background: var(--title2-color);
 }
 body.dark-mode .cab-btn {
@@ -10734,7 +10738,7 @@ Hotel Booking Offcanvas
   margin-top: 20px;
 }
 .hotel-filter-wrapper + .hotel-filter-wrapper {
-  padding-bottom: 50px;
+  padding-bottom: 85px;
 }
 .hotel-filter-wrapper h3 {
   font-size: 18px;
@@ -10782,6 +10786,7 @@ Hotel Booking Offcanvas
   font-size: 16px;
   font-weight: 500;
   color: rgba(var(--title-color), 1);
+  white-space: nowrap;
 }
 @media (max-width: 600px) {
   .hotel-filter-wrapper .checkbox-section .native-checkbox {
@@ -19815,7 +19820,7 @@ Hotel mobile menu
 .hotel-mobile-menu ul {
   display: flex;
   align-items: center;
-  gap: 15;
+  gap: 15px;
   padding: 10px 20px;
   margin: 0;
 }
@@ -20584,11 +20589,9 @@ salon CSS
 .product-box .img-part .wishlist-btn.active,
 .product-box .img-part .wishlist-btn :active,
 .product-box .img-part .wishlist-btn :hover {
-  background-color: rgba(var(--theme-color), 1);
   border: transparent !important;
 }
 .product-box .img-part .wishlist-btn:not(.btn-check) + .btn:active {
-  background-color: rgba(var(--theme-color), 1);
   border: transparent !important;
 }
 .product-box .img-part .wishlist-btn .icli {
@@ -38080,8 +38083,13 @@ body.dark-mode .jewellery-slider {
   background-color: rgba(var(--white), 1);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  height: calc(100vh - 312px);
+  height: calc(100vh - 238px);
   padding-inline: 20px;
+}
+@media (max-width: 374px) {
+  .jewellery-slide-detail {
+    height: calc(100vh - 70px);
+  }
 }
 body.dark-mode .jewellery-slide-detail {
   background-color: rgba(var(--bg-color), 1);

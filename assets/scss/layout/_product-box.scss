@@ -34,12 +34,10 @@
             &.active,
             :active,
             :hover {
-                background-color: rgba(var(--theme-color), 1);
                 border: transparent !important;
             }
 
             &:not(.btn-check)+.btn:active {
-                background-color: rgba(var(--theme-color), 1);
                 border: transparent !important;
             }
 

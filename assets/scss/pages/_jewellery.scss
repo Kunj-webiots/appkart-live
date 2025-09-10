@@ -783,8 +783,12 @@
     background-color: rgba(var(--white), 1);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: calc(100vh - 312px);
+    height: calc(100vh - 238px);
     padding-inline: 20px;
+
+    @media (max-width:374px) {
+        height: calc(100vh - 70px);
+    }
 
     body.dark-mode & {
         background-color: rgba(var(--bg-color), 1);

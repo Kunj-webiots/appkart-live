@@ -1099,7 +1099,7 @@ Hotel Booking Offcanvas
     margin-top: 20px;
 
     +.hotel-filter-wrapper {
-        padding-bottom: 50px;
+        padding-bottom: 85px;
     }
 
     h3 {
@@ -1148,6 +1148,7 @@ Hotel Booking Offcanvas
             font-size: 16px;
             font-weight: 500;
             color: rgba(var(--title-color), 1);
+            white-space: nowrap;
 
             @media (max-width:600px) {
                 font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (600 - 320)));

@@ -433,8 +433,9 @@
     padding-block: 16px;
     color: rgba(var(--white), 1);
 
-    &:hover {
-        background: rgba(var(--theme-color), 1);
+    &:hover,
+    &:active {
+        background: var(--theme-color);
         color: rgba(var(--white), 1) !important;
     }
 
@@ -469,6 +470,11 @@
 .cab-btn {
     color: rgba(var(--white), 1);
     background: var(--title2-color);
+
+    &:hover,
+    &:active {
+        background: var(--title2-color);
+    }
 
     body.dark-mode & {
         background-color: #222;
