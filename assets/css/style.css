@@ -4903,7 +4903,6 @@ Dark Mode CSS
 }
 .theme-toggle-button input[type=checkbox]:checked {
   background-color: rgba(var(--theme-color), 1);
-  background: var(--theme-color);
 }
 .theme-toggle-button input[type=checkbox]:checked::before {
   transform: translateX(165%) translateY(-4%);
@@ -4919,6 +4918,10 @@ Dark Mode CSS
   border-radius: 100%;
   background-color: rgba(var(--content-color), 0.5);
   transition: 0.5s;
+}
+
+.theme-btn input:checked {
+  background: var(--theme-color);
 }
 
 /**=====================
