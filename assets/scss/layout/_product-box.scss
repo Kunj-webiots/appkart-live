@@ -42,11 +42,11 @@
             &.active,
             :active,
             :hover {
-                border: transparent;
+                border: transparent !important;
             }
 
             &:not(.btn-check)+.btn:active {
-                border: transparent;
+                border: transparent !important;
             }
 
             .icli {
@@ -635,11 +635,11 @@
         &.active,
         :active,
         :hover {
-            border: transparent;
+            border: transparent !important;
         }
 
         &:not(.btn-check)+.btn:active {
-            border: transparent;
+            border: transparent !important;
         }
 
         .icli {
@@ -774,11 +774,11 @@
         &.active,
         :active,
         :hover {
-            border-color: transparent;
+            border-color: transparent !important;
         }
 
         &:not(.btn-check)+.btn:active {
-            border-color: transparent;
+            border-color: transparent !important;
         }
 
         .icli {
@@ -1387,12 +1387,12 @@ furniture CSS
         &.active,
         &:active,
         &:hover {
-            border-color: transparent;
+            border-color: transparent !important;
             background-color: rgba(var(--white), 1) !important;
         }
 
         &:not(.btn-check)+.btn:active {
-            border-color: transparent;
+            border-color: transparent !important;
         }
 
         .icli {
@@ -1404,7 +1404,6 @@ furniture CSS
         }
 
         &.active {
-
             .icli {
                 display: none;
             }
@@ -1487,7 +1486,6 @@ furniture CSS
     }
 }
 
-
 /*=============
  Jewellery CSS 
  ===============*/
@@ -1563,12 +1561,12 @@ furniture CSS
                 &.active,
                 &:active,
                 &:hover {
-                    border-color: transparent;
+                    border-color: transparent !important;
                     background-color: rgba(var(--white), 1);
                 }
 
                 &:not(.btn-check)+.btn:active {
-                    border-color: transparent;
+                    border-color: transparent !important;
                 }
 
                 .icli {

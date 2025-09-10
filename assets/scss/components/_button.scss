@@ -10,14 +10,14 @@
     border: none;
 
     &:hover {
-        color: rgba(var(--white), 1) !important;
-        background-color: rgba(var(--theme-color), 1) !important;
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
     }
 
     &:active {
-        border: none;
-        color: rgba(var(--white), 1) !important;
-        background-color: rgba(var(--theme-color), 1) !important;
+        border-color: none !important;
+        color: rgba(var(--white), 1);
+        background-color: rgba(var(--theme-color), 1);
     }
 
     &-sm {
@@ -28,8 +28,6 @@
         padding: calc(12px + (14 - 12) * ((100vw - 320px) / (600 - 320)));
         font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (600 - 320)));
     }
-
-
 
     &.solid-btn {
         color: rgba(var(--white), 1);
@@ -141,6 +139,10 @@
     border: none;
     color: rgba(var(--dark-bg), 1);
 
+    &:hover,
+    &:active {
+        color: rgba(var(--dark-bg), 1) !important;
+    }
 
     .dark-mode & {
         color: rgba(var(--bg-color), 1);

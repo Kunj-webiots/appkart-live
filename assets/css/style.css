@@ -5309,7 +5309,6 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
 /*================== Food OTP auth  ====================*/
 .starting-heading {
   text-align: center;
-  margin-top: 10px;
 }
 .starting-heading p {
   font-size: 16px;
@@ -5336,7 +5335,7 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
 }
 @media (max-width: 600px) {
   .otp-request {
-    padding-block: calc(30px + 30 * (100vw - 320px) / 280);
+    padding-block: calc(25px + 35 * (100vw - 320px) / 280);
   }
 }
 .otp-request p {
@@ -7456,12 +7455,16 @@ body.dark .movie-auth-form .form-group .form-control {
   font-weight: 500;
   line-height: 1;
   border-radius: 6px;
+  border: none;
 }
 .btn:hover {
-  background-color: rgba(var(--theme-color), 1) !important;
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--theme-color), 1);
 }
 .btn:active {
-  background-color: rgba(var(--theme-color), 1) !important;
+  border-color: none !important;
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--theme-color), 1);
 }
 .btn-sm {
   padding: 5px 10px !important;
@@ -7471,6 +7474,10 @@ body.dark .movie-auth-form .form-group .form-control {
     padding: calc(12px + 2 * (100vw - 320px) / 280);
     font-size: calc(13px + 3 * (100vw - 320px) / 280);
   }
+}
+.btn.solid-btn {
+  color: rgba(var(--white), 1);
+  background-color: rgba(var(--theme-color), 1);
 }
 
 /**** ecommerce button CSS ****/
@@ -7561,6 +7568,9 @@ body.dark .movie-auth-form .form-group .form-control {
   border-radius: 8px;
   border: none;
   color: rgba(var(--dark-bg), 1);
+}
+.food-btn:hover, .food-btn:active {
+  color: rgba(var(--dark-bg), 1) !important;
 }
 .dark-mode .food-btn {
   color: rgba(var(--bg-color), 1);
@@ -8367,6 +8377,9 @@ body.dark-mode .login-list li a {
   border-radius: 14px;
   box-shadow: 2px 3px 6px 0px rgba(0, 0, 0, 0.07);
 }
+.login-list.plant-login .login-box a {
+  border: none;
+}
 
 .form-select {
   position: relative;
@@ -8884,7 +8897,7 @@ body.dark-mode .ecommerce-form .division span {
   right: 10px;
   transform: translateY(-50%);
   padding-left: 10px;
-  border-left: 1px solid rgb(210, 255, 210);
+  border-left: 1px solid rgb(210, 210, 210);
   --Iconsax-Color: rgba(var(--title-color), 1);
   --Iconsax-Size: 20px;
 }
@@ -20524,10 +20537,10 @@ salon CSS
 .product-box .img-part .wishlist-btn.active,
 .product-box .img-part .wishlist-btn :active,
 .product-box .img-part .wishlist-btn :hover {
-  border: transparent;
+  border: transparent !important;
 }
 .product-box .img-part .wishlist-btn:not(.btn-check) + .btn:active {
-  border: transparent;
+  border: transparent !important;
 }
 .product-box .img-part .wishlist-btn .icli {
   color: rgba(var(--content-color), 1);
@@ -21040,10 +21053,10 @@ body.dark-mode .grocery-product-box .img-part {
 .pet-product-box .wishlist-btn.active,
 .pet-product-box .wishlist-btn :active,
 .pet-product-box .wishlist-btn :hover {
-  border: transparent;
+  border: transparent !important;
 }
 .pet-product-box .wishlist-btn:not(.btn-check) + .btn:active {
-  border: transparent;
+  border: transparent !important;
 }
 .pet-product-box .wishlist-btn .icli {
   color: rgba(var(--content-color), 1);
@@ -21160,10 +21173,10 @@ body.dark-mode .grocery-product-box .img-part {
 .food-product-box .wishlist-btn.active,
 .food-product-box .wishlist-btn :active,
 .food-product-box .wishlist-btn :hover {
-  border-color: transparent;
+  border-color: transparent !important;
 }
 .food-product-box .wishlist-btn:not(.btn-check) + .btn:active {
-  border-color: transparent;
+  border-color: transparent !important;
 }
 .food-product-box .wishlist-btn .icli {
   color: rgba(var(--white), 1);
@@ -21360,6 +21373,7 @@ body.dark-mode .shop-product-box {
   outline: none;
   font-weight: 500;
   line-height: 1;
+  background-color: transparent;
 }
 .food-product-content .food-shipping {
   display: flex;
@@ -21674,11 +21688,11 @@ furniture CSS
   background-color: rgba(var(--white), 1);
 }
 .furniture-product-box .wishlist-btn.active, .furniture-product-box .wishlist-btn:active, .furniture-product-box .wishlist-btn:hover {
-  border-color: transparent;
+  border-color: transparent !important;
   background-color: rgba(var(--white), 1) !important;
 }
 .furniture-product-box .wishlist-btn:not(.btn-check) + .btn:active {
-  border-color: transparent;
+  border-color: transparent !important;
 }
 .furniture-product-box .wishlist-btn .icli {
   color: rgba(var(--title-color), 1);
@@ -21716,6 +21730,7 @@ furniture CSS
   border-radius: 100%;
   --Iconsax-Color: rgba(var(--white), 1);
   --Iconsax-Size: 18px;
+  cursor: pointer;
 }
 body.dark-mode .furniture-product-box .product-details .cart-icon {
   --Iconsax-Color: rgba(var(--title-color), 1);
@@ -21843,11 +21858,11 @@ body.dark-mode .trend-gold-wrapper .trend-jewellery-box .jewellery-image .wishli
   background-color: rgba(var(--body-color), 1);
 }
 .trend-gold-wrapper .trend-jewellery-box .jewellery-image .wishlist-btn.active, .trend-gold-wrapper .trend-jewellery-box .jewellery-image .wishlist-btn:active, .trend-gold-wrapper .trend-jewellery-box .jewellery-image .wishlist-btn:hover {
-  border-color: transparent;
+  border-color: transparent !important;
   background-color: rgba(var(--white), 1);
 }
 .trend-gold-wrapper .trend-jewellery-box .jewellery-image .wishlist-btn:not(.btn-check) + .btn:active {
-  border-color: transparent;
+  border-color: transparent !important;
 }
 .trend-gold-wrapper .trend-jewellery-box .jewellery-image .wishlist-btn .icli {
   color: rgba(var(--title-color), 1);
@@ -23262,7 +23277,7 @@ salon CSS
   bottom: 0;
   transform: translate(-50%);
   z-index: 8;
-  padding: 15px;
+  padding: 12px;
   box-shadow: 0px 0px 10px 0px rgba(var(--title-color), 0.1);
   background-color: rgba(var(--white), 1);
 }
@@ -23281,7 +23296,6 @@ salon CSS
   padding: 22px 20px;
   background-color: rgba(var(--dark-bg), 1);
   border-radius: 20px;
-  margin-bottom: 10px;
 }
 @media (max-width: 600px) {
   .food-fixed-panel .food-fixed-panel-content {
@@ -27600,20 +27614,20 @@ body.dark-mode .food-payment-listing li:nth-child(2) img {
 .chat-container .input-icon {
   cursor: pointer;
   position: absolute;
-  right: 14%;
+  right: 90px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
   color: rgba(var(--content-color), 1);
 }
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .chat-container .input-icon {
-    right: 25%;
+    right: calc(85px + 5 * (100vw - 320px) / 280);
   }
 }
 [dir=rtl] .chat-container .input-icon {
   right: unset;
-  left: 14%;
+  left: 90px;
 }
 .chat-container .input-icon .clip-icon {
   --Iconsax-Color: rgba(var(--content-color), 1);
@@ -28039,6 +28053,10 @@ body.dark-mode .address-list-box .address-list .address-box {
   position: relative;
 }
 .wallet-banner img {
+  width: 100%;
+  height: 76px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
 }
@@ -35999,6 +36017,7 @@ body.dark-mode .category-selection-box li a img {
   color: rgba(var(--content-color), 1);
 }
 .furniture-cart-list li .cart-details .cart-content .close-icon {
+  cursor: pointer;
   transform: rotate(45deg);
   --Iconsax-Color: rgba(var(--title-color), 1);
   --Iconsax-Size: 18px;
@@ -36849,7 +36868,7 @@ body.dark-mode .product-price-count .plus-minus {
 }
 .product-review-list .rating-review-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 13px;
   padding-block: 13px;
   border-top: 1px solid rgba(var(--content-color), 0.15);
@@ -37150,7 +37169,7 @@ body.dark-mode .add-cart-button .cart-icon {
 }
 
 .product-team-condition-wrapper .condition-content h2 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: rgba(var(--title-color), 1);
 }
