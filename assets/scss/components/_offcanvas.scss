@@ -1099,7 +1099,7 @@ Hotel Booking Offcanvas
     margin-top: 20px;
 
     +.hotel-filter-wrapper {
-        padding-bottom: 80px;
+        padding-bottom: 50px;
     }
 
     h3 {
@@ -1134,7 +1134,12 @@ Hotel Booking Offcanvas
         margin-top: 15px;
         display: flex;
         align-items: center;
+        flex-wrap: nowrap;
         gap: 16px;
+
+        @media (max-width:600px) {
+            gap: calc(10px + (16 - 10) * ((100vw - 320px) / (600 - 320)));
+        }
 
         .native-checkbox {
             display: flex;
@@ -1143,6 +1148,10 @@ Hotel Booking Offcanvas
             font-size: 16px;
             font-weight: 500;
             color: rgba(var(--title-color), 1);
+
+            @media (max-width:600px) {
+                font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (600 - 320)));
+            }
 
             input[type=checkbox] {
                 @include pseudowh (20px, 20px);
@@ -1924,10 +1933,37 @@ Bottom offcanvas
                         font-weight: 500;
                         color: rgba(var(--title-color), 1);
                     }
+
+                    input[type="radio"] {
+                        appearance: none;
+                        -webkit-appearance: none;
+                        width: 16px;
+                        height: 16px;
+                        border: 1px solid rgba(var(--theme-color), 1);
+                        border-radius: 50%;
+                        outline: none;
+                        cursor: pointer;
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(var(--theme-color), 1);
+                            position: absolute;
+                            top: 2px;
+                            left: 2px;
+                            display: none;
+                        }
+
+                        &:checked::before {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
-
     }
 }
 
@@ -2038,7 +2074,7 @@ Fitness CSS
 =============*/
 .offcanvas {
     &.fitness-theme {
-        background-color: rgba(var(--black-color), 1);
+        background-color: rgba(var(--body-color), 1);
 
         .btn-close {
             background-color: rgba(var(--white), 1);
@@ -2074,7 +2110,7 @@ furniture CSS
         }
 
         .filter-wrapper {
-            padding-bottom: 70px;
+            padding-bottom: 60px;
         }
 
         .filter-right-box {

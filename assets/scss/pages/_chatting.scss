@@ -83,8 +83,16 @@
         transform: translateY(-50%);
         cursor: pointer;
 
-        @media (max-width:375px) {
-            right: 33%;
+        @media (max-width:500px) and (min-width:440px) {
+            right: 24%;
+        }
+
+        @media (max-width:439px) and (min-width:400px) {
+            right: 25%;
+        }
+
+        @media (max-width:399px) {
+            right: 30%;
         }
 
         [dir="rtl"] & {

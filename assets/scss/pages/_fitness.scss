@@ -2,7 +2,7 @@
 5.11 Fitness SCSS 
 ====================*/
 .fitness {
-    background-color: rgba(var(--black-color), 1);
+    background-color: rgba(var(--body-color), 1);
 }
 
 .gender-select {
@@ -183,7 +183,7 @@
         .work-img {
             @include pseudowh(75px, 58px);
             @include flex_center;
-            background-color: rgba(var(--black-color), 1);
+            background-color: rgba(var(--body-color), 1);
             border-radius: 8px;
 
             @media (max-width:600px) {
@@ -360,7 +360,7 @@
             right: 13px;
             font-size: 12px;
             font-weight: 400;
-            color: rgba(var(--black-color), 1);
+            color: rgba(var(--body-color), 1);
             background-color: rgba(var(--theme-color), 1);
             padding: 3px 8px;
             border-bottom-left-radius: 6px;
@@ -530,7 +530,7 @@
     .active {
         background-color: rgba(var(--theme-color), 1);
         border: transparent;
-        color: rgba(var(--black-color), 1);
+        color: rgba(var(--body-color), 1);
     }
 }
 
@@ -557,7 +557,7 @@
             .svg-image {
                 @include flex_center;
                 @include pseudowh(40px, 40px);
-                background-color: rgba(var(--black-color), 1);
+                background-color: rgba(var(--body-color), 1);
                 border-radius: 6px;
 
                 img {
@@ -611,7 +611,7 @@
             .svg-image {
                 @include flex_center;
                 @include pseudowh(40px, 40px);
-                background-color: rgba(var(--black-color), 1);
+                background-color: rgba(var(--body-color), 1);
                 border-radius: 6px;
 
                 img {
@@ -849,7 +849,7 @@ Notification CSS
                 font-weight: 400;
                 color: rgba(var(--white), 1);
                 border: 1px solid rgba(var(--white), 0.17);
-                background-color: rgba(var(--black-color), 1);
+                background-color: rgba(var(--body-color), 1);
                 opacity: 1;
                 cursor: pointer;
                 padding: 3px 20px 6px;

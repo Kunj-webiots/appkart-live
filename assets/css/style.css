@@ -4513,11 +4513,11 @@
 }
 
 .fitness {
+  --body-color: 36, 36, 36;
   --theme-color: 108, 223, 195;
   --bg-color: 49, 49, 49;
   --content-color: 141, 143, 141;
   --title-color: 242, 242, 242;
-  --black-color: 36, 36, 36;
 }
 
 .furniture {
@@ -4902,6 +4902,7 @@ Dark Mode CSS
 }
 .theme-toggle-button input[type=checkbox]:checked {
   background-color: rgba(var(--theme-color), 1);
+  background: var(--theme-color);
 }
 .theme-toggle-button input[type=checkbox]:checked::before {
   transform: translateX(165%) translateY(-4%);
@@ -5361,7 +5362,7 @@ body.dark-mode .food-social-icon li:nth-child(1) img {
   width: 100%;
   max-width: 600px;
   background: var(--theme-color);
-  height: 100vh;
+  min-height: 100vh;
   z-index: 0;
   position: fixed;
   top: 0;
@@ -6046,7 +6047,7 @@ body.dark-mode .learning-auth-form .flex-spacing .custom-checkbox input:checked 
 .login-social-list .division2 span {
   font-size: 14px;
   font-weight: 400;
-  background-color: rgba(var(--white), 1);
+  background-color: rgb(243, 243, 243);
   color: rgba(var(--content-color), 1);
   padding: 0 6px;
 }
@@ -7808,6 +7809,7 @@ body.dark-mode .learning-btn {
   bottom: 0;
   padding: 20px;
   background-color: rgba(var(--white), 0.15);
+  border: none;
 }
 body.dark-mode .bottom-button {
   background-color: rgb(49, 49, 49);
@@ -7936,8 +7938,9 @@ body.dark-mode .cab-btn {
     padding-block: calc(11px + 2 * (100vw - 320px) / 280);
   }
 }
-.fitness-btn:hover {
-  color: rgba(var(--bg-color), 1);
+.fitness-btn:hover, .fitness-btn:active {
+  background-color: rgba(var(--theme-color), 1) !important;
+  color: rgba(var(--bg-color), 1) !important;
 }
 
 /*=============== furniture button ============*/
@@ -10727,7 +10730,7 @@ Hotel Booking Offcanvas
   margin-top: 20px;
 }
 .hotel-filter-wrapper + .hotel-filter-wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 }
 .hotel-filter-wrapper h3 {
   font-size: 18px;
@@ -10760,7 +10763,13 @@ Hotel Booking Offcanvas
   margin-top: 15px;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 16px;
+}
+@media (max-width: 600px) {
+  .hotel-filter-wrapper .checkbox-section {
+    gap: calc(10px + 6 * (100vw - 320px) / 280);
+  }
 }
 .hotel-filter-wrapper .checkbox-section .native-checkbox {
   display: flex;
@@ -10769,6 +10778,11 @@ Hotel Booking Offcanvas
   font-size: 16px;
   font-weight: 500;
   color: rgba(var(--title-color), 1);
+}
+@media (max-width: 600px) {
+  .hotel-filter-wrapper .checkbox-section .native-checkbox {
+    font-size: calc(13px + 3 * (100vw - 320px) / 280);
+  }
 }
 .hotel-filter-wrapper .checkbox-section .native-checkbox input[type=checkbox] {
   width: 20px;
@@ -11477,6 +11491,32 @@ Bottom offcanvas
   font-weight: 500;
   color: rgba(var(--title-color), 1);
 }
+.offcanvas.learn-bottom-offcanvas .download-image-list li .download-img-content input[type=radio] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(var(--theme-color), 1);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.offcanvas.learn-bottom-offcanvas .download-image-list li .download-img-content input[type=radio]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(var(--theme-color), 1);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: none;
+}
+.offcanvas.learn-bottom-offcanvas .download-image-list li .download-img-content input[type=radio]:checked::before {
+  display: block;
+}
 
 /* ==================
 Cab booking offcanvas
@@ -11561,7 +11601,7 @@ Cab booking offcanvas
 Fitness CSS 
 =============*/
 .offcanvas.fitness-theme {
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
 }
 .offcanvas.fitness-theme .btn-close {
   background-color: rgba(var(--white), 1);
@@ -11589,7 +11629,7 @@ furniture CSS
   overflow: hidden;
 }
 .offcanvas.furniture-theme-offcanvas .filter-wrapper {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 .offcanvas.furniture-theme-offcanvas .filter-right-box {
   padding-top: 60px;
@@ -15368,7 +15408,7 @@ fitness tab CSS
 }
 .fitness-tab .nav-tabs .nav-item .nav-link.active {
   font-weight: 500;
-  color: rgba(var(--black-color), 1);
+  color: rgba(var(--body-color), 1);
   background-color: rgba(var(--theme-color), 1);
 }
 .fitness-tab .nav-tabs .nav-item .nav-link:hover {
@@ -15420,7 +15460,7 @@ fitness tab CSS
   background-color: rgba(var(--white), 1);
   padding-block: 6px;
   border-radius: 50px;
-  color: rgba(var(--black-color), 1);
+  color: rgba(var(--body-color), 1);
   display: flex;
   align-items: center;
   gap: 4px;
@@ -15434,7 +15474,7 @@ fitness tab CSS
   }
 }
 .fitness-tab .fitness-premium-plant-list li .premium-plant-content h6 .icon {
-  --Iconsax-Color: rgba(var(--black-color), 1);
+  --Iconsax-Color: rgba(var(--body-color), 1);
   --Iconsax-Size: 18px;
 }
 @media (max-width: 600px) {
@@ -15650,7 +15690,7 @@ body.dark-mode .salon-course-tab .about-detail-tab .custom-collapse-box .toggle-
   background-color: rgba(var(--theme-color), 1);
   border-radius: 3px;
   width: 60px;
-  height: 40px;
+  height: 50px;
   color: rgba(var(--white), 1);
   position: relative;
   padding: 4px;
@@ -17585,9 +17625,9 @@ body.dark-mode .chatting-main-header .header-box .right-header .chatting-dropdow
   left: 30px;
   cursor: pointer;
 }
-@media (max-width: 350px) {
+@media (max-width: 600px) {
   .chatting-main-header .header-box .search-box .icon {
-    left: 20px;
+    left: calc(20px + 10 * (100vw - 320px) / 280);
   }
 }
 .chatting-main-header .header-box .search-box.active {
@@ -18594,7 +18634,7 @@ Fitness header CSS
   width: 100%;
   max-width: 600px;
   padding-block: 35px 15px;
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
   z-index: 1;
 }
 @media (max-width: 600px) {
@@ -18642,7 +18682,7 @@ Fitness header CSS
   width: 100%;
   max-width: 600px;
   padding-block: 20px;
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
 }
 .fitness-main-header .body-main-header {
   display: flex;
@@ -19334,6 +19374,9 @@ body.dark-mode .loader {
   opacity: 0;
   transform: translateY(-100%);
   pointer-events: none;
+}
+.loader.loading {
+  background-color: rgba(var(--body-color), 1);
 }
 
 /**=====================
@@ -20534,16 +20577,14 @@ salon CSS
   background-color: rgba(var(--white), 1);
   border: none;
 }
-.product-box .img-part .wishlist-btn.btn:hover,
-.product-box .img-part .wishlist-btn.btn :active {
-  background-color: rgba(var(--white), 1) !important;
-}
 .product-box .img-part .wishlist-btn.active,
 .product-box .img-part .wishlist-btn :active,
 .product-box .img-part .wishlist-btn :hover {
+  background-color: rgba(var(--theme-color), 1);
   border: transparent !important;
 }
 .product-box .img-part .wishlist-btn:not(.btn-check) + .btn:active {
+  background-color: rgba(var(--theme-color), 1);
   border: transparent !important;
 }
 .product-box .img-part .wishlist-btn .icli {
@@ -21177,11 +21218,11 @@ body.dark-mode .grocery-product-box .img-part {
 .food-product-box .wishlist-btn.active,
 .food-product-box .wishlist-btn :active,
 .food-product-box .wishlist-btn :hover {
-  background-color: rgba(var(--theme-color), 1);
+  background-color: rgba(var(--theme-color), 1) !important;
   border-color: transparent !important;
 }
 .food-product-box .wishlist-btn:not(.btn-check) + .btn:active {
-  background-color: rgba(var(--theme-color), 1);
+  background-color: rgba(var(--theme-color), 1) !important;
   border-color: transparent !important;
 }
 .food-product-box .wishlist-btn .icli {
@@ -23224,44 +23265,6 @@ salon CSS
   font-weight: 400;
   color: rgba(var(--title-color), 1);
 }
-.movie-profile-wrapper li .movie-profile-box .profile-title .toggle-button {
-  display: flex;
-  position: relative;
-  padding: 0;
-}
-.movie-profile-wrapper li .movie-profile-box .profile-title .toggle-button span {
-  width: 45px;
-  height: 24px;
-  display: flex;
-  position: relative;
-  background-color: rgba(var(--white), 0.06);
-  transition: 0.5s;
-  cursor: pointer;
-  border-radius: 100px;
-}
-.movie-profile-wrapper li .movie-profile-box .profile-title .toggle-button span::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  top: 5px;
-  left: 5px;
-  border-radius: 100%;
-  background-color: rgba(var(--content-color), 0.5);
-  transition: 0.5s;
-}
-.movie-profile-wrapper li .movie-profile-box .profile-title .toggle-button input[type=checkbox] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.movie-profile-wrapper li .movie-profile-box .profile-title .toggle-button input[type=checkbox]:checked + span {
-  background-color: rgb(65, 60, 99);
-}
-.movie-profile-wrapper li .movie-profile-box .profile-title .toggle-button input[type=checkbox]:checked + span::before {
-  left: 27px;
-  background: var(--theme-color);
-}
 .movie-profile-wrapper li .movie-profile-box.logout {
   background-color: rgba(var(--error-color), 0.12);
 }
@@ -23789,6 +23792,9 @@ body.dark-mode .fixed-panel .fixed-panel-content {
   background-color: rgba(var(--white), 1);
   border-radius: 42px;
   white-space: nowrap;
+}
+.fixed-panel .fixed-panel-content .fixed-btn:hover, .fixed-panel .fixed-panel-content .fixed-btn:active {
+  color: rgba(var(--theme-color), 1) !important;
 }
 body.dark-mode .fixed-panel .fixed-panel-content .fixed-btn {
   color: rgba(var(--white), 1);
@@ -25950,6 +25956,12 @@ body.dark-mode .pet-profile-box {
   font-weight: 500;
   border-radius: 9px;
   text-align: center;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  .pet-order-box li {
+    font-size: calc(14px + 2 * (100vw - 320px) / 280);
+  }
 }
 
 .pet-address-content {
@@ -28348,9 +28360,19 @@ body.dark-mode .message-chat-box {
   transform: translateY(-50%);
   cursor: pointer;
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) and (min-width: 440px) {
   .message-chat-box .chat-message-icon {
-    right: 33%;
+    right: 24%;
+  }
+}
+@media (max-width: 439px) and (min-width: 400px) {
+  .message-chat-box .chat-message-icon {
+    right: 25%;
+  }
+}
+@media (max-width: 399px) {
+  .message-chat-box .chat-message-icon {
+    right: 30%;
   }
 }
 [dir=rtl] .message-chat-box .chat-message-icon {
@@ -31440,7 +31462,7 @@ body.dark-mode .payment-card-section .payment-options-list li:nth-child(2) img {
   border: solid rgba(var(--white), 1);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
-  border-color: rgba(var(--title-color), 1);
+  border-color: rgba(var(--white), 1);
 }
 
 .privacy-police-section .privacy-police-wrapper {
@@ -31849,6 +31871,7 @@ body.dark-mode .blog-follow-list li .follow-content .following {
   border-radius: 12px;
 }
 .blog-comment-wrapper .blog-comment-box img {
+  width: 100%;
   border-radius: 12px;
 }
 .blog-comment-wrapper .blog-comment-box .comment-content {
@@ -32834,7 +32857,7 @@ body.dark-mode .swal2-popup {
   margin-top: 5px;
   height: 5px;
   border-radius: 50px;
-  background-color: rgba(var(--white), 1);
+  background-color: rgba(var(--content-color), 0.09);
 }
 body.dark-mode .learning-wrapper li .learning-list-content .reading-view .progress {
   background-color: rgba(var(--body-color), 1);
@@ -34846,6 +34869,9 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
   box-shadow: 2px 3px 6px 0px rgba(var(--black), 0.19);
   border-radius: 100%;
 }
+.cab-wallet-wrapper .wallet-offer-content {
+  width: calc(100% - 40px - 15px);
+}
 .cab-wallet-wrapper .wallet-offer-content h4 {
   font-size: 16px;
   font-weight: 500;
@@ -35070,7 +35096,7 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
 5.11 Fitness SCSS 
 ====================*/
 .fitness {
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
 }
 
 .gender-select {
@@ -35244,7 +35270,7 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
   border-radius: 8px;
 }
 @media (max-width: 600px) {
@@ -35409,7 +35435,7 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
   right: 13px;
   font-size: 12px;
   font-weight: 400;
-  color: rgba(var(--black-color), 1);
+  color: rgba(var(--body-color), 1);
   background-color: rgba(var(--theme-color), 1);
   padding: 3px 8px;
   border-bottom-left-radius: 6px;
@@ -35559,7 +35585,7 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
 .fitness-history-list .active {
   background-color: rgba(var(--theme-color), 1);
   border: transparent;
-  color: rgba(var(--black-color), 1);
+  color: rgba(var(--body-color), 1);
 }
 
 .workout-wrapper {
@@ -35589,7 +35615,7 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
   border-radius: 6px;
 }
 .workout-wrapper .workout-box .workout-content .svg-image img {
@@ -35637,7 +35663,7 @@ body.dark-mode .confirm-modal .modal-header .btn-close {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
   border-radius: 6px;
 }
 .chart-card-box .chart-card-content .workout-content .svg-image img {
@@ -35853,7 +35879,7 @@ Notification CSS
   font-weight: 400;
   color: rgba(var(--white), 1);
   border: 1px solid rgba(var(--white), 0.17);
-  background-color: rgba(var(--black-color), 1);
+  background-color: rgba(var(--body-color), 1);
   opacity: 1;
   cursor: pointer;
   padding: 3px 20px 6px;
@@ -37351,6 +37377,7 @@ body.dark-mode .user-settings-panel li.delete-account .icon {
   font-size: 13px;
   font-weight: 400;
   margin-top: 5px;
+  line-height: 1.6;
 }
 
 .product-address-choose {

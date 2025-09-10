@@ -1116,9 +1116,8 @@
                     left: 30px;
                     cursor: pointer;
 
-                    @media (max-width:350px) {
-                         left: 20px;
-
+                    @media (max-width:600px) {
+                         left: calc(20px + (30 - 20) * ((100vw - 320px) / (600 - 320)));
                     }
 
                }
@@ -2234,7 +2233,7 @@ Fitness header CSS
      width: 100%;
      max-width: 600px;
      padding-block: 35px 15px;
-     background-color: rgba(var(--black-color), 1);
+     background-color: rgba(var(--body-color), 1);
      z-index: 1;
 
      @media (max-width:600px) {
@@ -2282,7 +2281,7 @@ Fitness header CSS
      width: 100%;
      max-width: 600px;
      padding-block: 20px;
-     background-color: rgba(var(--black-color), 1);
+     background-color: rgba(var(--body-color), 1);
 
      .body-main-header {
           display: flex;

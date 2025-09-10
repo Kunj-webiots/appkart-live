@@ -6,7 +6,6 @@
 
     &.dark-mode {
         background-color: rgba(var(--body-color), 1);
-
     }
 }
 
@@ -1414,7 +1413,7 @@
         border: solid rgba(var(--white), 1);
         border-width: 0 2px 2px 0;
         transform: rotate(45deg);
-        border-color: rgba(var(--title-color), 1);
+        border-color: rgba(var(--white), 1);
     }
 }
 

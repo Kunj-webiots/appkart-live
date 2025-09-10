@@ -328,7 +328,7 @@
                     margin-top: 5px;
                     height: 5px;
                     border-radius: 50px;
-                    background-color: rgba(var(--white), 1);
+                    background-color: rgba(var(--content-color), 0.09);
 
                     body.dark-mode & {
                         background-color: rgba(var(--body-color), 1);

@@ -390,6 +390,7 @@
     bottom: 0;
     padding: 20px;
     background-color: rgba(var(--white), 0.15);
+    border: none;
 
     body.dark-mode & {
         background-color: rgb(49, 49, 49);
@@ -527,8 +528,10 @@
         padding-block: calc(11px + (13 - 11) * ((100vw - 320px) / (600 - 320)));
     }
 
-    &:hover {
-        color: rgba(var(--bg-color), 1);
+    &:hover,
+    &:active {
+        background-color: rgba(var(--theme-color), 1) !important;
+        color: rgba(var(--bg-color), 1) !important;
     }
 
 }

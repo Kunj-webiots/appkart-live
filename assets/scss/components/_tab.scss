@@ -1393,7 +1393,7 @@ fitness tab CSS
 
                 &.active {
                     font-weight: 500;
-                    color: rgba(var(--black-color), 1);
+                    color: rgba(var(--body-color), 1);
                     background-color: rgba(var(--theme-color), 1);
                 }
 
@@ -1448,7 +1448,7 @@ fitness tab CSS
                     background-color: rgba(var(--white), 1);
                     padding-block: 6px;
                     border-radius: 50px;
-                    color: rgba(var(--black-color), 1);
+                    color: rgba(var(--body-color), 1);
                     display: flex;
                     align-items: center;
                     gap: 4px;
@@ -1461,7 +1461,7 @@ fitness tab CSS
                     }
 
                     .icon {
-                        --Iconsax-Color: rgba(var(--black-color), 1);
+                        --Iconsax-Color: rgba(var(--body-color), 1);
                         --Iconsax-Size: 18px;
 
                         @media (max-width:600px) {

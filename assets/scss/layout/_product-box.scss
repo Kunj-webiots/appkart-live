@@ -31,21 +31,15 @@
             background-color: rgba(var(--white), 1);
             border: none;
 
-            &.btn {
-
-                &:hover,
-                :active {
-                    background-color: rgba(var(--white), 1) !important;
-                }
-            }
-
             &.active,
             :active,
             :hover {
+                background-color: rgba(var(--theme-color), 1);
                 border: transparent !important;
             }
 
             &:not(.btn-check)+.btn:active {
+                background-color: rgba(var(--theme-color), 1);
                 border: transparent !important;
             }
 
@@ -774,12 +768,12 @@
         &.active,
         :active,
         :hover {
-            background-color: rgba(var(--theme-color), 1);
+            background-color: rgba(var(--theme-color), 1) !important;
             border-color: transparent !important;
         }
 
         &:not(.btn-check)+.btn:active {
-            background-color: rgba(var(--theme-color), 1);
+            background-color: rgba(var(--theme-color), 1) !important;
             border-color: transparent !important;
         }
 

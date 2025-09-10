@@ -772,6 +772,11 @@
         font-weight: 500;
         border-radius: 9px;
         text-align: center;
+        white-space: nowrap;
+
+        @media (max-width:600px) {
+            font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
+        }
     }
 }
 

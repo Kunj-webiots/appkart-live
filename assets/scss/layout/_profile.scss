@@ -1414,46 +1414,6 @@ salon CSS
                     color: rgba(var(--title-color), 1);
                 }
 
-                .toggle-button {
-                    display: flex;
-                    position: relative;
-                    padding: 0;
-
-                    span {
-                        @include pseudowh(45px, 24px);
-                        display: flex;
-                        position: relative;
-                        background-color: rgba(var(--white), 0.06);
-                        transition: 0.5s;
-                        cursor: pointer;
-                        border-radius: 100px;
-
-                        &::before {
-                            @include pos;
-                            @include pseudowh(14px, 14px);
-                            top: 5px;
-                            left: 5px;
-                            border-radius: 100%;
-                            background-color: rgba(var(--content-color), 0.5);
-                            transition: .5s;
-                        }
-                    }
-
-                    input[type="checkbox"] {
-                        opacity: 0;
-                        width: 0;
-                        height: 0;
-
-                        &:checked+span {
-                            background-color: rgb(65 60 99);
-
-                            &::before {
-                                left: 27px;
-                                background: var(--theme-color);
-                            }
-                        }
-                    }
-                }
             }
 
             &.logout {

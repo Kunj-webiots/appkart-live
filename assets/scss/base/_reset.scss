@@ -338,6 +338,7 @@ Dark Mode CSS
 
         &:checked {
             background-color: rgba(var(--theme-color), 1);
+            background: var(--theme-color);
 
             &::before {
                 transform: translateX(165%) translateY(-4%);

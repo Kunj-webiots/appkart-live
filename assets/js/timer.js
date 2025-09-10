@@ -1,7 +1,7 @@
 /********************** 
   timer js start
 ***********************/
-/***** CALCULATE THE TIME REMAINING *****/
+// /***** CALCULATE THE TIME REMAINING *****/
 // function getTimeRemaining(endtime) {
 //   var t = Date.parse(endtime) - Date.parse(new Date());
 
@@ -21,7 +21,7 @@
 //   };
 // }
 
-// /***** DISPLAY THE CLOCK AND STOP IT WHEN IT REACHES ZERO *****/
+// // /***** DISPLAY THE CLOCK AND STOP IT WHEN IT REACHES ZERO *****/
 // function initializeClock(id, endtime) {
 //   var clock = document.getElementById(id);
 //   // var daysSpan = clock.querySelector('.days');
@@ -46,7 +46,7 @@
 //   var timeinterval = setInterval(updateClock, 1000);
 // }
 
-// /***** SET A VALID END DATE *****/
+// // /***** SET A VALID END DATE *****/
 // var deadline = new Date(Date.parse(new Date()) + 5 * 60 * 60 * 1000);
 // initializeClock("clock", deadline);
 

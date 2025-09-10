@@ -29,4 +29,8 @@
       transform: translateY(-100%);
       pointer-events: none;
    }
+
+   &.loading {
+      background-color: rgba(var(--body-color), 1);
+   }
 }

@@ -398,6 +398,11 @@
             border-radius: 42px;
             white-space: nowrap;
 
+            &:hover,
+            &:active {
+                color: rgba(var(--theme-color), 1) !important;
+            }
+
             body.dark-mode & {
                 color: rgba(var(--white), 1);
                 background-color: rgba(var(--body-color), 1);
