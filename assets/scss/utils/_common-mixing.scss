@@ -125,34 +125,34 @@ $i: 0;
     $i: $i+1;
 }
 
-$background-name: theme-color,
-content,
-title,
-secondary,
-box-bg,
-black,
-white;
-$background-color: rgba(var(--theme-color), 1),
-rgba(var(--content-color), 1),
-rgba(var(--title-color), 1),
-rgba(var(--secondary-color), 1),
-rgba(var(--box-bg), 1),
-rgba(var(--border-color), 1),
-rgba(var(--black), 1),
-rgba(var(--white), 1);
+// $background-name: theme-color,
+// content,
+// title,
+// secondary,
+// box-bg,
+// black,
+// white;
+// $background-color: rgba(var(--theme-color), 1),
+// rgba(var(--content-color), 1),
+// rgba(var(--title-color), 1),
+// rgba(var(--secondary-color), 1),
+// rgba(var(--box-bg), 1),
+// rgba(var(--border-color), 1),
+// rgba(var(--black), 1),
+// rgba(var(--white), 1);
 
-@each $var in $background-name {
-    $i: index($background-name, $var);
+// @each $var in $background-name {
+//     $i: index($background-name, $var);
 
-    .bg-#{$var} {
-        background-color: rgba(var(--#{$var}), 1) !important;
-    }
+//     .bg-#{$var} {
+//         background-color: rgba(var(--#{$var}), 1) !important;
+//     }
 
-    .color-#{$var} {
-        color: rgba(var(--#{$var}), 1) !important;
-    }
+//     .color-#{$var} {
+//         color: rgba(var(--#{$var}), 1) !important;
+//     }
 
-    .icon-#{$var} {
-        --iconsax-Color: rgba(var(--#{$var}), 1) !important;
-    }
-}
+//     .icon-#{$var} {
+//         --iconsax-Color: rgba(var(--#{$var}), 1) !important;
+//     }
+// }

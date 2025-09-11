@@ -4261,90 +4261,6 @@
   font-size: 100px;
 }
 
-.bg-theme-color {
-  background-color: rgba(var(--theme-color), 1) !important;
-}
-
-.color-theme-color {
-  color: rgba(var(--theme-color), 1) !important;
-}
-
-.icon-theme-color {
-  --iconsax-Color: rgba(var(--theme-color), 1) !important;
-}
-
-.bg-content {
-  background-color: rgba(var(--content), 1) !important;
-}
-
-.color-content {
-  color: rgba(var(--content), 1) !important;
-}
-
-.icon-content {
-  --iconsax-Color: rgba(var(--content), 1) !important;
-}
-
-.bg-title {
-  background-color: rgba(var(--title), 1) !important;
-}
-
-.color-title {
-  color: rgba(var(--title), 1) !important;
-}
-
-.icon-title {
-  --iconsax-Color: rgba(var(--title), 1) !important;
-}
-
-.bg-secondary {
-  background-color: rgba(var(--secondary), 1) !important;
-}
-
-.color-secondary {
-  color: rgba(var(--secondary), 1) !important;
-}
-
-.icon-secondary {
-  --iconsax-Color: rgba(var(--secondary), 1) !important;
-}
-
-.bg-box-bg {
-  background-color: rgba(var(--box-bg), 1) !important;
-}
-
-.color-box-bg {
-  color: rgba(var(--box-bg), 1) !important;
-}
-
-.icon-box-bg {
-  --iconsax-Color: rgba(var(--box-bg), 1) !important;
-}
-
-.bg-black {
-  background-color: rgba(var(--black), 1) !important;
-}
-
-.color-black {
-  color: rgba(var(--black), 1) !important;
-}
-
-.icon-black {
-  --iconsax-Color: rgba(var(--black), 1) !important;
-}
-
-.bg-white {
-  background-color: rgba(var(--white), 1) !important;
-}
-
-.color-white {
-  color: rgba(var(--white), 1) !important;
-}
-
-.icon-white {
-  --iconsax-Color: rgba(var(--white), 1) !important;
-}
-
 /*=====================
     1.3 Variables CSS
 ==========================*/
@@ -7467,14 +7383,16 @@ body.dark .movie-auth-form .form-group .form-control {
   border-radius: 6px;
   border: none;
 }
+body.dark-mode .btn {
+  color: rgba(var(--title-color), 1) !important;
+}
 .btn:hover {
   color: rgba(var(--white), 1) !important;
-  background-color: rgba(var(--theme-color), 1);
+  background-color: rgba(var(--theme-color), 1) !important;
 }
 .btn:active {
-  border-color: none !important;
   color: rgba(var(--white), 1) !important;
-  background-color: rgba(var(--theme-color), 1);
+  background-color: rgba(var(--theme-color), 1) !important;
 }
 .btn-sm {
   padding: 5px 10px !important;
@@ -7486,8 +7404,14 @@ body.dark .movie-auth-form .form-group .form-control {
   }
 }
 .btn.solid-btn {
+  width: 100%;
   color: rgba(var(--white), 1);
   background-color: rgba(var(--theme-color), 1);
+}
+.btn.rounded-btn {
+  color: rgb(255, 255, 255);
+  background-color: rgba(var(--theme-color), 1);
+  border-radius: 100px;
 }
 
 /**** ecommerce button CSS ****/
@@ -7496,10 +7420,6 @@ body.dark .movie-auth-form .form-group .form-control {
   color: rgba(var(--white), 1);
   background-color: rgba(var(--theme-color), 1);
   text-transform: uppercase;
-}
-.ecommerce-btn:hover {
-  color: rgba(var(--white), 1);
-  background-color: rgba(var(--theme-color), 1);
 }
 
 /**** plant button CSS ****/
@@ -7517,11 +7437,6 @@ body.dark .movie-auth-form .form-group .form-control {
   .pet-btn {
     font-size: calc(14px + 2 * (100vw - 320px) / 280);
   }
-}
-.plant-btn:hover,
-.pet-btn:hover {
-  color: rgba(var(--white), 1);
-  background-color: rgba(var(--theme-color), 1);
 }
 
 .pet-btn {
@@ -7618,17 +7533,11 @@ body.dark-mode .map-btn {
   border-radius: 8px;
   width: 100%;
 }
-body.dark-mode .chatting-btn {
-  color: rgba(var(--title-color), 1);
-}
 @media (max-width: 600px) {
   .chatting-btn {
     font-size: calc(16px + 2 * (100vw - 320px) / 280);
     margin-top: calc(35px + 5 * (100vw - 320px) / 280);
   }
-}
-.chatting-btn:active {
-  color: rgba(var(--white), 1);
 }
 
 .google-btn {
@@ -7676,9 +7585,6 @@ body.dark-mode .chatting-fixed-button {
   background-color: rgba(var(--theme-color), 1);
   border-radius: 6px;
   margin-bottom: 18px;
-}
-body.dark-mode .hotel-button {
-  color: rgba(var(--title-color), 1);
 }
 @media (max-width: 600px) {
   .hotel-button {
@@ -7749,9 +7655,6 @@ body.dark-mode .blog-fix-btn {
   text-align: center;
   border-radius: 8px;
 }
-body.dark-mode .blog-btn {
-  color: rgba(var(--title-color), 1);
-}
 
 /*============= Learning Button CSS ==============*/
 .learning-btn {
@@ -7763,9 +7666,6 @@ body.dark-mode .blog-btn {
   text-align: center;
   border-radius: 30px;
   padding-block: 15px;
-}
-body.dark-mode .learning-btn {
-  color: rgba(var(--title-color), 1);
 }
 @media (max-width: 600px) {
   .learning-btn {
@@ -7857,15 +7757,11 @@ body.dark-mode .bottom-button {
 }
 .cab-main-btn:hover, .cab-main-btn:active {
   background: var(--theme-color);
-  color: rgba(var(--white), 1) !important;
 }
 @media (max-width: 600px) {
   .cab-main-btn {
     border-radius: calc(8px + 8 * (100vw - 320px) / 280);
   }
-}
-body.dark-mode .cab-main-btn {
-  color: rgba(var(--title-color), 1);
 }
 body.dark-mode .cab-main-btn .icon {
   --Iconsax-Color: rgba(var(--title-color), 1);
@@ -7947,7 +7843,6 @@ body.dark-mode .cab-btn {
   }
 }
 .fitness-btn:hover, .fitness-btn:active {
-  background-color: rgba(var(--theme-color), 1) !important;
   color: rgba(var(--bg-color), 1) !important;
 }
 
@@ -7975,9 +7870,6 @@ body.dark-mode .cab-btn {
   font-weight: 500;
   padding-block: 12px;
   line-height: 1.2;
-}
-body.dark-mode .furniture-btn {
-  color: rgba(var(--title-color), 1);
 }
 .furniture-btn.fur-btn2 {
   background-color: rgba(var(--title-color), 1);
@@ -8056,12 +7948,9 @@ body.dark-mode .jewellery-button .reset-btn {
     font-size: calc(15px + 2 * (100vw - 320px) / 280);
   }
 }
-body.dark-mode .gold-btn:active {
+body.dark-mode .gold-btn:active, body.dark-mode .gold-btn:hover {
   background-color: rgba(var(--secondary-color), 1);
   border: none;
-}
-.gold-btn:hover {
-  background-color: rgba(var(--secondary-color), 1);
 }
 
 /*============== salon  button ==============*/
@@ -8094,13 +7983,6 @@ body.dark-mode .gold-btn:active {
     font-size: calc(14px + 2 * (100vw - 320px) / 280);
     padding-block: calc(12px + 3 * (100vw - 320px) / 280);
   }
-}
-.salon-btn:hover {
-  color: rgba(var(--white), 1);
-  background-color: rgba(var(--theme-color), 1);
-}
-body.dark-mode .salon-btn {
-  color: rgba(var(--title-color), 1);
 }
 
 /*================ Movie button ==============*/
@@ -11815,6 +11697,10 @@ salon Offcanvas
   opacity: 1;
   border-radius: 100%;
   margin: 0;
+  box-shadow: none;
+}
+.dark-mode .offcanvas.salon-theme .offcanvas-header .btn-close {
+  filter: brightness(0) invert(1);
 }
 .offcanvas.salon-theme .theme-filter-btn {
   display: flex;
@@ -14204,21 +14090,18 @@ food range slider
   flex-wrap: nowrap;
   overflow: hidden;
   width: 100%;
-  border-bottom: none;
   overflow-x: auto;
 }
 .grocery-auth-tab .nav-tabs .nav-item {
-  color: rgba(var(--white), 0.1);
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(var(--white), 0.1);
+  width: 100%;
   list-style-type: none;
   cursor: pointer;
-  border-radius: 8px;
   transition: all 0.3s ease;
   border-radius: 0;
-  border-bottom: 1px solid rgba(var(--border-color), 1);
 }
 .grocery-auth-tab .nav-tabs .nav-item .nav-link {
   width: 100%;
@@ -14228,35 +14111,15 @@ food range slider
   white-space: nowrap;
   color: rgba(var(--title-color), 1);
   background-color: transparent;
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: 1px solid rgba(var(--border), 1);
+  border: 0;
+  border-bottom: 2px solid transparent;
 }
 .grocery-auth-tab .nav-tabs .nav-item .nav-link.active {
   font-weight: 700;
-  background-color: transparent;
   color: rgba(var(--theme-color), 1);
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-bottom: 2px solid rgba(var(--theme-color), 1);
-  padding-left: 15px;
-  padding-right: 15px;
+  border-bottom-color: rgba(var(--theme-color), 1);
+  padding-inline: 15px;
   border-radius: 0;
-  width: 100%;
-}
-.grocery-auth-tab .nav-tabs .nav-item .nav-link.active:hover {
-  color: rgba(var(--theme-color), 1);
-}
-.grocery-auth-tab .nav-tabs .nav-item .nav-link:hover {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  color: rgba(var(--title-color), 1);
-}
-.grocery-auth-tab .nav-tabs .nav-item .nav-link:focus {
-  border-color: transparent;
 }
 .grocery-auth-tab .tab-content {
   height: 100%;
@@ -14271,6 +14134,10 @@ food range slider
   margin-top: 15px;
   color: rgba(var(--title-color), 1);
   background-color: rgba(var(--white), 1);
+}
+.grocery-auth-tab .tab-content .google-buttons a:hover, .grocery-auth-tab .tab-content .google-buttons a:active {
+  color: rgba(var(--title-color), 1) !important;
+  background-color: rgba(var(--white), 1) !important;
 }
 .dark-mode .grocery-auth-tab .tab-content .google-buttons a {
   background-color: rgba(var(--body-color), 1);
@@ -20838,6 +20705,10 @@ body.dark-mode .cart-product-box .product-content .plus-minus input {
   top: 5px;
   right: 5px;
   background-color: transparent;
+  box-shadow: none;
+}
+.plant-product-box .img-part .wishlist-btn:hover, .plant-product-box .img-part .wishlist-btn:active {
+  background-color: transparent !important;
 }
 .plant-product-box .product-content .product-name {
   margin-top: 10px;
@@ -20912,6 +20783,7 @@ body.dark-mode .cart-product-box .product-content .plus-minus input {
   --Iconsax-Color: rgba(var(--title-color), 1);
   --Iconsax-Size: 18px;
   transform: rotate(45deg);
+  cursor: pointer;
 }
 .plant-horizontal-product-box .product-content .wishlist-btn {
   padding: 4px;
@@ -24956,6 +24828,9 @@ body.dark-mode .product-details-section .plus-minus .icon {
   border-radius: 6px;
   box-shadow: 0px 0px 10px 0px rgba(var(--black), 0.1);
 }
+body.dark-mode .map-part .map-details {
+  background-color: rgba(var(--bg-color), 1);
+}
 .map-part .map-details .icon {
   --Iconsax-Color: rgba(var(--title-color), 1);
   --Iconsax-Size: 24px;
@@ -26499,6 +26374,41 @@ body.dark-mode .plant-product-details-content {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.plant-reset {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 600px;
+  z-index: 1;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(var(--white), 1);
+  box-shadow: 0px -6px 7px rgba(var(--black), 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.plant-reset .reset-btn {
+  width: 100%;
+  color: rgba(var(--title-color), 1);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 100px;
+  background-color: rgba(var(--content-color), 0.12);
+}
+.plant-reset .reset-btn:hover, .plant-reset .reset-btn:active {
+  background-color: rgba(var(--content-color), 0.12) !important;
+  color: rgba(var(--title-color), 1) !important;
+}
+.plant-reset .review-button {
+  width: 100%;
+  border-radius: 100px;
+  background-color: rgba(var(--theme-color), 1);
+  color: rgba(var(--white), 1);
 }
 
 /*=======================
@@ -39049,8 +38959,8 @@ body.dark-mode .salon-location-content .services-content .icon {
   font-size: 13px;
   font-weight: 500;
   border: 1px solid rgba(var(--theme-color), 0.1);
+  background-color: rgba(var(--content-color), 0.1);
   overflow: hidden;
-  --bs-dropdown-bg: rgba(var(--light-bg), 1);
 }
 .salon-location-content .dropdown-menu-end li {
   width: 100%;
@@ -39068,7 +38978,9 @@ body.dark-mode .salon-location-content .services-content .icon {
   font-size: 13px;
   font-weight: 500;
   color: rgba(var(--title-color), 1);
-  background-color: rgba(var(--light-bg), 1);
+}
+.salon-location-content .dropdown-menu-end li .dropdown-item:hover {
+  background-color: transparent;
 }
 .salon-location-content .detail {
   margin-top: 8px;

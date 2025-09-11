@@ -318,6 +318,12 @@
             top: 5px;
             right: 5px;
             background-color: transparent;
+            box-shadow: none;
+
+            &:hover,
+            &:active {
+                background-color: transparent !important;
+            }
         }
     }
 
@@ -405,6 +411,7 @@
             --Iconsax-Color: rgba(var(--title-color), 1);
             --Iconsax-Size: 18px;
             transform: rotate(45deg);
+            cursor: pointer;
         }
 
         .wishlist-btn {

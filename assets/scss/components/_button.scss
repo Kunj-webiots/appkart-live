@@ -9,15 +9,18 @@
     border-radius: 6px;
     border: none;
 
+    body.dark-mode & {
+        color: rgba(var(--title-color), 1) !important;
+    }
+
     &:hover {
         color: rgba(var(--white), 1) !important;
-        background-color: rgba(var(--theme-color), 1);
+        background-color: rgba(var(--theme-color), 1) !important;
     }
 
     &:active {
-        border-color: none !important;
         color: rgba(var(--white), 1) !important;
-        background-color: rgba(var(--theme-color), 1);
+        background-color: rgba(var(--theme-color), 1) !important;
     }
 
     &-sm {
@@ -30,6 +33,7 @@
     }
 
     &.solid-btn {
+        width: 100%;
         color: rgba(var(--white), 1);
         background-color: rgba(var(--theme-color), 1);
     }
@@ -40,11 +44,11 @@
     //     border: 1px solid rgba(var(--theme-color), 1);
     // }
 
-    // &.rounded-btn {
-    //     color: rgba(255, 255, 255, 1);
-    //     background-color: rgba(var(--theme-color), 1);
-    //     border-radius: 100px;
-    // }
+    &.rounded-btn {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(var(--theme-color), 1);
+        border-radius: 100px;
+    }
 
 }
 
@@ -54,11 +58,6 @@
     color: rgba(var(--white), 1);
     background-color: rgba(var(--theme-color), 1);
     text-transform: uppercase;
-
-    &:hover {
-        color: rgba(var(--white), 1);
-        background-color: rgba(var(--theme-color), 1);
-    }
 }
 
 /**** plant button CSS ****/
@@ -73,11 +72,6 @@
 
     @media (max-width: 600px) {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
-    }
-
-    &:hover {
-        color: rgba(var(--white), 1);
-        background-color: rgba(var(--theme-color), 1);
     }
 }
 
@@ -173,8 +167,6 @@
     color: rgba(var(--dark-bg), 1);
 }
 
-
-
 //*============ chatting-button ==========*//
 .chatting-btn {
     margin-top: 40px;
@@ -185,17 +177,9 @@
     border-radius: 8px;
     width: 100%;
 
-    body.dark-mode & {
-        color: rgba(var(--title-color), 1);
-    }
-
     @media (max-width:600px) {
         font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
         margin-top: calc(35px + (40 - 35) * ((100vw - 320px) / (600 - 320)));
-    }
-
-    &:active {
-        color: rgba(var(--white), 1);
     }
 
 }
@@ -249,15 +233,10 @@
     border-radius: 6px;
     margin-bottom: 18px;
 
-    body.dark-mode & {
-        color: rgba(var(--title-color), 1);
-    }
-
     @media (max-width:600px) {
         font-size: calc(15px + (16 - 15) * ((100vw - 320px) / (600 - 320)));
         margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (600 - 320)));
         margin-bottom: calc(10px + (18 - 10) * ((100vw - 320px) / (600 - 320)));
-
     }
 }
 
@@ -323,10 +302,6 @@
     font-weight: 500;
     text-align: center;
     border-radius: 8px;
-
-    body.dark-mode & {
-        color: rgba(var(--title-color), 1);
-    }
 }
 
 /*============= Learning Button CSS ==============*/
@@ -340,9 +315,6 @@
     border-radius: 30px;
     padding-block: 15px;
 
-    body.dark-mode & {
-        color: rgba(var(--title-color), 1);
-    }
 
     @media (max-width:600px) {
         font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (600 - 320)));
@@ -436,7 +408,6 @@
     &:hover,
     &:active {
         background: var(--theme-color);
-        color: rgba(var(--white), 1) !important;
     }
 
     @media (max-width:600px) {
@@ -444,8 +415,6 @@
     }
 
     body.dark-mode & {
-        color: rgba(var(--title-color), 1);
-
         .icon {
             --Iconsax-Color: rgba(var(--title-color), 1);
         }
@@ -536,7 +505,6 @@
 
     &:hover,
     &:active {
-        background-color: rgba(var(--theme-color), 1) !important;
         color: rgba(var(--bg-color), 1) !important;
     }
 
@@ -565,10 +533,6 @@
     font-weight: 500;
     padding-block: 12px;
     line-height: 1.2;
-
-    body.dark-mode & {
-        color: rgba(var(--title-color), 1);
-    }
 
     &.fur-btn2 {
         background-color: rgba(var(--title-color), 1);
@@ -657,14 +621,12 @@
     }
 
     body.dark-mode & {
-        &:active {
+
+        &:active,
+        &:hover {
             background-color: rgba(var(--secondary-color), 1);
             border: none;
         }
-    }
-
-    &:hover {
-        background-color: rgba(var(--secondary-color), 1);
     }
 }
 
@@ -697,15 +659,6 @@
     @media (max-width:600px) {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
         padding-block: calc(12px + (15 - 12) * ((100vw - 320px) / (600 - 320)));
-    }
-
-    &:hover {
-        color: rgba(var(--white), 1);
-        background-color: rgba(var(--theme-color), 1);
-    }
-
-    body.dark-mode & {
-        color: rgba(var(--title-color), 1);
     }
 }
 

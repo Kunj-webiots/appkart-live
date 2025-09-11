@@ -63,21 +63,16 @@
         flex-wrap: nowrap;
         overflow: hidden;
         width: 100%;
-        border-bottom: none;
         overflow-x: auto;
 
         .nav-item {
+            @include flex_center;
             color: rgba(var(--white), 0.1);
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             list-style-type: none;
             cursor: pointer;
-            border-radius: 8px;
             transition: all 0.3s ease;
             border-radius: 0;
-            border-bottom: 1px solid rgba(var(--border-color), 1);
 
             .nav-link {
                 width: 100%;
@@ -87,38 +82,15 @@
                 white-space: nowrap;
                 color: rgba(var(--title-color), 1);
                 background-color: transparent;
-                border-left: none;
-                border-right: none;
-                border-top: none;
-                border-bottom: 1px solid rgba(var(--border), 1);
+                border: 0;
+                border-bottom: 2px solid transparent;
 
                 &.active {
                     font-weight: 700;
-                    background-color: transparent;
                     color: rgba(var(--theme-color), 1);
-                    border-left: none;
-                    border-right: none;
-                    border-top: none;
-                    border-bottom: 2px solid rgba(var(--theme-color), 1);
-                    padding-left: 15px;
-                    padding-right: 15px;
+                    border-bottom-color: rgba(var(--theme-color), 1);
+                    padding-inline: 15px;
                     border-radius: 0;
-                    width: 100%;
-
-                    &:hover {
-                        color: rgba(var(--theme-color), 1);
-                    }
-                }
-
-                &:hover {
-                    border-left: none;
-                    border-right: none;
-                    border-top: none;
-                    color: rgba(var(--title-color), 1);
-                }
-
-                &:focus {
-                    border-color: transparent;
                 }
             }
         }
@@ -137,6 +109,12 @@
                 margin-top: 15px;
                 color: rgba(var(--title-color), 1);
                 background-color: rgba(var(--white), 1);
+
+                &:hover,
+                &:active {
+                    color: rgba(var(--title-color), 1) !important;
+                    background-color: rgba(var(--white), 1) !important;
+                }
 
                 .dark-mode & {
                     background-color: rgba(var(--body-color), 1);
@@ -221,7 +199,6 @@
 /* ============================
 chatting notification page CSS 
 ===============================*/
-
 .chatting-tab {
     height: calc(100vh - 265px);
 

@@ -2316,6 +2316,11 @@ salon Offcanvas
                 opacity: 1;
                 border-radius: 100%;
                 margin: 0;
+                box-shadow: none;
+
+                .dark-mode & {
+                    filter: brightness(0) invert(1);
+                }
             }
         }
 

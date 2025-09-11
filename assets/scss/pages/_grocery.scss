@@ -451,6 +451,10 @@
         border-radius: 6px;
         box-shadow: 0px 0px 10px 0px rgba(var(--black), 0.1);
 
+        body.dark-mode & {
+            background-color: rgba(var(--bg-color), 1);
+        }
+
         .icon {
             --Iconsax-Color: rgba(var(--title-color), 1);
             --Iconsax-Size: 24px;
