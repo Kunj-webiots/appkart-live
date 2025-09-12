@@ -25,7 +25,9 @@ $outfit: "Outfit",
 sans-serif;
 $poppins:"Poppins",
 sans-serif;
-;
+$inter:"Inter",
+sans-serif;
+
 
 
 :root {
@@ -265,4 +267,19 @@ sans-serif;
     --rating: 248, 153, 10; //#F8990A
     --border: 32, 93, 238;
     --dark-border: 32, 30, 46;
+}
+
+
+.landing {
+    --theme-color: 79, 97, 251;
+    --body-color: 255, 255, 255;
+    --main-color: 40, 40, 40;
+    --title-color: 60, 60, 60;
+    --content-color: 141, 141, 141;
+    --border-color: 127, 131, 132;
+    --button-color: linear-gradient(90.2deg, #4F61FB 0.18%, #CD359A 122.65%);
+
+    -- &.dark-mode {
+        --body-color: 50, 50, 50;
+    }
 }

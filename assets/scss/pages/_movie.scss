@@ -627,13 +627,15 @@
             background-color: rgba(var(--white), 1);
 
             &.active,
-            :active,
-            :hover {
+            &:active,
+            &:hover {
                 border-color: transparent;
+                background-color: rgba(var(--white), 1) !important;
             }
 
             &:not(.btn-check)+.btn:active {
                 border-color: transparent;
+                background-color: rgba(var(--white), 1) !important;
             }
 
             .icli {
@@ -708,6 +710,9 @@
 
     li {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         +li {
             margin-top: 18px;
@@ -736,12 +741,15 @@
                     color: rgba(var(--content-color), 1);
                 }
 
-                i {
-                    --Iconsax-Color: rgba(var(--title-color), 1);
-                    --Iconsax-Size: 16px;
-                    transform: rotate(45deg);
-                }
             }
+
+        }
+
+        i {
+            --Iconsax-Color: rgba(var(--title-color), 1);
+            --Iconsax-Size: 16px;
+            transform: rotate(45deg);
+            cursor: pointer;
         }
     }
 }

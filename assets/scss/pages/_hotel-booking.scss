@@ -772,7 +772,7 @@
         color: rgba(var(--title-color), 1);
         padding: 14px;
         border-radius: 6px;
-        background-color: rgba(var(--white), 1);
+        background-color: rgba(var(--content-color), 0.12);
         text-align: center;
 
         body.dark-mode & {

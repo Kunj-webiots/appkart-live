@@ -631,6 +631,10 @@
         border: none;
         background-color: transparent;
 
+        &.btn {
+            background-color: transparent !important;
+        }
+
         &.active,
         :active,
         :hover {
@@ -639,6 +643,7 @@
 
         &:not(.btn-check)+.btn:active {
             border: transparent !important;
+
         }
 
         .icli {
@@ -1544,6 +1549,10 @@ furniture CSS
                 right: 8px;
                 box-shadow: 0px 2px 8px rgba(var(--black), 0.1);
                 background-color: rgba(var(--white), 1);
+
+                &.btn {
+                    background-color: rgba(var(--white), 1) !important;
+                }
 
                 @media (max-width:600px) {
                     top: calc(3px + (8 - 3) * ((100vw - 320px) / (600 - 320)));

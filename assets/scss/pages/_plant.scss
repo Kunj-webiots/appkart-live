@@ -168,8 +168,17 @@
       color: rgba(var(--white), 1);
       background-color: transparent;
 
+      &:hover {
+        color: rgba(var(--white), 1) !important;
+      }
+
       body.dark-mode & {
+        color: rgba(var(--title-color), 1);
         background-color: transparent;
+
+        &:hover {
+          background-color: transparent !important;
+        }
       }
 
       i {

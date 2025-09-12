@@ -751,7 +751,7 @@ input[type="number"] {
             }
 
             .input-text {
-                border-color: rgba(var(---border-color), 1);
+                border-color: rgba(var(--content-color), 1);
 
                 &:focus {
                     outline: none;
@@ -1156,6 +1156,9 @@ food page CSS
 .food-recent-search-listing {
     li {
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
         a {
             margin-bottom: 15px;
@@ -1184,6 +1187,7 @@ food page CSS
             --Iconsax-Color: rgba(var(--content-color), 1);
             --Iconsax-Size: 24px;
             transform: rotate(45deg);
+            cursor: pointer;
         }
 
         .time-icon {

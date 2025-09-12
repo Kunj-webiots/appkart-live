@@ -1134,8 +1134,14 @@ Hotel Booking Offcanvas
         margin-top: 15px;
         display: flex;
         align-items: center;
-        flex-wrap: nowrap;
         gap: 16px;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
 
         @media (max-width:600px) {
             gap: calc(10px + (16 - 10) * ((100vw - 320px) / (600 - 320)));
@@ -1163,6 +1169,10 @@ Hotel Booking Offcanvas
                 accent-color: rgba(var(--theme-color), 1);
                 border: 1px solid rgba(var(--content-color), 0.2);
                 position: relative;
+
+                @media (max-width:600px) {
+                    @include pseudowh(calc(18px + (20 - 18) * ((100vw - 320px) / (600 - 320))), calc(18px + (20 - 18) * ((100vw - 320px) / (600 - 320))));
+                }
 
                 &::before {
                     @include pseudowh (6px, 12px);

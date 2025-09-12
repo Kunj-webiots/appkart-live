@@ -1254,7 +1254,7 @@ salon CSS
         border-radius: 100%;
     }
 
-    .movie-pofile-content {
+    .movie-profile-content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1281,6 +1281,10 @@ salon CSS
             width: 35px;
             z-index: 1;
             cursor: pointer;
+
+            &::file-selector-button {
+                cursor: pointer;
+            }
 
             [dir="rtl"] & {
                 right: unset;

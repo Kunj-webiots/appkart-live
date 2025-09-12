@@ -783,7 +783,7 @@
     background-color: rgba(var(--white), 1);
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: calc(100vh - 238px);
+    height: calc(100vh - 195px);
     padding-inline: 20px;
 
     @media (max-width:374px) {
@@ -828,13 +828,13 @@
             overflow: hidden;
             border: 1px solid transparent;
 
+            &.swiper-slide-thumb-active {
+                border-color: rgba(var(--theme-color), 1) !important;
+            }
+
             body.dark-mode & {
                 border-color: rgba(var(--bg-color), 1);
                 background-color: rgba(var(--body-color), 1);
-
-                &.swiper-slide-thumb-active {
-                    border-color: rgba(var(--theme-color), 1);
-                }
             }
 
             img {

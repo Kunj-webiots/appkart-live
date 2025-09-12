@@ -33,7 +33,6 @@
     }
 
     &.solid-btn {
-        width: 100%;
         color: rgba(var(--white), 1);
         background-color: rgba(var(--theme-color), 1);
     }
@@ -616,6 +615,12 @@
     display: block;
     text-align: center;
 
+    &:active,
+    &:hover {
+        background-color: rgba(var(--secondary-color), 1) !important;
+        border: none;
+    }
+
     @media (max-width:600px) {
         font-size: calc(15px + (17 - 15) * ((100vw - 320px) / (600 - 320)));
     }
@@ -624,7 +629,7 @@
 
         &:active,
         &:hover {
-            background-color: rgba(var(--secondary-color), 1);
+            background-color: rgba(var(--secondary-color), 1) !important;
             border: none;
         }
     }
