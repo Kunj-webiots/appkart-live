@@ -114,7 +114,7 @@
 // }
 
 /* =============
-food range slider
+ 3.6 Range Slider
 ================*/
 .custom-slider-theme {
     margin-top: 25px;
@@ -131,6 +131,16 @@ food range slider
         color: rgba(var(--title-color), 1);
     }
 
+    .progress-slider {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        height: 8px;
+        border-radius: 15px;
+        background: rgba(var(--theme-color), 1);
+
+    }
+
     .range-slider {
         position: relative;
         width: 100%;
@@ -138,16 +148,6 @@ food range slider
         border-radius: 100px;
         background: rgba(var(--content-color), 0.2);
         margin-top: 55px;
-
-        .progress-slider {
-            position: absolute;
-            z-index: 1;
-            left: 0;
-            right: 0;
-            height: 8px;
-            border-radius: 15px;
-            background: rgba(var(--theme-color), 1);
-        }
 
         input[type="range"] {
             position: absolute;
@@ -164,44 +164,14 @@ food range slider
                 appearance: none;
                 width: 15px;
                 height: 15px;
-                background-color: rgba(var(--theme-color), 1);
+                background-color: rgba(var(--white), 1);
+                border: 4px solid rgba(var(--theme-color), 1);
                 border-radius: 50%;
                 position: relative;
                 margin-top: -3px;
                 z-index: 2;
             }
-
-            &::-moz-range-thumb {
-                pointer-events: auto;
-                width: 15px;
-                height: 15px;
-                background-color: rgba(var(--theme-color), 1);
-                border-radius: 50%;
-                border: none;
-            }
         }
-    }
-
-    .hotel-range-slider {
-        input[type="range"] {
-
-            &::-webkit-slider-thumb {
-                @include pseudowh(16px, 16px);
-                background-color: rgba(var(--white), 1);
-                border: 4px solid rgba(var(--theme-color), 1);
-                margin-top: -1px;
-            }
-
-            &::-moz-range-thumb {
-                @include pseudowh (16px, 16px);
-                pointer-events: auto;
-                background-color: rgba(var(--white), 1);
-                border: 4px solid rgba(var(--theme-color), 1);
-                border-radius: 50%;
-                border: none;
-            }
-        }
-
     }
 
     .range-number {
@@ -217,11 +187,16 @@ food range slider
             background: rgba(var(--theme-color), 1);
             border-radius: 6px;
             text-align: center;
-            color: rgba(var(--black), 1);
+            color: rgba(var(--white), 1);
             padding: 2px 4px;
             pointer-events: auto;
             display: inline-flex;
             align-items: center;
+
+            [dir="rtl"] & {
+                left: unset;
+                right: 0;
+            }
 
             &::after {
                 @include pos;
@@ -235,7 +210,7 @@ food range slider
 
             .rs-label {
                 font-weight: 500;
-                color: rgba(var(--title-color), 1);
+                color: rgba(var(--white), 1);
                 pointer-events: none;
             }
 
@@ -250,22 +225,35 @@ food range slider
             }
         }
 
-        .hotel-range-box {
-            font-weight: 700;
-            font-size: 14px;
-            background: rgba(var(--theme-color), 1);
-            color: rgba(var(--white), 1);
-            padding: 2px 4px;
+    }
+}
 
-            .rs-label {
-                color: rgba(var(--white), 1);
+.food-range-slider {
+    .range-slider {
+        input[type="range"] {
+            &::-webkit-slider-thumb {
+                pointer-events: auto;
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                background-color: rgba(var(--theme-color), 1);
+                border-radius: 50%;
+                position: relative;
+                margin-top: -3px;
+                z-index: 2;
             }
         }
     }
 
-    .hotel-range-number {
-        left: 50%;
-        transform: translateX(-50%);
-        top: -45px;
+    .range-number {
+        .range-box {
+            .rs-label {
+                color: rgba(var(--title-color), 1);
+            }
+
+            input {
+                color: rgba(var(--title-color), 1);
+            }
+        }
     }
 }

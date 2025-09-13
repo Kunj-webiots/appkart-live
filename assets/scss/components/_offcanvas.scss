@@ -987,7 +987,7 @@ reset offcanvas CSS
 Hotel Booking Offcanvas 
 ========================*/
 .offcanvas {
-    &.hotel-theme-offcanvas {
+    &.filter-theme-offcanvas {
         max-width: 600px;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
@@ -1385,7 +1385,6 @@ Hotel Booking Offcanvas
         }
     }
 
-
     .current-location-gps {
         display: inline-flex;
         align-items: center;
@@ -1435,6 +1434,10 @@ Hotel Booking Offcanvas
 
             li {
                 width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding-block: 10px;
 
                 +li {
                     border-top: 1px dashed rgba(var(--content-color), 0.42);

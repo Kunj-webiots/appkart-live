@@ -10539,7 +10539,7 @@ body.dark-mode .reset-contant .button-reset .btn:active {
 /* ====================
 Hotel Booking Offcanvas 
 ========================*/
-.offcanvas.hotel-theme-offcanvas {
+.offcanvas.filter-theme-offcanvas {
   max-width: 600px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -10551,20 +10551,20 @@ Hotel Booking Offcanvas
   padding-inline: 15px;
   background-color: rgba(var(--white), 1);
 }
-.dark-mode .offcanvas.hotel-theme-offcanvas {
+.dark-mode .offcanvas.filter-theme-offcanvas {
   background-color: rgba(var(--body-color), 1);
 }
 @media (max-width: 600px) {
-  .offcanvas.hotel-theme-offcanvas {
+  .offcanvas.filter-theme-offcanvas {
     border-top-left-radius: calc(18px + 32 * (100vw - 320px) / 280);
     border-top-right-radius: calc(18px + 32 * (100vw - 320px) / 280);
   }
 }
-.offcanvas.hotel-theme-offcanvas .offcanvas-body {
+.offcanvas.filter-theme-offcanvas .offcanvas-body {
   padding-top: 35px;
 }
 @media (max-width: 600px) {
-  .offcanvas.hotel-theme-offcanvas .offcanvas-body {
+  .offcanvas.filter-theme-offcanvas .offcanvas-body {
     padding-top: calc(22px + 13 * (100vw - 320px) / 280);
   }
 }
@@ -10955,6 +10955,10 @@ Hotel Booking Offcanvas
 }
 .destination-wrapper .popular-city ul li {
   width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 10px;
 }
 .destination-wrapper .popular-city ul li + li {
   border-top: 1px dashed rgba(var(--content-color), 0.42);
@@ -13928,7 +13932,7 @@ movie CSS
   3.6  Range Slider CSS start
 ==========================*/
 /* =============
-food range slider
+ 3.6 Range Slider
 ================*/
 .custom-slider-theme {
   margin-top: 25px;
@@ -13943,6 +13947,14 @@ food range slider
   font-weight: 700;
   color: rgba(var(--title-color), 1);
 }
+.custom-slider-theme .progress-slider {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  height: 8px;
+  border-radius: 15px;
+  background: rgba(var(--theme-color), 1);
+}
 .custom-slider-theme .range-slider {
   position: relative;
   width: 100%;
@@ -13950,15 +13962,6 @@ food range slider
   border-radius: 100px;
   background: rgba(var(--content-color), 0.2);
   margin-top: 55px;
-}
-.custom-slider-theme .range-slider .progress-slider {
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  height: 8px;
-  border-radius: 15px;
-  background: rgba(var(--theme-color), 1);
 }
 .custom-slider-theme .range-slider input[type=range] {
   position: absolute;
@@ -13978,35 +13981,12 @@ food range slider
           appearance: none;
   width: 15px;
   height: 15px;
-  background-color: rgba(var(--theme-color), 1);
+  background-color: rgba(var(--white), 1);
+  border: 4px solid rgba(var(--theme-color), 1);
   border-radius: 50%;
   position: relative;
   margin-top: -3px;
   z-index: 2;
-}
-.custom-slider-theme .range-slider input[type=range]::-moz-range-thumb {
-  pointer-events: auto;
-  width: 15px;
-  height: 15px;
-  background-color: rgba(var(--theme-color), 1);
-  border-radius: 50%;
-  border: none;
-}
-.custom-slider-theme .hotel-range-slider input[type=range]::-webkit-slider-thumb {
-  width: 16px;
-  height: 16px;
-  background-color: rgba(var(--white), 1);
-  border: 4px solid rgba(var(--theme-color), 1);
-  margin-top: -1px;
-}
-.custom-slider-theme .hotel-range-slider input[type=range]::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  pointer-events: auto;
-  background-color: rgba(var(--white), 1);
-  border: 4px solid rgba(var(--theme-color), 1);
-  border-radius: 50%;
-  border: none;
 }
 .custom-slider-theme .range-number {
   position: absolute;
@@ -14021,11 +14001,15 @@ food range slider
   background: rgba(var(--theme-color), 1);
   border-radius: 6px;
   text-align: center;
-  color: rgba(var(--black), 1);
+  color: rgba(var(--white), 1);
   padding: 2px 4px;
   pointer-events: auto;
   display: inline-flex;
   align-items: center;
+}
+[dir=rtl] .custom-slider-theme .range-number .range-box {
+  left: unset;
+  right: 0;
 }
 .custom-slider-theme .range-number .range-box::after {
   content: "";
@@ -14039,7 +14023,7 @@ food range slider
 }
 .custom-slider-theme .range-number .range-box .rs-label {
   font-weight: 500;
-  color: rgba(var(--title-color), 1);
+  color: rgba(var(--white), 1);
   pointer-events: none;
 }
 .custom-slider-theme .range-number .range-box input {
@@ -14051,20 +14035,24 @@ food range slider
   pointer-events: auto;
   width: 30px;
 }
-.custom-slider-theme .range-number .hotel-range-box {
-  font-weight: 700;
-  font-size: 14px;
-  background: rgba(var(--theme-color), 1);
-  color: rgba(var(--white), 1);
-  padding: 2px 4px;
+
+.food-range-slider .range-slider input[type=range]::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(var(--theme-color), 1);
+  border-radius: 50%;
+  position: relative;
+  margin-top: -3px;
+  z-index: 2;
 }
-.custom-slider-theme .range-number .hotel-range-box .rs-label {
-  color: rgba(var(--white), 1);
+.food-range-slider .range-number .range-box .rs-label {
+  color: rgba(var(--title-color), 1);
 }
-.custom-slider-theme .hotel-range-number {
-  left: 50%;
-  transform: translateX(-50%);
-  top: -45px;
+.food-range-slider .range-number .range-box input {
+  color: rgba(var(--title-color), 1);
 }
 
 /*=====================
