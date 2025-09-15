@@ -1152,53 +1152,6 @@ food page CSS
     }
 }
 
-
-.food-recent-search-listing {
-    li {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        a {
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-
-            @media (max-width: 600px) {
-                margin-bottom: calc(5px + (15 - 5) * ((100vw - 320px) / (600 - 320)));
-            }
-        }
-
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        h5 {
-            width: 100%;
-            font-size: 14px;
-            font-weight: 500;
-            color: rgba(var(--content-color), 1);
-            text-transform: capitalize;
-        }
-
-        .close-icon {
-            --Iconsax-Color: rgba(var(--content-color), 1);
-            --Iconsax-Size: 24px;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
-
-        .time-icon {
-            --Iconsax-Color: rgba(var(--content-color), 1);
-            --Iconsax-Size: 20px;
-            margin-right: 5px;
-            margin-top: -2px;
-        }
-    }
-}
-
 /* ==================== chatting form ==================*/
 .chatting-search {
     margin-top: -55px;

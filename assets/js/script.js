@@ -18,6 +18,7 @@
 // 8. change password JS
 // 9. rating button JS
 // 10. Copy Link JS
+// 11. Search Close JS
 
 /* ======================
  1. Dark Mode Js
@@ -62,6 +63,9 @@ toggle?.addEventListener('change', (e) => {
 window.addEventListener('load', function () {
   setTimeout(function () {
     const loader = document.querySelector('.loader');
+
+    if (!loader) return;
+
     loader.classList.add('hide');
 
     setTimeout(() => {
@@ -69,8 +73,6 @@ window.addEventListener('load', function () {
     }, 800);
   }, 2000);
 });
-
-
 
 /*====================
 4. Ratio JS
@@ -222,9 +224,13 @@ function copyLink(el) {
     alert("Input not found");
   }
 }
-// document.querySelectorAll('.month-date li').forEach(li =>
-//   li.onclick = () => {
-//     document.querySelector('.month-date .active')?.classList.remove('active');
-//     li.classList.add('active');
-//   }
-// );
+/* ================
+11. Search Close JS
+===================*/
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".recent-search-listing .close-icon").forEach(function (icon) {
+    icon.addEventListener("click", function () {
+      this.closest("li").remove();
+    });
+  });
+});

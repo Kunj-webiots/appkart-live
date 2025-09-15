@@ -2,54 +2,110 @@
 /*============
 2. Two side range js
 ==================*/
+// document.addEventListener("DOMContentLoaded", () => {
+//     const rangeMin = document.querySelector(".min-range");
+//     const rangeMax = document.querySelector(".max-range");
+//     const inputMin = document.querySelector(".input-min");
+//     const inputMax = document.querySelector(".input-max");
+//     const boxMin = document.querySelector(".input-min-box");
+//     const boxMax = document.querySelector(".input-max-box");
+//     const progress = document.querySelector(".progress-slider");
+
+//     // Check if all required elements exist
+//     if (!rangeMin || !rangeMax || !inputMin || !inputMax || !boxMin || !boxMax || !progress) {
+//         console.warn("Two-side range slider elements missing.");
+//         return;
+//     }
+
+//     function updateSlider() {
+//         const min = parseInt(rangeMin.value);
+//         const max = parseInt(rangeMax.value);
+//         const maxVal = parseInt(rangeMin.max);
+
+//         if (max - min <= 0) return;
+
+//         progress.style.left = (min / maxVal) * 100 + "%";
+//         progress.style.right = 100 - (max / maxVal) * 100 + "%";
+
+//         inputMin.value = min;
+//         inputMax.value = max;
+
+//         const offset = 22;
+//         boxMin.style.left = `calc(${(min / maxVal) * 100}% - ${offset}px)`;
+//         boxMax.style.left = `calc(${(max / maxVal) * 100}% - ${offset}px)`;
+//     }
+
+//     inputMin.addEventListener("input", () => {
+//         rangeMin.value = inputMin.value;
+//         updateSlider();
+//     });
+
+//     inputMax.addEventListener("input", () => {
+//         rangeMax.value = inputMax.value;
+//         updateSlider();
+//     });
+
+//     rangeMin.addEventListener("input", updateSlider);
+//     rangeMax.addEventListener("input", updateSlider);
+
+//     updateSlider();
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
-    const rangeMin = document.querySelector(".min-range");
-    const rangeMax = document.querySelector(".max-range");
-    const inputMin = document.querySelector(".input-min");
-    const inputMax = document.querySelector(".input-max");
-    const boxMin = document.querySelector(".input-min-box");
-    const boxMax = document.querySelector(".input-max-box");
-    const progress = document.querySelector(".progress-slider");
+    const sliderGroups = document.querySelectorAll(".custom-slider-theme");
 
-    // Check if all required elements exist
-    if (!rangeMin || !rangeMax || !inputMin || !inputMax || !boxMin || !boxMax || !progress) {
-        console.warn("Two-side range slider elements missing.");
-        return;
-    }
+    sliderGroups.forEach(group => {
+        const rangeMin = group.querySelector(".min-range");
+        const rangeMax = group.querySelector(".max-range");
+        const inputMin = group.querySelector(".input-min");
+        const inputMax = group.querySelector(".input-max");
+        const boxMin = group.querySelector(".input-min-box");
+        const boxMax = group.querySelector(".input-max-box");
+        const progress = group.querySelector(".progress-slider");
 
-    function updateSlider() {
-        const min = parseInt(rangeMin.value);
-        const max = parseInt(rangeMax.value);
-        const maxVal = parseInt(rangeMin.max);
+        // Skip if any required element is missing
+        if (!rangeMin || !rangeMax || !inputMin || !inputMax || !boxMin || !boxMax || !progress) {
+            console.warn("Missing elements in slider group.");
+            return;
+        }
 
-        if (max - min <= 0) return;
+        function updateSlider() {
+            const min = parseInt(rangeMin.value);
+            const max = parseInt(rangeMax.value);
+            const maxVal = parseInt(rangeMin.max);
 
-        progress.style.left = (min / maxVal) * 100 + "%";
-        progress.style.right = 100 - (max / maxVal) * 100 + "%";
+            if (max - min <= 0) return;
 
-        inputMin.value = min;
-        inputMax.value = max;
+            progress.style.left = (min / maxVal) * 100 + "%";
+            progress.style.right = 100 - (max / maxVal) * 100 + "%";
 
-        const offset = 22;
-        boxMin.style.left = `calc(${(min / maxVal) * 100}% - ${offset}px)`;
-        boxMax.style.left = `calc(${(max / maxVal) * 100}% - ${offset}px)`;
-    }
+            inputMin.value = min;
+            inputMax.value = max;
 
-    inputMin.addEventListener("input", () => {
-        rangeMin.value = inputMin.value;
+            const offset = 22;
+            boxMin.style.left = `calc(${(min / maxVal) * 100}% - ${offset}px)`;
+            boxMax.style.left = `calc(${(max / maxVal) * 100}% - ${offset}px)`;
+        }
+
+        // Sync input fields to sliders
+        inputMin.addEventListener("input", () => {
+            rangeMin.value = inputMin.value;
+            updateSlider();
+        });
+
+        inputMax.addEventListener("input", () => {
+            rangeMax.value = inputMax.value;
+            updateSlider();
+        });
+
+        // Sync sliders to input fields
+        rangeMin.addEventListener("input", updateSlider);
+        rangeMax.addEventListener("input", updateSlider);
+
         updateSlider();
     });
-
-    inputMax.addEventListener("input", () => {
-        rangeMax.value = inputMax.value;
-        updateSlider();
-    });
-
-    rangeMin.addEventListener("input", updateSlider);
-    rangeMax.addEventListener("input", updateSlider);
-
-    updateSlider();
 });
+
 
 
 /*============

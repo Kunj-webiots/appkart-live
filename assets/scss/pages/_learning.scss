@@ -587,43 +587,16 @@
 
 }
 
-.re-search-list {
+.main-search-list {
     margin-top: 10px;
 
     li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
         +li {
             margin-top: 14px;
 
-            @media (max-width:600px) {
-                margin-top: calc(8px + (14 - 8) * ((100vw - 320px) / (600 - 320)));
-            }
-        }
-
-
-        a {
-            h4 {
+            h5 {
                 font-size: 16px;
                 font-weight: 400;
-                color: rgba(var(--content-color), 1);
-
-                @media (max-width:600px) {
-                    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (600 - 320)));
-                }
-            }
-        }
-
-        .icon {
-            --Iconsax-Color: rgba(var(--content-color), 1);
-            --Iconsax-Size: 20px;
-            transform: rotate(45deg);
-            cursor: pointer;
-
-            @media (max-width:600px) {
-                --IConsax-Size: calc(18px + (20 - 18) * ((100vw - 320px) / (600 - 320)));
             }
         }
     }

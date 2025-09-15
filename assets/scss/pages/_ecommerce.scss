@@ -262,40 +262,6 @@
     }
 }
 
-.recent-search-listing {
-    li {
-        @include flex_space;
-
-        +li {
-            margin-top: 20px;
-
-            @media (max-width:600px) {
-                margin-top: calc(10px + (20 - 10) * ((100vw - 320px) / (600 - 320)));
-            }
-        }
-
-        h5 {
-            font-size: 14px;
-            font-weight: 500;
-            color: rgba(var(--content-color), 1);
-            text-transform: capitalize;
-        }
-
-        .close-icon {
-            --Iconsax-Color: rgba(var(--content-color), 1);
-            --Iconsax-Size: 24px;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
-
-        .time-icon {
-            --Iconsax-Color: rgba(var(--content-color), 1);
-            --Iconsax-Size: 24px;
-        }
-
-    }
-}
-
 /*========================
     cart page CSS 
 ==========================*/

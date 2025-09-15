@@ -275,11 +275,20 @@ sans-serif;
     --body-color: 255, 255, 255;
     --main-color: 40, 40, 40;
     --title-color: 60, 60, 60;
+    --bg-color: 243, 243, 243;
     --content-color: 141, 141, 141;
-    --border-color: 127, 131, 132;
+    --border-color: 233, 233, 233;
     --button-color: linear-gradient(90.2deg, #4F61FB 0.18%, #CD359A 122.65%);
 
-    -- &.dark-mode {
+    &.dark-mode {
+        --border-color: 71, 68, 68;
         --body-color: 50, 50, 50;
+        --title-color: 255, 255, 255;
+        --content-color: 163, 163, 163;
+        --white: 40, 40, 40;
+        --bg-color: 40, 40, 40;
+        --second-color: 50, 50, 50;
+        --dark-bg: 255, 255, 255;
+        --light-bg: 33, 33, 33;
     }
 }

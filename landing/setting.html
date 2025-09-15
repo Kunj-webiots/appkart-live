@@ -34,6 +34,7 @@
     <!-- Iconsax css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
 
+
     <!-- Style css -->
     <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
@@ -49,39 +50,47 @@
             </a>
         </div>
         <div class="header-content">
-            <h2>Buttons</h2>
+            <h2>App Setting</h2>
             <p>15 Multipurpose full apps made just for you.</p>
         </div>
     </header>
     <!-- header  end  -->
 
-    <!-- Button section start -->
-    <section class="section-t-space-2 app-button-section">
+    <!-- setting section start -->
+    <section class="section-t-space2 app-setting-section">
         <div class="custom-container">
-            <ul class="different-button-contant">
+            <h3 class="app-title">Settings</h3>
+            <ul class="settings-options">
                 <li>
-                    <button class="pattern-btn">With Background Pattern</button>
+                    <div class="setting-list">
+                        <div>
+                            <i class="iconsax icon" data-icon="background-layer"></i>
+                        </div>
+                        <div class="setting-content">
+                            <h4>RTL</h4>
+                            <div class="theme-toggle-button">
+                                <input type="checkbox" id="rtlToggle">
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <button class="radius-btn">Radius Button</button>
-                </li>
-                <li>
-                    <button class="round-btn">Rounded Button</button>
-                </li>
-                <li>
-                    <button class="gradient-btn">Gradient Button</button>
-                </li>
-                <li>
-                    <button class="outline-btn">Outline Button</button>
-                </li>
-                <li>
-                    <button class="round-line-btn">Rounded Outline Button</button>
+                    <div class="setting-list">
+                        <div>
+                            <i class="iconsax icon" data-icon="moon"></i>
+                        </div>
+                        <div class="setting-content">
+                            <h4>Dark Mode</h4>
+                            <div class="theme-toggle-button">
+                                <input type="checkbox" id="toggleDarkMode">
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
-    <!-- Button section  end  -->
-
+    <!-- setting section  end  -->
 
     <!-- Bootstrap JS-->
     <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
@@ -91,6 +100,10 @@
 
     <!-- Script JS  -->
     <script src="../assets/js/script.js"></script>
+
+    <!-- Script JS  -->
+    <script src="../assets/js/script.js"></script>
+
 </body>
 
 </html>

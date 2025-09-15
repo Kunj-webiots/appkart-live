@@ -394,36 +394,6 @@
     }
 }
 
-.recent-list {
-    margin-top: 10px;
-
-    li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 14px;
-        font-weight: 400;
-        color: rgba(var(--content-color), 1);
-
-        +li {
-            margin-top: 8px;
-        }
-
-        a {
-            font-size: 14px;
-            font-weight: 400;
-            color: rgba(var(--content-color), 1);
-        }
-
-        .add-icon {
-            --Iconsax-Color: rgba(var(--title-color), 1);
-            --Iconsax-Size: 20px;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
-    }
-}
-
 .tags-list {
     margin-top: 15px;
     display: flex;
@@ -1663,5 +1633,15 @@
         display: flex;
         align-items: flex-start;
         gap: 5px;
+    }
+}
+
+.furniture-search {
+    margin-top: 11px;
+
+    li {
+        +li {
+            margin-top: 8px;
+        }
     }
 }

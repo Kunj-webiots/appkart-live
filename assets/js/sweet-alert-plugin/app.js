@@ -3,7 +3,7 @@
 (function () {
   var SweetAlert_custom = {
     init: function () {
-      document.querySelector(".sweet-15").onclick = async function () {
+      document.querySelector(".sweet-15", ".sweet-16").onclick = async function () {
         const Toast = Swal.mixin({
           toast: true,
           position: "top-end",

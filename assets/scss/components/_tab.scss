@@ -873,98 +873,98 @@ Hotel Review tab
 
     .tab-content {
         margin-top: 20px;
+    }
+}
 
-        .room-slide-wrapper {
-            border: 1px solid rgba(var(--theme-color), 0.1);
-            border-radius: 12px;
+.room-slide-wrapper {
+    border: 1px solid rgba(var(--theme-color), 0.1);
+    border-radius: 12px;
+    margin-top: 10px;
+
+    .room-slide {
+
+        img {
+            width: 100%;
+            height: 182px;
+            object-fit: cover;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        .swiper-pagination {
+            position: relative;
             margin-top: 10px;
+            inset: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-            .room-slide {
-
-                img {
-                    width: 100%;
-                    height: 182px;
-                    object-fit: cover;
-                    border-top-left-radius: 12px;
-                    border-top-right-radius: 12px;
-                }
-
-                .swiper-pagination {
-                    position: relative;
-                    margin-top: 10px;
-                    inset: unset;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    .swiper-pagination-bullet {
-                        @include pseudowh (8px, 8px);
-                        background-color: rgba(var(--content-color), 0.46);
-                        border-radius: 100px;
-                        opacity: 1;
-                    }
-
-                    .swiper-pagination-bullet-active {
-                        @include pseudowh (25px, 8px);
-                        background-color: rgba(var(--theme-color), 1);
-                    }
-                }
+            .swiper-pagination-bullet {
+                @include pseudowh (8px, 8px);
+                background-color: rgba(var(--content-color), 0.46);
+                border-radius: 100px;
+                opacity: 1;
             }
 
-            .room-slide-content {
-                background-color: rgba(var(--white), 1);
-                border-bottom-left-radius: 12px;
-                border-bottom-right-radius: 12px;
-                padding: 15px 10px 12px;
+            .swiper-pagination-bullet-active {
+                @include pseudowh (25px, 8px);
+                background-color: rgba(var(--theme-color), 1);
+            }
+        }
+    }
 
-                h4 {
-                    font-size: 14px;
-                    font-weight: 700;
-                    color: rgba(var(--title-color), 1);
+    .room-slide-content {
+        background-color: rgba(var(--white), 1);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        padding: 15px 10px 12px;
+
+        h4 {
+            font-size: 14px;
+            font-weight: 700;
+            color: rgba(var(--title-color), 1);
+        }
+
+        h5 {
+            margin-top: 3px;
+            color: rgba(var(--theme-color), 1);
+            font-size: 14px;
+            font-weight: 700;
+
+            span {
+                color: rgba(var(--content-color), 1);
+                font-weight: 500;
+                font-size: 13px;
+            }
+
+            h6 {
+                font-size: 13px;
+                font-weight: 700;
+                color: rgba(var(--title-color), 1);
+            }
+        }
+
+        .hotel-room-size {
+            display: flex;
+            gap: 28px;
+            margin-top: 14px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                img {
+                    body.dark-mode & {
+                        filter: invert(1);
+                    }
                 }
 
-                h5 {
-                    margin-top: 3px;
-                    color: rgba(var(--theme-color), 1);
+                h6 {
+                    @include text-ellipsis($line:1);
                     font-size: 14px;
-                    font-weight: 700;
-
-                    span {
-                        color: rgba(var(--content-color), 1);
-                        font-weight: 500;
-                        font-size: 13px;
-                    }
-
-                    h6 {
-                        font-size: 13px;
-                        font-weight: 700;
-                        color: rgba(var(--title-color), 1);
-                    }
-                }
-
-                .hotel-room-size {
-                    display: flex;
-                    gap: 28px;
-                    margin-top: 14px;
-
-                    li {
-                        display: flex;
-                        align-items: center;
-                        gap: 5px;
-
-                        img {
-                            body.dark-mode & {
-                                filter: invert(1);
-                            }
-                        }
-
-                        h6 {
-                            @include text-ellipsis($line:1);
-                            font-size: 14px;
-                            font-weight: 500;
-                            color: rgba(var(--content-color), 1);
-                        }
-                    }
+                    font-weight: 500;
+                    color: rgba(var(--content-color), 1);
                 }
             }
         }

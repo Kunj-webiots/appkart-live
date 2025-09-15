@@ -34,6 +34,9 @@
     <!-- Iconsax css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
 
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../assets/css/vendors/swiper/swiper.min.css">
+
     <!-- Style css -->
     <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
@@ -49,77 +52,61 @@
             </a>
         </div>
         <div class="header-content">
-            <h2>Alert</h2>
-            <p>Small popup windows that display the
-                message and notify some information</p>
+            <h2>Search Bar</h2>
+            <p>Search through a collection list given in the suggestions box</p>
         </div>
     </header>
     <!-- header  end  -->
 
-    <!-- action section start  -->
-    <section class="section-t-space app-action-section">
+    <!-- slider section start -->
+    <section class="section-t-space2 app-slider-section">
         <div class="custom-container">
-            <div class="action-content">
-                <img src="../assets/images/landing/action/2.png" class="img-fluid" alt="alert">
-                <button class="open-btn" type="button" data-bs-toggle="modal" data-bs-target="#feedback-filter">Open
-                    Alert</button>
+            <div class="swiper ecommerce-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="img-fluid product" src="../assets/images/ecommerce/product/11-1.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid product" src="../assets/images/ecommerce/product/11-2.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="img-fluid product" src="../assets/images/ecommerce/product/11-3.jpg" alt="product">
+                    </div>
+                </div>
+                <div class="swiper-pagination product-pagination"></div>
+            </div>
+            <div class="room-slide-wrapper pb-2">
+                <div class="swiper room-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">
+                            <img src="../assets/images/hotel-booking/product/10.jpg" class="img-fluid" alt="room-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/images/hotel-booking/product/11.jpg" class="img-fluid" alt="room-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/images/hotel-booking/product/2.jpg" class="img-fluid" alt="room-image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/images/hotel-booking/product/6.jpg" class="img-fluid" alt="room-image">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- action section  end   -->
-
-    <!-- model section start -->
-    <div class="modal fade feedback-model" id="feedback-filter">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content landing-emoji">
-                <h4>How are you feeling?</h4>
-                <p>We value your feedback so that we can better understand your needs and adjust our service.</p>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="emoji-items">
-                            <li>
-                                <img src="../assets/images/food/icon/5.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/4.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li class="active">
-                                <img src="../assets/images/food/icon/1.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/2.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/3.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="feedback-comment">
-                    <textarea name="text" class="textarea" placeholder="Add a Comment..." id="text-input"
-                        rows="2"></textarea>
-                </div>
-                <button class="btn landing-btn  m_top-20" data-bs-dismiss="modal">SubmitNow</button>
-            </div>
-        </div>
-    </div>
-    <!-- model section  end  -->
-
+    <!-- slider section  end  -->
 
     <!-- Bootstrap JS-->
     <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Active section JS -->
-    <script src="../assets/js/active-section.js"></script>
-
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>
+
+    <!-- swiper js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom-swiper.js"></script>
 
     <!-- Script JS  -->
     <script src="../assets/js/script.js"></script>

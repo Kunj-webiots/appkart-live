@@ -34,6 +34,9 @@
     <!-- Iconsax css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
 
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="../assets/css/flatpickr.min.css">
+
     <!-- Style css -->
     <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
@@ -44,7 +47,7 @@
     <header class="landing-main-header">
         <div class="top-content">
             <img src="../assets/images/logo/logo-white.png" class="img-fluid" alt="logo">
-            <a href="#!" class="setting-icon">
+            <a href="setting.html" class="setting-icon">
                 <i class="iconsax icon" data-icon="setting-1"></i>
             </a>
         </div>
@@ -58,17 +61,11 @@
     <!-- Button section start -->
     <section class="section-t-space-2 app-button-section">
         <div class="custom-container">
-            <ul class="picker-buttons">
-                <li>
-                    <button class="open-btn">Open Date Picker</button>
-                </li>
-                <li>
-                    <button class="open-btn">Open Time Picker</button>
-                </li>
-                <li>
-                    <button class="open-btn">Open Date & Time picker</button>
-                </li>
-            </ul>
+            <div class="datepicker-box">
+                <input type="text" id="datePicker" placeholder="Open Date Picker">
+                <input type="text" id="timePicker" placeholder="Open Time Picker">
+                <input type="text" id="dateTimePicker" placeholder="Open Date & Time picker">
+            </div>
         </div>
     </section>
     <!-- Button section  end  -->
@@ -78,6 +75,13 @@
 
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Date picker -->
+    <script src="../assets/js/vendors/datepicker/flatpickr.js"></script>
+    <script src="../assets/js/vendors/datepicker/custom-datepicker.js"></script>
+
+    <!-- Script JS  -->
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

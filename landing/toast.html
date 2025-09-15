@@ -49,48 +49,60 @@
             </a>
         </div>
         <div class="header-content">
-            <h2>Buttons</h2>
+            <h2>Toast</h2>
             <p>15 Multipurpose full apps made just for you.</p>
         </div>
     </header>
     <!-- header  end  -->
 
-    <!-- Button section start -->
-    <section class="section-t-space-2 app-button-section">
+    <!-- toast section start -->
+    <section class="section-t-space2 app-toast-section">
         <div class="custom-container">
-            <ul class="different-button-contant">
+            <ul class="app-buttons">
                 <li>
-                    <button class="pattern-btn">With Background Pattern</button>
+                    <button class="open-btn" id="successToastBtn">Success Alert</button>
+                    <div class="toast-container">
+                        <div id="successToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <i class="iconsax icon" data-icon="tick-circle"></i>
+                                <h5>Item Successfully Added</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
                 </li>
+
                 <li>
-                    <button class="radius-btn">Radius Button</button>
-                </li>
-                <li>
-                    <button class="round-btn">Rounded Button</button>
-                </li>
-                <li>
-                    <button class="gradient-btn">Gradient Button</button>
-                </li>
-                <li>
-                    <button class="outline-btn">Outline Button</button>
-                </li>
-                <li>
-                    <button class="round-line-btn">Rounded Outline Button</button>
+                    <button class="open-btn" id="errorToastBtn">Error Alert</button>
+                    <div class="toast-container">
+                        <div id="errorToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header toast-head">
+                                <i class="iconsax icon" data-icon="close-circle"></i>
+                                <h5>Product Not Available</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
-    <!-- Button section  end  -->
-
+    <!-- toast section end  -->
 
     <!-- Bootstrap JS-->
-    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src=" ../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Toast JS -->
+    <script src="../assets/js/toast.js"></script>
 
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>
 
     <!-- Script JS  -->
     <script src="../assets/js/script.js"></script>
+
 </body>
 
 </html>

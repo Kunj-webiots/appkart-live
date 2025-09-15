@@ -2047,3 +2047,22 @@
         }
     }
 }
+
+.food-search {
+    li {
+        +li {
+            margin-top: 15px;
+        }
+
+        a {
+            display: flex;
+            align-items: flex-end;
+            gap: 5px;
+
+            .time-icon {
+                --Iconsax-Size: 20px;
+                --Iconsax-Color: rgba(var(--content-color), 1);
+            }
+        }
+    }
+}

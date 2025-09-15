@@ -126,8 +126,8 @@
     }
 
     h4 {
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 16px;
+        font-weight: 600;
         color: rgba(var(--title-color), 1);
     }
 
@@ -148,6 +148,7 @@
         border-radius: 100px;
         background: rgba(var(--content-color), 0.2);
         margin-top: 55px;
+        direction: ltr;
 
         input[type="range"] {
             position: absolute;
@@ -193,9 +194,8 @@
             display: inline-flex;
             align-items: center;
 
-            [dir="rtl"] & {
-                left: unset;
-                right: 0;
+            body.dark-mode & {
+                color: rgba(var(--title-color), 1);
             }
 
             &::after {
@@ -206,12 +206,17 @@
                 border-left: 5px solid transparent;
                 border-right: 5px solid transparent;
                 border-top: 6px solid rgba(var(--theme-color), 1);
+
             }
 
             .rs-label {
                 font-weight: 500;
                 color: rgba(var(--white), 1);
                 pointer-events: none;
+
+                body.dark-mode & {
+                    color: rgba(var(--title-color), 1);
+                }
             }
 
             input {
@@ -222,6 +227,10 @@
                 text-align: center;
                 pointer-events: auto;
                 width: 30px;
+
+                body.dark-mode & {
+                    color: rgba(var(--title-color), 1);
+                }
             }
         }
 
@@ -254,6 +263,19 @@
             input {
                 color: rgba(var(--title-color), 1);
             }
+        }
+    }
+
+    .range-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+
+        span {
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(var(--content-color), 1);
         }
     }
 }

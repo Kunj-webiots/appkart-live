@@ -300,33 +300,12 @@
     }
 }
 
-.salon-search-list {
+.salon-search {
     margin-top: 15px;
 
     li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        +li {
-            margin-top: 20px;
-
-            @media (max-width:600px) {
-                margin-top: calc(12px + (20 - 12) * ((100vw - 320px) / (600 - 320)));
-            }
-        }
-
-        a {
-            font-size: 15px;
-            font-weight: 400;
-            color: rgba(var(--content-color), 1);
-        }
-
         .close-icon {
-            transform: rotate(45deg);
-            --Iconsax-Color: rgba(var(--content-color), 1);
-            --Iconsax-Size: 18px;
-            cursor: pointer;
+            --Iconsax-Size: 20px;
         }
     }
 }
@@ -1242,6 +1221,7 @@
     margin: 0 auto;
     position: relative;
     margin-top: 24px;
+    direction: ltr;
 
     .range-input {
         -webkit-appearance: none;

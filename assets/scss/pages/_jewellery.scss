@@ -990,3 +990,17 @@
         }
     }
 }
+
+.jewellery-search {
+    margin-top: 10px;
+
+    li {
+        +li {
+            margin-top: 16px;
+        }
+
+        a {
+            font-weight: 400;
+        }
+    }
+}

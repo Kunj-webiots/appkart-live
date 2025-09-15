@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="appkart">
+    <meta name="keywords" content="appkart">
+    <meta name="author" content="appkart">
+    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
+    <title>Appkart</title>
+    <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
+    <meta name="title-color" content="#00162E">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="appkart">
+    <meta name="msapplication-TileImage" content="../assets/images/logo/favicon.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Google font css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css"
+        href="../assets/css/vendors/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Iconsax css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/iconsax.css">
+
+    <!-- Style css -->
+    <link id="change-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body class="landing inter-font">
+
+    <!-- header start -->
+    <header class="landing-main-header">
+        <div class="top-content">
+            <img src="../assets/images/logo/logo-white.png" class="img-fluid" alt="logo">
+            <a href="setting.html" class="setting-icon">
+                <i class="iconsax icon" data-icon="setting-1"></i>
+            </a>
+        </div>
+        <div class="header-content">
+            <h2>Tabs</h2>
+            <p>Search through a collection list given in the suggestions box</p>
+        </div>
+    </header>
+    <!-- header  end  -->
+
+    <!-- tab section start -->
+    <section class="section-t-space2 app-tab-section">
+        <div class="custom-container">
+            <div class="app-tab-wrapper">
+                <h2>With Icon Tab</h2>
+                <ul class="hotel-tab">
+                    <li class="active"><a href="#!"><i class="iconsax" data-icon="house-2"></i>Hotel</a></li>
+                    <li><a href="#!"><i class="iconsax" data-icon="building-3"></i>Homestay</a></li>
+                    <li><a href="#!"><i class="iconsax" data-icon="building-1"></i>Apart</a></li>
+                    <li><a href="#!"><i class="iconsax" data-icon="house-1"></i>Rehouses</a></li>
+                </ul>
+            </div>
+            <div class="app-tab-wrapper">
+                <h2>Minimal Tab</h2>
+                <div class="blog-categories-tab">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                data-bs-target="#all-tab-pane" type="button" role="tab"
+                                aria-selected="true">All</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="business-tab" data-bs-toggle="tab"
+                                data-bs-target="#business-tab-pane" type="button" role="tab" aria-selected="false"
+                                tabindex="-1">Business</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="event-tab" data-bs-toggle="tab"
+                                data-bs-target="#event-tab-pane" type="button" role="tab" aria-selected="false"
+                                tabindex="-1">Event</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="eduction-tab" data-bs-toggle="tab"
+                                data-bs-target="#eduction-tab-pane" type="button" role="tab" aria-selected="false"
+                                tabindex="-1">Eduction</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tec-tab" data-bs-toggle="tab" data-bs-target="#tec-tab-pane"
+                                type="button" role="tab" aria-selected="false" tabindex="-1">Technology</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app-tab-wrapper">
+                <h2>Shadow Tab</h2>
+                <div class="learn-wishlist-tab-wrapper">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="design-tab" data-bs-toggle="tab"
+                                data-bs-target="#design-tab-pane" type="button" role="tab"
+                                aria-controls="design-tab-pane" aria-selected="true">Design</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="coding-tab" data-bs-toggle="tab"
+                                data-bs-target="#coding-tab-pane" type="button" role="tab"
+                                aria-controls="coding-tab-pane" aria-selected="false">Coding</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="market-tab" data-bs-toggle="tab"
+                                data-bs-target="#market-tab-pane" type="button" role="tab"
+                                aria-controls="market-tab-pane" aria-selected="false">Marketing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="fitness-tab" data-bs-toggle="tab"
+                                data-bs-target="#fitness-tab-pane" type="button" role="tab"
+                                aria-controls="fitness-tab-pane" aria-selected="false">Health & Fitness</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tab section  end  -->
+
+    <!-- Bootstrap JS-->
+    <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Iconsax JS-->
+    <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Active section JS -->
+    <script src="../assets/js/active-section.js"></script>
+
+    <!-- Script JS  -->
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

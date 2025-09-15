@@ -366,6 +366,10 @@ food returns page offcanvas
                         font-size: 14px;
                         font-weight: 500;
                         color: rgba(var(--content-color), 1);
+
+                        [dir="rtl"] & {
+                            padding-inline: 16px 0;
+                        }
                     }
                 }
 
@@ -406,6 +410,7 @@ food returns page offcanvas
 
         body.dark-mode & {
             background-color: rgba(var(--second-color), 1);
+            color: rgb(255, 255, 255);
         }
     }
 }
@@ -1009,7 +1014,8 @@ Hotel Booking Offcanvas
         }
 
         .offcanvas-body {
-            padding-top: 35px;
+            padding: 35px;
+            padding-inline: 6px;
 
             @media (max-width:600px) {
                 padding-top: calc(22px + (35 - 22) * ((100vw - 320px) / (600 - 320)));
@@ -1104,7 +1110,7 @@ Hotel Booking Offcanvas
 
     h3 {
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 600;
         color: rgba(var(--title-color), 1);
     }
 
@@ -1120,9 +1126,16 @@ Hotel Booking Offcanvas
             font-weight: 500;
             color: rgba(var(--title-color), 1);
             gap: 5px;
-            padding: 4px 15px;
+            padding: 6px 10px;
             background-color: rgba(var(--content-color), 0.1);
             border-radius: 60px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &.active {
+                background-color: rgba(var(--theme-color), 1);
+                color: rgba(var(--white), 1);
+            }
 
             img {
                 @include pseudowh(15px, 15px);
@@ -1155,6 +1168,7 @@ Hotel Booking Offcanvas
             font-weight: 500;
             color: rgba(var(--title-color), 1);
             white-space: nowrap;
+            cursor: pointer;
 
             @media (max-width:600px) {
                 font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (600 - 320)));

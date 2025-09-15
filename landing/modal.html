@@ -44,7 +44,7 @@
     <header class="landing-main-header">
         <div class="top-content">
             <img src="../assets/images/logo/logo-white.png" class="img-fluid" alt="logo">
-            <a href="#!" class="setting-icon">
+            <a href="setting.html" class="setting-icon">
                 <i class="iconsax icon" data-icon="setting-1"></i>
             </a>
         </div>
@@ -68,24 +68,24 @@
     <!-- action section  end   -->
 
     <!-- filter offcanvas section start -->
-    <div class="offcanvas offcanvas-bottom  hotel-theme-offcanvas" tabindex="-1" id="offcanvasFilter">
+    <div class="offcanvas offcanvas-bottom  filter-theme-offcanvas" tabindex="-1" id="offcanvasFilter">
         <div class="offcanvas-header hotel-theme-header">
             <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter</h5>
         </div>
         <div class="offcanvas-body small pt-0">
             <div class="custom-slider-theme">
                 <h4>Guest Details</h4>
-                <div class="range-slider hotel-range-slider">
+                <div class="range-slider">
                     <div class="progress-slider"></div>
                     <input type="range" min="0" max="100" value="30" class="min-range">
                     <input type="range" min="0" max="100" value="60" class="max-range">
 
-                    <div class="range-number hotel-range-number">
-                        <div class="range-box input-min-box hotel-range-box">
+                    <div class="range-number ">
+                        <div class="range-box input-min-box">
                             <span class="rs-label">$</span>
                             <input type="number" value="30" class="input-min">
                         </div>
-                        <div class="range-box input-max-box hotel-range-box">
+                        <div class="range-box input-max-box">
                             <span class="rs-label">$</span>
                             <input type="number" value="60" class="input-max">
                         </div>
@@ -97,15 +97,15 @@
                 <ul class="hotel-tab m_top-12">
                     <li><a href="#!"><i class="iconsax" data-icon="house-2"></i>Hotel</a></li>
                     <li><a href="#!"><i class="iconsax" data-icon="building-3"></i>Homestay</a></li>
-                    <li><a href="#!"><i class="iconsax" data-icon="building-1"></i>Apart</a></li>
+                    <li class="active"><a href="#!"><i class="iconsax" data-icon="building-1"></i>Apart</a></li>
                     <li><a href="#!"><i class="iconsax" data-icon="house-1"></i>Rehouses</a></li>
                 </ul>
             </div>
             <div class="hotel-filter-wrapper">
                 <h3>Star Rating</h3>
-                <ul class="hotel-star-rating">
+                <ul class="hotel-star-rating hotel-tab">
                     <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">5</li>
-                    <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">4</li>
+                    <li class="active"><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">4</li>
                     <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">3</li>
                     <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">2</li>
                     <li><img src="../assets/images/svg/star-fill.svg" class="img-fluid" alt="star">1</li>
@@ -129,8 +129,8 @@
                 </div>
             </div>
             <div class="hotel-review-box hotel-reset">
-                <a href="home.html" class="reset-btn w-100">Reset</a>
-                <a href="category.html" class="review-button">Apply Filter</a>
+                <a href="#!" class="reset-btn w-100">Reset</a>
+                <a href="#!" class="review-button">Apply Filter</a>
             </div>
         </div>
         <div class="panel-space-sm"></div>
@@ -143,8 +143,14 @@
     <!-- Range slider Js  -->
     <script src="../assets/js/range-slider.js"></script>
 
+    <!-- Active JS -->
+    <script src="../assets/js/active-section.js"></script>
+
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Script JS  -->
+    <script src="../assets/js/script.js"></script>
 
 </body>
 

@@ -740,20 +740,11 @@
                     font-size: 14px;
                     color: rgba(var(--content-color), 1);
                 }
-
             }
 
         }
-
-        i {
-            --Iconsax-Color: rgba(var(--title-color), 1);
-            --Iconsax-Size: 16px;
-            transform: rotate(45deg);
-            cursor: pointer;
-        }
     }
 }
-
 
 
 .show-payment-list {

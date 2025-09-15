@@ -49,74 +49,67 @@
             </a>
         </div>
         <div class="header-content">
-            <h2>Alert</h2>
-            <p>Small popup windows that display the
-                message and notify some information</p>
+            <h2>Ranger Slider</h2>
+            <p>It allows you to select a value or range of values between a specified min and max.</p>
         </div>
     </header>
     <!-- header  end  -->
 
-    <!-- action section start  -->
-    <section class="section-t-space app-action-section">
+    <!-- range slider section start -->
+    <section class="section-t-space-2 app-range-section">
         <div class="custom-container">
-            <div class="action-content">
-                <img src="../assets/images/landing/action/2.png" class="img-fluid" alt="alert">
-                <button class="open-btn" type="button" data-bs-toggle="modal" data-bs-target="#feedback-filter">Open
-                    Alert</button>
+            <div class="custom-slider-theme food-range-slider">
+                <h3 class="app-title">Pricing Slider(1)</h3>
+                <div class="range-slider">
+                    <div class="progress-slider"></div>
+                    <input type="range" min="0" max="100" value="20" class="min-range">
+                    <input type="range" min="0" max="100" value="80" class="max-range">
+
+                    <div class="range-number">
+                        <div class="range-box input-min-box">
+                            <span class="rs-label  text-white">Rs.</span>
+                            <input type="number" value="20" class="input-min text-white">
+                        </div>
+                        <div class="range-box input-max-box">
+                            <span class="rs-label  text-white">Rs.</span>
+                            <input type="number" value="80" class="input-max text-white">
+                        </div>
+                    </div>
+                </div>
+                <div class="range-content">
+                    <span>Rs.0</span>
+                    <span>Rs.1000</span>
+                </div>
+            </div>
+
+            <div class="custom-slider-theme">
+                <h3 class="app-title">Pricing Slider(2)</h3>
+                <div class="range-slider">
+                    <div class="progress-slider"></div>
+                    <input type="range" min="0" max="100" value="30" class="min-range">
+                    <input type="range" min="0" max="100" value="60" class="max-range">
+
+                    <div class="range-number">
+                        <div class="range-box input-min-box hotel-range-box">
+                            <span class="rs-label">$</span>
+                            <input type="number" value="30" class="input-min">
+                        </div>
+                        <div class="range-box input-max-box hotel-range-box">
+                            <span class="rs-label">$</span>
+                            <input type="number" value="60" class="input-max">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- action section  end   -->
-
-    <!-- model section start -->
-    <div class="modal fade feedback-model" id="feedback-filter">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content landing-emoji">
-                <h4>How are you feeling?</h4>
-                <p>We value your feedback so that we can better understand your needs and adjust our service.</p>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="emoji-items">
-                            <li>
-                                <img src="../assets/images/food/icon/5.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/4.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li class="active">
-                                <img src="../assets/images/food/icon/1.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/2.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/3.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="feedback-comment">
-                    <textarea name="text" class="textarea" placeholder="Add a Comment..." id="text-input"
-                        rows="2"></textarea>
-                </div>
-                <button class="btn landing-btn  m_top-20" data-bs-dismiss="modal">SubmitNow</button>
-            </div>
-        </div>
-    </div>
-    <!-- model section  end  -->
-
+    <!-- range slider section  end  -->
 
     <!-- Bootstrap JS-->
     <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Active section JS -->
-    <script src="../assets/js/active-section.js"></script>
+    <!--  range slider -->
+    <script src="../assets/js/range-slider.js"></script>
 
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>

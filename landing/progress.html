@@ -49,81 +49,49 @@
             </a>
         </div>
         <div class="header-content">
-            <h2>Alert</h2>
-            <p>Small popup windows that display the
-                message and notify some information</p>
+            <h2>Progress Bar</h2>
+            <p>It inform users about the status of ongoing processes.</p>
         </div>
     </header>
     <!-- header  end  -->
 
-    <!-- action section start  -->
-    <section class="section-t-space app-action-section">
+    <!-- progress section start -->
+    <section class="section-t-space-2 app-progress-section">
         <div class="custom-container">
-            <div class="action-content">
-                <img src="../assets/images/landing/action/2.png" class="img-fluid" alt="alert">
-                <button class="open-btn" type="button" data-bs-toggle="modal" data-bs-target="#feedback-filter">Open
-                    Alert</button>
+            <div class="app-progress-box">
+                <h2>Progress Bar</h2>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar"></div>
+                </div>
+                <h5>55% Complete</h5>
+            </div>
+            <div class="app-progress-box">
+                <h2>With Label</h2>
+                <div class="progress label" role="progressbar" aria-label="Example with label" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar label-bar">75%</div>
+                </div>
+            </div>
+            <div class="app-progress-box">
+                <h2>With Striped</h2>
+                <div class="progress striped" role="progressbar" aria-label="Animated striped example"
+                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- action section  end   -->
-
-    <!-- model section start -->
-    <div class="modal fade feedback-model" id="feedback-filter">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content landing-emoji">
-                <h4>How are you feeling?</h4>
-                <p>We value your feedback so that we can better understand your needs and adjust our service.</p>
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="emoji-items">
-                            <li>
-                                <img src="../assets/images/food/icon/5.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/4.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li class="active">
-                                <img src="../assets/images/food/icon/1.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/2.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                            <li>
-                                <img src="../assets/images/food/icon/3.svg" alt="emoji">
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="feedback-comment">
-                    <textarea name="text" class="textarea" placeholder="Add a Comment..." id="text-input"
-                        rows="2"></textarea>
-                </div>
-                <button class="btn landing-btn  m_top-20" data-bs-dismiss="modal">SubmitNow</button>
-            </div>
-        </div>
-    </div>
-    <!-- model section  end  -->
-
+    <!-- progress section  end  -->
 
     <!-- Bootstrap JS-->
     <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
-
-    <!-- Active section JS -->
-    <script src="../assets/js/active-section.js"></script>
 
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>
 
     <!-- Script JS  -->
     <script src="../assets/js/script.js"></script>
-
 </body>
 
 </html>
