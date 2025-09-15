@@ -367,7 +367,7 @@
 
             &:hover,
             &:active {
-                color: rgba(var(--theme-color), 1) !important;
+                color: rgba(var(--theme-color), 1);
             }
 
             body.dark-mode & {

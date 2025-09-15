@@ -163,6 +163,12 @@
         position: relative;
 
         .form-control {
+            border: none;
+
+            &:focus {
+                border: none !important;
+            }
+
             body.dark-mode & {
                 background-color: rgba(var(--dark-bg), 1);
                 color: rgba(var(--title-color), 1);

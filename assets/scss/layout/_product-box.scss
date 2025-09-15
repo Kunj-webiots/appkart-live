@@ -31,10 +31,15 @@
             background-color: rgba(var(--white), 1);
             border: none;
 
+            &.btn {
+                background-color: rgba(var(--white), 1) !important;
+            }
+
             &.active,
             :active,
             :hover {
                 border: transparent !important;
+                background-color: rgba(var(--white), 1) !important;
             }
 
             &:not(.btn-check)+.btn:active {
@@ -371,8 +376,9 @@
         @include flex_center;
         width: 80px;
         height: 65px;
-        background-color: rgba(var(--light-bg), 1);
+        background-color: rgba(var(--light-bg), 0.7);
         border: 1px solid rgba(var(--black), 0.03);
+        border-radius: 6px;
 
         .cart-img {
             border-radius: 6px;
@@ -523,6 +529,8 @@
         border-radius: 6px;
         width: 100%;
         padding: 10px;
+        box-shadow: none;
+        background-color: rgba(var(--light-bg), 1);
 
         @media (max-width: 600px) {
             height: calc(100px + (125 - 100) * ((100vw - 320px) / (600 - 320)));

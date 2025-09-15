@@ -219,7 +219,7 @@
 
 .order-address {
     padding: 15px;
-    background-color: rgba(var(--light-bg), 1);
+    background-color: rgba(var(--light-bg), 0.7);
     border-radius: 8px;
     border: 1px solid rgba(var(--border-color), 1);
 
@@ -251,6 +251,11 @@
         color: rgba(var(--white), 1);
         background-color: rgba(var(--theme-color), 1);
         border-radius: 6px;
+
+        &:hover,
+        :active {
+            color: rgba(var(--white), 1) !important;
+        }
     }
 
     .fixed-panel-content {
@@ -264,14 +269,14 @@
             font-weight: 700;
             line-height: 1;
             margin-top: 5px;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(var(--white), 1);
         }
 
         h6 {
             font-weight: 400;
             font-size: 12px;
             line-height: 1;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(var(--white), 1);
         }
 
         .fixed-btn {
@@ -282,11 +287,11 @@
             font-size: 16px;
             font-weight: 700;
             text-transform: capitalize;
-            color: rgba(255, 255, 255, 1);
+            color: rgba(var(--white), 1);
             background-color: transparent;
 
             i {
-                --Iconsax-Color: rgba(255, 255, 255, 1);
+                --Iconsax-Color: rgba(var(--white), 1);
                 --Iconsax-Size: 16px;
             }
         }
@@ -478,7 +483,7 @@
         @include flex_center;
         padding: 5px;
         background-color: rgba(var(--theme-color), 1);
-        --Iconsax-Color: rgba(255, 255, 255, 1);
+        --Iconsax-Color: rgba(var(--white), 1);
         --Iconsax-Size: 18px;
         border-radius: 4px;
     }

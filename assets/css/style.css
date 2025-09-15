@@ -20504,10 +20504,14 @@ salon CSS
   background-color: rgba(var(--white), 1);
   border: none;
 }
+.product-box .img-part .wishlist-btn.btn {
+  background-color: rgba(var(--white), 1) !important;
+}
 .product-box .img-part .wishlist-btn.active,
 .product-box .img-part .wishlist-btn :active,
 .product-box .img-part .wishlist-btn :hover {
   border: transparent !important;
+  background-color: rgba(var(--white), 1) !important;
 }
 .product-box .img-part .wishlist-btn:not(.btn-check) + .btn:active {
   border: transparent !important;
@@ -20800,8 +20804,9 @@ body.dark-mode .cart-product-box .product-content .plus-minus input {
   justify-content: center;
   width: 80px;
   height: 65px;
-  background-color: rgba(var(--light-bg), 1);
+  background-color: rgba(var(--light-bg), 0.7);
   border: 1px solid rgba(var(--black), 0.03);
+  border-radius: 6px;
 }
 .plant-horizontal-product-box .img-part .cart-img {
   border-radius: 6px;
@@ -20928,6 +20933,8 @@ body.dark-mode .grocery-product-box .img-part {
   border-radius: 6px;
   width: 100%;
   padding: 10px;
+  box-shadow: none;
+  background-color: rgba(var(--light-bg), 1);
 }
 @media (max-width: 600px) {
   .grocery-product-box .img-part {
@@ -23707,7 +23714,7 @@ body.dark-mode .fixed-panel .fixed-panel-content {
   white-space: nowrap;
 }
 .fixed-panel .fixed-panel-content .fixed-btn:hover, .fixed-panel .fixed-panel-content .fixed-btn:active {
-  color: rgba(var(--theme-color), 1) !important;
+  color: rgba(var(--theme-color), 1);
 }
 body.dark-mode .fixed-panel .fixed-panel-content .fixed-btn {
   color: rgba(var(--white), 1);
@@ -24655,7 +24662,7 @@ body.dark-mode .product-details-section .plus-minus .icon {
 
 .order-address {
   padding: 15px;
-  background-color: rgba(var(--light-bg), 1);
+  background-color: rgba(var(--light-bg), 0.7);
   border-radius: 8px;
   border: 1px solid rgba(var(--border-color), 1);
 }
@@ -24683,6 +24690,10 @@ body.dark-mode .product-details-section .plus-minus .icon {
   background-color: rgba(var(--theme-color), 1);
   border-radius: 6px;
 }
+.grocery-fixed-panel .fixed-btn:hover,
+.grocery-fixed-panel .fixed-btn :active {
+  color: rgba(var(--white), 1) !important;
+}
 .grocery-fixed-panel .fixed-panel-content {
   padding: 10px 15px;
   color: rgba(var(--white), 1);
@@ -24694,13 +24705,13 @@ body.dark-mode .product-details-section .plus-minus .icon {
   font-weight: 700;
   line-height: 1;
   margin-top: 5px;
-  color: rgb(255, 255, 255);
+  color: rgba(var(--white), 1);
 }
 .grocery-fixed-panel .fixed-panel-content h6 {
   font-weight: 400;
   font-size: 12px;
   line-height: 1;
-  color: rgb(255, 255, 255);
+  color: rgba(var(--white), 1);
 }
 .grocery-fixed-panel .fixed-panel-content .fixed-btn {
   padding: 0;
@@ -24710,11 +24721,11 @@ body.dark-mode .product-details-section .plus-minus .icon {
   font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
-  color: rgb(255, 255, 255);
+  color: rgba(var(--white), 1);
   background-color: transparent;
 }
 .grocery-fixed-panel .fixed-panel-content .fixed-btn i {
-  --Iconsax-Color: rgba(255, 255, 255, 1);
+  --Iconsax-Color: rgba(var(--white), 1);
   --Iconsax-Size: 16px;
 }
 
@@ -24890,7 +24901,7 @@ body.dark-mode .map-part .map-details {
   justify-content: center;
   padding: 5px;
   background-color: rgba(var(--theme-color), 1);
-  --Iconsax-Color: rgba(255, 255, 255, 1);
+  --Iconsax-Color: rgba(var(--white), 1);
   --Iconsax-Size: 18px;
   border-radius: 4px;
 }
@@ -33905,6 +33916,12 @@ body.dark-mode .choose-cab-list li a {
   border: 1px solid rgba(var(--content-color), 0.4);
   border-radius: 6px;
   position: relative;
+}
+.booking-calender-list .datepicker-container .form-control {
+  border: none;
+}
+.booking-calender-list .datepicker-container .form-control:focus {
+  border: none !important;
 }
 body.dark-mode .booking-calender-list .datepicker-container .form-control {
   background-color: rgba(var(--dark-bg), 1);
