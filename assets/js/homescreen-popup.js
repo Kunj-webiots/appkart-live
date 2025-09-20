@@ -1,26 +1,6 @@
 /*==========================
  add to home screen popup js
  ==========================*/
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-  deferredPrompt = e;
-});
-
-const installApp = document.getElementById('installApp');
-
-installApp.addEventListener('click', async () => {
-  if (deferredPrompt !== null) {
-    deferredPrompt.prompt();
-    const {
-      outcome
-    } = await deferredPrompt.userChoice;
-    if (outcome === 'accepted') {
-      deferredPrompt = null;
-    }
-  }
-});
-
 // let deferredPrompt;
 
 // window.addEventListener('beforeinstallprompt', (e) => {
@@ -111,28 +91,28 @@ installApp.addEventListener('click', async () => {
 
 
 
-// let deferredPrompt;
-// const installApp = document.getElementById('installApp');
+let deferredPrompt;
+const installApp = document.getElementById('installApp');
 
-// // Listen for beforeinstallprompt
-// window.addEventListener('beforeinstallprompt', (e) => {
-//   e.preventDefault();            // Stop auto prompt
-//   deferredPrompt = e;            // Save event for later
-//   installApp.style.display = 'block'; // Show install button
-// });
+// Listen for beforeinstallprompt
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();            // Stop auto prompt
+  deferredPrompt = e;            // Save event for later
+  installApp.style.display = 'block'; // Show install button
+});
 
-// // Handle click
-// installApp.addEventListener('click', async () => {
-//   if (!deferredPrompt) {
-//     console.log("Install prompt not available yet");
-//     return;
-//   }
+// Handle click
+installApp.addEventListener('click', async () => {
+  if (!deferredPrompt) {
+    console.log("Install prompt not available yet");
+    return;
+  }
 
-//   deferredPrompt.prompt(); // Show install dialog
+  deferredPrompt.prompt(); // Show install dialog
 
-//   const { outcome } = await deferredPrompt.userChoice;
-//   console.log("User choice:", outcome);
+  const { outcome } = await deferredPrompt.userChoice;
+  console.log("User choice:", outcome);
 
-//   deferredPrompt = null;         // Reset
-//   installApp.style.display = 'none'; // Hide button again
-// });
+  deferredPrompt = null;         // Reset
+  installApp.style.display = 'none'; // Hide button again
+});

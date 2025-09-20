@@ -138,62 +138,49 @@ const filesToCache = [
 /* ============================
    Install event
    ============================ */
-// self.addEventListener("install", (event) => {
-//   event.waitUntil(
-//     caches.open(cacheName).then((cache) => {
-//       console.log("Service Worker: Caching app shell");
-//       return cache.addAll(filesToCache);
-//     })
-//   );
-//   self.skipWaiting();
-// });
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches.open(cacheName).then((cache) => {
+      console.log("Service Worker: Caching app shell");
+      return cache.addAll(filesToCache);
+    })
+  );
+  self.skipWaiting();
+});
 
-// /* ============================
-//    Activate event
-//    ============================ */
-// self.addEventListener("activate", (event) => {
-//   event.waitUntil(
-//     caches.keys().then((keyList) =>
-//       Promise.all(
-//         keyList.map((key) => {
-//           if (key !== cacheName) {
-//             console.log("Service Worker: Removing old cache", key);
-//             return caches.delete(key);
-//           }
-//         })
-//       )
-//     )
-//   );
-//   self.clients.claim();
-// });
+/* ============================
+   Activate event
+   ============================ */
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys().then((keyList) =>
+      Promise.all(
+        keyList.map((key) => {
+          if (key !== cacheName) {
+            console.log("Service Worker: Removing old cache", key);
+            return caches.delete(key);
+          }
+        })
+      )
+    )
+  );
+  self.clients.claim();
+});
 
-// /* ============================
-//    Fetch event
-//    ============================ */
-// self.addEventListener("fetch", (event) => {
-//   event.respondWith(
-//     caches.match(event.request).then((cachedResponse) => {
-//       // Return cached response OR fetch from network
-//       return (
-//         cachedResponse ||
-//         fetch(event.request).catch(() => {
-//           // Optional: return offline fallback page here
-//           // return caches.match("/offline.html");
-//         })
-//       );
-//     })
-//   );
-// });
-
-
-
-setTimeout(() => {
-  self.addEventListener("install", function (e) {
-    e.waitUntil(
-      caches.open(cacheName).then(function (cache) {
-        return cache.addAll(filesToCache);
-      })
-    );
-    self.skipWaiting();
-  });
-}, 500);
+/* ============================
+   Fetch event
+   ============================ */
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((cachedResponse) => {
+      // Return cached response OR fetch from network
+      return (
+        cachedResponse ||
+        fetch(event.request).catch(() => {
+          // Optional: return offline fallback page here
+          // return caches.match("/offline.html");
+        })
+      );
+    })
+  );
+});
