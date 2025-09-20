@@ -2,6 +2,133 @@
   3.4  Offcanvas CSS
 ==========================*/
 .offcanvas {
+
+    &.addtohome-popup {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: auto;
+        border-top: none;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: transparent;
+
+        .btn-close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            opacity: 1;
+            font-size: 12px;
+            border-radius: 100%;
+            background-color: rgba(var(--white), 1);
+            box-shadow: none;
+
+            &.close {
+                background-color: transparent;
+                filter: invert(1);
+            }
+
+            .dark-mode & {
+                filter: invert(1);
+            }
+
+            [dir="rtl"] & {
+                left: 10px;
+                right: unset;
+            }
+        }
+
+        .offcanvas-body {
+            text-align: right;
+            background-color: rgba(var(--white), 1);
+            padding: 15px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+            &.dark-theme {
+                background-color: rgba(var(--body-color), 1);
+
+                .install-app {
+                    color: rgba(var(--black), 1);
+
+                    &:hover {
+                        color: rgba(var(--black), 1) !important;
+                    }
+                }
+            }
+
+            [dir="rtl"] & {
+                text-align: left;
+            }
+
+            .app-info {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                text-align: left;
+
+                [dir="rtl"] & {
+                    text-align: right;
+                }
+
+                .content {
+                    padding-left: 15px;
+
+                    [dir="rtl"] & {
+                        padding-left: 0;
+                        padding-right: 15px;
+                    }
+
+                    h3 {
+                        font-weight: 600;
+                        color: rgba(var(--title-color), 1);
+                    }
+
+                    a {
+                        color: rgba(var(--content-color), 1);
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: rgba(var(--theme-color), 1);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .install-app {
+                display: inline-block;
+                background-color: rgba(var(--theme-color), 1);
+                color: rgba(var(--white), 1);
+
+                &.theme-btn {
+                    background: var(--theme-color);
+                }
+            }
+        }
+    }
+
+
+    &.addtohome-popup {
+        animation: slideUp 0.4s ease;
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+
+
+
+
+
     &.sidebar-offcanvas {
         width: 280px;
         background-color: rgba(var(--white), 1);

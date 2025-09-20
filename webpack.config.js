@@ -36,11 +36,11 @@ module.exports = {
             filename: "style.css",
         }),
         new BrowserSyncPlugin({
-            files: ["landing/index.html"],
+            files: ["blog/index.html"],
             host: "localhost",
             port: 3000,
             server: {
-                baseDir: ["landing", "index.html/assets"],
+                baseDir: ["blog", "index.html/assets"],
                 routes: {
                     "/assets": "assets",
                 },

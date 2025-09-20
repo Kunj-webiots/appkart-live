@@ -429,7 +429,7 @@
 
         a {
             background-color: rgba(var(--bg-color), 1);
-            padding: 10px;
+            padding: 10px 18px 10px 10px;
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
             display: flex;
@@ -439,6 +439,7 @@
             @media (max-width:600px) {
                 gap: calc(10px + (20 - 10) * ((100vw - 320px) / (600 - 320)));
                 padding: calc(8px + (10 - 8) * ((100vw - 320px) / (600 - 320)));
+                padding-right: calc(10px + (18 - 10) * ((100vw - 320px) / (600 - 320)));
             }
 
             .category-img {
@@ -463,6 +464,10 @@
                 align-items: center;
                 justify-content: space-between;
                 width: calc(100% - 60px - 20px);
+
+                @media (max-width:600px) {
+                    width: calc(100% - calc(50px + (60 - 50) * ((100vw - 320px) / (600 - 320))) - calc(10px + (20 - 10) * ((100vw - 320px) / (600 - 320))));
+                }
 
                 h4 {
                     font-size: 16px;

@@ -234,3 +234,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+
+
+
+// window.onload = () => {
+//   "use strict";
+//   if ("serviceWorker" in navigator) {
+//     navigator.serviceWorker.register("sw.js");
+//   }
+// };
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("../chatting/sw.js")
+      .then((reg) => console.log("Service Worker registered ✅", reg.scope))
+      .catch((err) => console.error("Service Worker failed ❌", err));
+  });
+}

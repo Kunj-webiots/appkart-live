@@ -351,7 +351,7 @@
                 h4 {
                     display: flex;
                     align-items: center;
-                    gap: 20px;
+                    gap: 10px;
 
                     span {
                         font-size: 18px;
@@ -564,6 +564,7 @@
     color: rgba(var(--title-color), 1);
     margin-top: 22px;
     border: none;
+    display: block;
 }
 
 .landing-filter {
@@ -662,12 +663,13 @@
     li {
         width: 100%;
 
-        .open-btn {
-            margin-top: 0;
-        }
-
         +li {
             margin-top: 12px;
+        }
+
+        .open-btn {
+            margin-top: 0;
+            line-height: 26px;
         }
     }
 }

@@ -8,7 +8,7 @@
     <meta name="description" content="appkart">
     <meta name="keywords" content="appkart">
     <meta name="author" content="appkart">
-    <!-- <link rel="manifest" href="../manifest.json"> -->
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="../assets/images/logo/favicon.png" type="image/x-icon">
     <title>Appkart</title>
     <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
@@ -41,7 +41,7 @@
 
     <!-- loader Start -->
     <div class="loader loading">
-        <img src="../assets/images/Appkart-gif/Gif/fitness.gif" class="img-fluid" alt="fitness">
+        <img src="../assets/images/gif/fitness.gif" class="img-fluid" alt="fitness">
     </div>
     <!-- loader End -->
 
@@ -59,11 +59,31 @@
     </section>
     <!-- onboarding section  end  -->
 
+    <!-- pwa install app popup start -->
+    <div class="offcanvas offcanvas-bottom addtohome-popup show" tabindex="-1" id="offcanvas" aria-modal="true"
+        role="dialog">
+        <button type="button" class="btn-close close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-body dark-theme small">
+            <div class="app-info">
+                <img src="../../assets/images/logo/user/48.png" class="img-fluid" alt="">
+                <div class="content">
+                    <h3>Appkart App</h3>
+                    <a href="#">www.appkart-app.com</a>
+                </div>
+            </div>
+            <button class="btn install-app" id="installApp">Add to home screen</button>
+        </div>
+    </div>
+    <!-- pwa install app popup end -->
+
     <!-- Bootstrap JS-->
     <script src="../assets/js/vendors/bootstrap/bootstrap.min.js"></script>
 
     <!-- Iconsax JS-->
     <script src="../assets/js/iconsax.js"></script>
+
+    <!-- Install JS -->
+    <script src="../assets/js/homescreen-popup.js"></script>
 
     <!-- script JS -->
     <script src="../assets/js/script.js"></script>

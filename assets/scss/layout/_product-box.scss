@@ -306,6 +306,7 @@
         background-color: rgba(var(--light-bg), 1);
         border: 1px solid rgba(var(--border-color), 1);
         border-radius: 6px;
+        position: relative;
 
         .dark-mode & {
             background-color: rgba(var(--body-color), 1);
@@ -320,14 +321,55 @@
         }
 
         .wishlist-btn {
-            top: 5px;
-            right: 5px;
+            @include flex_center;
+            border-radius: 100%;
+            position: absolute;
+            padding: 0;
+            top: 7px;
+            right: 9px;
             background-color: transparent;
-            box-shadow: none;
+            border: none;
 
-            &:hover,
-            &:active {
+            &.btn {
                 background-color: transparent !important;
+            }
+
+            &.active,
+            &:active,
+            &:hover {
+                border: transparent !important;
+                background-color: transparent !important;
+            }
+
+            &:not(.btn-check)+.btn:active {
+                border: transparent !important;
+            }
+
+            .icli {
+                color: rgba(var(--title-color), 1);
+            }
+
+            .icbo {
+                display: none;
+            }
+
+            &.active {
+                .icli {
+                    display: none;
+                }
+
+                .icbo {
+                    display: flex;
+                    color: rgba(var(--theme-color), 1);
+                }
+
+                .effect:before {
+                    animation: fireworkLine 0.5s linear 0.1s;
+                }
+
+                .effect:after {
+                    animation: fireworkPoint 0.5s linear 0.1s;
+                }
             }
         }
     }
